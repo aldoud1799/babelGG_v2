@@ -1,4 +1,4 @@
-import sys, logging, json, os, threading
+import sys, logging, json, os, threading, msvcrt
 
 # Pre-load ML libraries before Qt — prevents DLL init conflicts on Windows
 import ctranslate2  # noqa
@@ -252,6 +252,17 @@ class BabelGG(QObject):
 
 
 if __name__ == '__main__':
+    # ── Single-instance lock ──────────────────────────────────────────────────
+    os.makedirs('data', exist_ok=True)
+    _lock_path = os.path.join('data', 'babelgg.lock')
+    try:
+        _lock_fh = open(_lock_path, 'w')
+        msvcrt.locking(_lock_fh.fileno(), msvcrt.LK_NBLCK, 1)
+    except OSError:
+        # Another instance already holds the lock
+        print('[MAIN] BabelGG is already running.', file=sys.stderr)
+        sys.exit(0)
+
     app = QApplication(sys.argv)
     app.setQuitOnLastWindowClosed(False)
     babelgg = BabelGG()
