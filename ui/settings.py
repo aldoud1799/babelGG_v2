@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import (
     QSizePolicy, QSpacerItem,
 )
 from PyQt6.QtCore import Qt, QSize
-from PyQt6.QtGui  import QKeySequence, QFont, QColor, QPalette
+from PyQt6.QtGui  import QKeySequence, QFont, QColor, QPalette, QIcon
 
 
 # ── Palette ───────────────────────────────────────────────────────────────────
@@ -337,6 +337,7 @@ class SettingsWindow(QDialog):
         self.save_fn = save_fn
         self.setWindowTitle('BabelGG — Settings')
         self.setFixedSize(520, 500)
+        self.setWindowIcon(QIcon('assets/icon.ico'))
         self.setStyleSheet(STYLE)
         self._build()
 

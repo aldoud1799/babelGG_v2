@@ -6,6 +6,7 @@ from transformers import NllbTokenizer  # noqa: loads torch before Qt DLLs
 
 from PyQt6.QtWidgets import QApplication, QDialog
 from PyQt6.QtCore    import QObject, pyqtSignal, QMetaObject, Qt, pyqtSlot
+from PyQt6.QtGui     import QIcon
 
 # keyboard — optional; hotkey registration silently degrades without admin rights
 try:
@@ -264,6 +265,7 @@ if __name__ == '__main__':
         sys.exit(0)
 
     app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon('assets/icon.ico'))
     app.setQuitOnLastWindowClosed(False)
     babelgg = BabelGG()
     babelgg.start()

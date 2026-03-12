@@ -12,7 +12,7 @@ from PyQt6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel,
     QProgressBar, QPushButton, QSizePolicy,
 )
-from PyQt6.QtGui import QFont
+from PyQt6.QtGui import QFont, QIcon
 
 
 # ── Worker ────────────────────────────────────────────────────────────────────
@@ -254,6 +254,7 @@ class DownloaderDialog(QDialog):
 
         self.setWindowTitle('BabelGG — First Run Setup')
         self.setFixedWidth(460)
+        self.setWindowIcon(QIcon('assets/icon.ico'))
         self.setWindowFlags(
             Qt.WindowType.Dialog |
             Qt.WindowType.WindowTitleHint |
