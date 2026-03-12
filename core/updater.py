@@ -11,11 +11,12 @@ import json, logging, os, threading, time
 from urllib.request import urlopen, Request
 from urllib.error   import URLError
 from packaging.version import Version
+from core.paths import data_path
 
 # Raw URL for version.json in the canonical repo branch
 VERSION_URL    = 'https://raw.githubusercontent.com/aldoud1799/babelGG_v2/main/version.json'
 RELEASES_URL   = 'https://github.com/aldoud1799/babelGG_v2/releases'
-META_PATH      = os.path.join('data', 'meta.json')
+META_PATH      = data_path('meta.json')
 CHECK_INTERVAL = 86400          # 24 hours in seconds
 FETCH_TIMEOUT  = 8              # seconds
 
@@ -29,7 +30,7 @@ def _load_meta() -> dict:
 
 
 def _save_meta(meta: dict):
-    os.makedirs('data', exist_ok=True)
+    os.makedirs(data_path(), exist_ok=True)
     try:
         with open(META_PATH, 'w', encoding='utf-8') as f:
             json.dump(meta, f, indent=2)

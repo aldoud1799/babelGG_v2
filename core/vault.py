@@ -1,5 +1,6 @@
 import json, logging, os, hashlib, threading
 from thefuzz import fuzz
+from core.paths import data_path
 
 
 class TranslationVault:
@@ -7,7 +8,7 @@ class TranslationVault:
     Translation cache. Exact match via SHA256. Fuzzy match via ratio.
     LRU eviction at 500 entries. Persists to data/vault.json.
     """
-    PATH            = os.path.join('data', 'vault.json')
+    PATH            = data_path('vault.json')
     MAX_ENTRIES     = 500
     FUZZY_THRESHOLD = 96
 
@@ -72,7 +73,7 @@ class TranslationVault:
 
     def _save(self):
         try:
-            os.makedirs('data', exist_ok=True)
+            os.makedirs(data_path(), exist_ok=True)
             with open(self.PATH, 'w', encoding='utf-8') as f:
                 json.dump(
                     {'cache': self._cache, 'texts': self._texts,

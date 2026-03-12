@@ -2,11 +2,12 @@ import logging
 from PyQt6.QtWidgets import (
     QDialog, QTabWidget, QWidget, QVBoxLayout, QHBoxLayout,
     QFormLayout, QComboBox, QSlider, QKeySequenceEdit,
-    QPushButton, QLabel, QRadioButton, QButtonGroup, QFrame,
+    QPushButton, QLabel, QRadioButton, QButtonGroup, QFrame, QCheckBox,
     QSizePolicy, QSpacerItem,
 )
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui  import QKeySequence, QFont, QColor, QPalette, QIcon
+from core.paths import asset_path
 
 
 # ── Palette ───────────────────────────────────────────────────────────────────
@@ -339,7 +340,7 @@ class SettingsWindow(QDialog):
         self.save_fn = save_fn
         self.setWindowTitle('BabelGG — Settings')
         self.setFixedSize(520, 500)
-        self.setWindowIcon(QIcon('assets/icon.ico'))
+        self.setWindowIcon(QIcon(asset_path('icon.ico')))
         self.setStyleSheet(STYLE)
         self._build()
 
@@ -432,6 +433,57 @@ class SettingsWindow(QDialog):
         slider_row.addLayout(slider_inner)
         lay.addLayout(slider_row)
 
+        lay.addSpacing(16)
+
+        anchor_row = QHBoxLayout()
+        anchor_row.addWidget(_row_label('Card Anchor', 'Choose where cards appear on screen'))
+        anchor_row.addStretch()
+        self._anchor_combo = QComboBox()
+        self._anchor_combo.addItem('Top Left', 'top_left')
+        self._anchor_combo.addItem('Top Right', 'top_right')
+        self._anchor_combo.addItem('Bottom Left', 'bottom_left')
+        self._anchor_combo.addItem('Bottom Right', 'bottom_right')
+        cur_anchor = str(self.config.get('card_anchor', 'bottom_right')).lower()
+        idx_anchor = next((i for i in range(self._anchor_combo.count())
+                           if self._anchor_combo.itemData(i) == cur_anchor), 3)
+        self._anchor_combo.setCurrentIndex(idx_anchor)
+        anchor_row.addWidget(self._anchor_combo)
+        lay.addLayout(anchor_row)
+
+        lay.addSpacing(16)
+
+        rate_row = QHBoxLayout()
+        rate_row.addWidget(_row_label('Card Rate Limit', 'Minimum delay between shown cards'))
+        rate_row.addStretch()
+
+        rate_inner = QHBoxLayout()
+        rate_inner.setSpacing(12)
+        self._rate_slider = QSlider(Qt.Orientation.Horizontal)
+        self._rate_slider.setRange(5, 30)  # 0.5s..3.0s
+        cur_rate = float(self.config.get('card_rate_limit_s', 1.2))
+        self._rate_slider.setValue(int(max(5, min(30, round(cur_rate * 10)))))
+        self._rate_slider.setFixedWidth(140)
+        self._rate_badge = QLabel(f'{self._rate_slider.value() / 10:.1f}s')
+        self._rate_badge.setObjectName('badge')
+        self._rate_badge.setFixedWidth(52)
+        self._rate_slider.valueChanged.connect(
+            lambda v: self._rate_badge.setText(f'{v / 10:.1f}s')
+        )
+        rate_inner.addWidget(self._rate_slider)
+        rate_inner.addWidget(self._rate_badge)
+        rate_row.addLayout(rate_inner)
+        lay.addLayout(rate_row)
+
+        lay.addSpacing(16)
+
+        compact_row = QHBoxLayout()
+        compact_row.addWidget(_row_label('Compact Mode', 'Show a shorter, less intrusive translation card'))
+        compact_row.addStretch()
+        self._compact_toggle = QCheckBox('Enabled')
+        self._compact_toggle.setChecked(bool(self.config.get('card_compact', True)))
+        compact_row.addWidget(self._compact_toggle)
+        lay.addLayout(compact_row)
+
         lay.addStretch()
         return w
 
@@ -449,7 +501,7 @@ class SettingsWindow(QDialog):
         hotkeys = self.config.get('hotkeys', {})
         self._hk_toggle   = QKeySequenceEdit(QKeySequence(hotkeys.get('toggle',   'Ctrl+Shift+H')))
         self._hk_reply    = QKeySequenceEdit(QKeySequence(hotkeys.get('reply',    'Ctrl+Shift+R')))
-        self._hk_settings = QKeySequenceEdit(QKeySequence(hotkeys.get('settings', 'Ctrl+Shift+,')))
+        self._hk_settings = QKeySequenceEdit(QKeySequence(hotkeys.get('settings', 'Ctrl+Shift+Comma')))
 
         for label, sub, widget in [
             ('Pause / Resume',  'Toggle clipboard monitoring on/off', self._hk_toggle),
@@ -611,13 +663,20 @@ class SettingsWindow(QDialog):
 
     # ── Save ─────────────────────────────────────────────────────────────────
     def _save(self):
+        def _seq_or_default(seq_edit, default: str) -> str:
+            seq = seq_edit.keySequence().toString().strip()
+            return seq or default
+
         self.config['my_language']  = self._lang_combo.currentData()
         self.config['card_timeout'] = self._timeout_slider.value()
+        self.config['card_anchor']  = self._anchor_combo.currentData()
+        self.config['card_compact'] = bool(self._compact_toggle.isChecked())
+        self.config['card_rate_limit_s'] = round(self._rate_slider.value() / 10.0, 1)
         self.config['flash_device'] = 'cuda' if self._cuda_btn.isChecked() else 'cpu'
         self.config['hotkeys'] = {
-            'toggle':   self._hk_toggle.keySequence().toString(),
-            'reply':    self._hk_reply.keySequence().toString(),
-            'settings': self._hk_settings.keySequence().toString(),
+            'toggle':   _seq_or_default(self._hk_toggle, 'Ctrl+Shift+H'),
+            'reply':    _seq_or_default(self._hk_reply, 'Ctrl+Shift+R'),
+            'settings': _seq_or_default(self._hk_settings, 'Ctrl+Shift+Comma'),
         }
         self.save_fn(self.config)
         logging.info(

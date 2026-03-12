@@ -7,6 +7,7 @@ from transformers import NllbTokenizer  # noqa: loads torch before Qt DLLs
 from PyQt6.QtWidgets import QApplication, QDialog
 from PyQt6.QtCore    import QObject, pyqtSignal, QMetaObject, Qt, pyqtSlot
 from PyQt6.QtGui     import QIcon
+from core.paths      import BASE_DIR, base_path, data_path, asset_path
 
 # keyboard â€” optional; hotkey registration silently degrades without admin rights
 try:
@@ -17,12 +18,12 @@ except Exception as _kb_err:
     _KEYBOARD_AVAILABLE = False
 
 # â”€â”€ Logging â€” must be first â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-os.makedirs('data', exist_ok=True)
+os.makedirs(data_path(), exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s  %(message)s',
     handlers=[
-        logging.FileHandler(os.path.join('data', 'babelgg.log'), encoding='utf-8'),
+        logging.FileHandler(data_path('babelgg.log'), encoding='utf-8'),
         logging.StreamHandler(sys.stdout),
     ]
 )
@@ -41,7 +42,7 @@ from ui.downloader  import DownloaderDialog, needs_download
 
 def load_config() -> dict:
     try:
-        with open('config.json', 'r', encoding='utf-8') as f:
+        with open(base_path('config.json'), 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
         logging.error(f'[MAIN] Config load failed: {e}')
@@ -50,7 +51,7 @@ def load_config() -> dict:
 
 def load_version() -> dict:
     try:
-        with open('version.json', 'r', encoding='utf-8') as f:
+        with open(base_path('version.json'), 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
         logging.error(f'[MAIN] version.json load failed: {e}')
@@ -59,7 +60,7 @@ def load_version() -> dict:
 
 def save_config(cfg: dict):
     try:
-        with open('config.json', 'w', encoding='utf-8') as f:
+        with open(base_path('config.json'), 'w', encoding='utf-8') as f:
             json.dump(cfg, f, indent=2, ensure_ascii=False)
         logging.info('[MAIN] Config saved')
     except Exception as e:
@@ -88,7 +89,7 @@ class BabelGG(QObject):
     # â”€â”€ Startup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def start(self):
         # 1. Tray icon â€” shown immediately
-        self.tray = TrayManager('assets/icon.ico', parent=self)
+        self.tray = TrayManager(asset_path('icon.ico'), parent=self)
         self.tray.set_status('Starting...')
         self.tray.settings_requested.connect(self._open_settings)
         self.tray.quit_requested.connect(self._quit)
@@ -126,10 +127,18 @@ class BabelGG(QObject):
             self.tray.set_status('Hotkeys disabled (keyboard module missing)')
             return
         hk = self.cfg('hotkeys', {})
+
+        def _hotkey(name: str, default: str) -> str:
+            raw = hk.get(name, default)
+            combo = str(raw).strip() or default
+            # keyboard library expects named keys like "comma" instead of ","
+            combo = combo.replace('+,', '+comma')
+            return combo
+
         bindings = [
-            (hk.get('toggle',   'ctrl+shift+h'),     '_hotkey_toggle'),
-            (hk.get('reply',    'ctrl+shift+r'),     '_hotkey_reply'),
-            (hk.get('settings', 'ctrl+shift+comma'), '_hotkey_settings'),
+            (_hotkey('toggle', 'ctrl+shift+h'), '_hotkey_toggle'),
+            (_hotkey('reply', 'ctrl+shift+r'), '_hotkey_reply'),
+            (_hotkey('settings', 'ctrl+shift+comma'), '_hotkey_settings'),
         ]
         failed = []
         for combo, slot_name in bindings:
@@ -177,6 +186,7 @@ class BabelGG(QObject):
                     flash=self.flash,
                     callback=self.card_signal.emit,   # thread-safe
                     tgt_language=self.cfg('my_language', 'english'),
+                    min_emit_interval_s=float(self.cfg('card_rate_limit_s', 1.2)),
                 )
                 self.catch.start()
                 self.tray.set_status('Ready âš¡ â€” Copy foreign text to translate')
@@ -198,7 +208,15 @@ class BabelGG(QObject):
         if self._paused:
             return
         timeout = self.cfg('card_timeout', 5)
-        card    = TranslationCard(result, timeout_s=timeout, parent=None)
+        card_anchor = self.cfg('card_anchor', 'bottom_right')
+        compact = bool(self.cfg('card_compact', True))
+        card = TranslationCard(
+            result,
+            timeout_s=timeout,
+            anchor=card_anchor,
+            compact=compact,
+            parent=None,
+        )
         card.reply_requested.connect(self._open_reply)
         card.closed.connect(
             lambda: self._cards.remove(card) if card in self._cards else None
@@ -214,16 +232,31 @@ class BabelGG(QObject):
         if len(visible) <= 1:
             return
         base = visible[-1]
+        anchor = str(self.cfg('card_anchor', 'bottom_right')).lower()
+        is_top_anchor = anchor.startswith('top')
         for i, card in enumerate(reversed(visible[:-1])):
-            card.move(base.x(), base.y() - (i + 1) * (base.height() + 8))
+            offset = (i + 1) * (base.height() + 8)
+            y = base.y() + offset if is_top_anchor else base.y() - offset
+            card.move(base.x(), y)
 
     # â”€â”€ Reply â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _open_reply(self, result: dict):
         if not self.flash or not self.flash.ready:
             logging.warning('[MAIN] Reply requested but FLASH not ready')
             return
-        reply = ReplyBox(self.flash, result, parent=None)
+        reply = ReplyBox(
+            self.flash,
+            result,
+            compact=bool(self.cfg('card_compact', True)),
+            parent=None,
+        )
+        reply.sent.connect(self._on_reply_sent)
         reply.show()
+
+    def _on_reply_sent(self, text: str):
+        if self.catch:
+            self.catch.ignore_once(text)
+        logging.info('[MAIN] Reply sent: clipboard suppression armed')
 
     # â”€â”€ Settings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _open_settings(self):
@@ -233,6 +266,7 @@ class BabelGG(QObject):
             # Apply language change live
             if self.catch:
                 self.catch.set_language(new_cfg.get('my_language', 'english'))
+                self.catch.set_rate_limit(float(new_cfg.get('card_rate_limit_s', 1.2)))
             # Apply device change if needed
             if self.flash and new_cfg.get('flash_device') != self.flash.device:
                 logging.info('[MAIN] Device changed â€” will apply on next start')
@@ -259,8 +293,8 @@ class BabelGG(QObject):
 
 if __name__ == '__main__':
     # ── Single-instance lock ──────────────────────────────────────────────────
-    os.makedirs('data', exist_ok=True)
-    _lock_path = os.path.join('data', 'babelgg.lock')
+    os.makedirs(data_path(), exist_ok=True)
+    _lock_path = data_path('babelgg.lock')
     try:
         _lock_fh = open(_lock_path, 'w')
         msvcrt.locking(_lock_fh.fileno(), msvcrt.LK_NBLCK, 1)
@@ -276,7 +310,7 @@ if __name__ == '__main__':
         pass
 
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon('assets/icon.ico'))
+    app.setWindowIcon(QIcon(asset_path('icon.ico')))
     app.setQuitOnLastWindowClosed(False)
     babelgg = BabelGG()
     babelgg.start()

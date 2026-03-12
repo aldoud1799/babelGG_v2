@@ -3,7 +3,7 @@
     QScrollArea, QSizePolicy
 )
 from PyQt6.QtCore import Qt, QTimer, QRectF, pyqtSignal
-from PyQt6.QtGui  import QCursor, QPainter, QColor, QPainterPath, QPen
+from PyQt6.QtGui  import QCursor, QPainter, QColor, QPainterPath, QPen, QLinearGradient
 
 
 LANG_FLAGS = {
@@ -26,34 +26,50 @@ LANG_FLAGS = {
 CARD_STYLE = """
 QLabel#translation {
     color: #FFFFFF;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Segoe UI';
+    font-size: 17px;
+    font-weight: 800;
+    font-family: 'Segoe UI Semibold';
 }
 QLabel#original {
-    color: #94A3B8;
-    font-size: 11px;
+    color: #A7B4CB;
+    font-size: 12px;
     font-family: 'Segoe UI';
 }
 QLabel#badge {
-    color: #00C2A8;
+    color: #93FFF1;
     font-size: 11px;
-    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-family: 'Segoe UI Semibold';
+    background: rgba(0, 194, 168, 0.15);
+    border: 1px solid rgba(0, 194, 168, 0.45);
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+QLabel#heading {
+    color: #C8F7EE;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI Semibold';
 }
 QPushButton#reply_btn {
-    background: #0F3460;
-    color: #00C2A8;
-    border: 1px solid #00C2A8;
-    border-radius: 6px;
-    padding: 3px 10px;
-    font-size: 11px;
+    background: #00C2A8;
+    color: #051A22;
+    border: none;
+    border-radius: 9px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: 'Segoe UI Semibold';
 }
-QPushButton#reply_btn:hover { background: #00C2A8; color: #000; }
+QPushButton#reply_btn:hover { background: #1BE6CC; color: #041419; }
+QPushButton#reply_btn:pressed { background: #00A895; }
 QPushButton#close_btn {
     background: transparent;
-    color: #94A3B8;
+    color: #9FB6CC;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 700;
     padding: 0;
 }
 QPushButton#close_btn:hover { color: #FFFFFF; }
@@ -64,9 +80,18 @@ class TranslationCard(QWidget):
     reply_requested = pyqtSignal(dict)
     closed          = pyqtSignal()
 
-    def __init__(self, result: dict, timeout_s: int = 5, parent=None):
+    def __init__(
+            self,
+            result: dict,
+            timeout_s: int = 5,
+            anchor: str = 'bottom_right',
+            compact: bool = False,
+            parent=None,
+    ):
         super().__init__(parent)
         self.result    = result
+        self.anchor    = str(anchor or 'bottom_right').lower()
+        self.compact   = bool(compact)
         self._pinned   = False
         self._drag_pos = None
         self._timeout_ms = max(0, timeout_s * 1000)
@@ -96,8 +121,12 @@ class TranslationCard(QWidget):
         rect = QRectF(self.rect()).adjusted(0.5, 0.5, -0.5, -0.5)
         path = QPainterPath()
         path.addRoundedRect(rect, 12.0, 12.0)
-        painter.fillPath(path, QColor('#1A1A2E'))
-        painter.setPen(QPen(QColor('#00C2A8'), 1.0))
+        grad = QLinearGradient(rect.topLeft(), rect.bottomRight())
+        grad.setColorAt(0.0, QColor('#151A35'))
+        grad.setColorAt(0.55, QColor('#11172F'))
+        grad.setColorAt(1.0, QColor('#0D1124'))
+        painter.fillPath(path, grad)
+        painter.setPen(QPen(QColor('#20D8BE'), 1.1))
         painter.drawPath(path)
         painter.end()
 
@@ -130,15 +159,20 @@ class TranslationCard(QWidget):
         orig = self.result.get('original', '')
         if len(orig) > 80:
             orig = orig[:80] + '...'
-        orig_lbl = QLabel(orig)
-        orig_lbl.setObjectName('original')
-        orig_lbl.setWordWrap(True)
-        orig_lbl.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
-        content_lay.addWidget(orig_lbl)
+        if not self.compact:
+            heading = QLabel('INCOMING')
+            heading.setObjectName('heading')
+            content_lay.addWidget(heading)
+
+            orig_lbl = QLabel(orig)
+            orig_lbl.setObjectName('original')
+            orig_lbl.setWordWrap(True)
+            orig_lbl.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+            content_lay.addWidget(orig_lbl)
 
         # Row 3: normalized hint (if slang was expanded)
         norm = self.result.get('normalized')
-        if norm:
+        if norm and not self.compact:
             norm_lbl = QLabel(f'\u2192 {norm}')
             norm_lbl.setObjectName('original')
             norm_lbl.setWordWrap(True)
@@ -146,7 +180,15 @@ class TranslationCard(QWidget):
             content_lay.addWidget(norm_lbl)
 
         # Row 4: translation (large, white, bold)
-        trans_lbl = QLabel(self.result.get('translation', ''))
+        if not self.compact:
+            translated_heading = QLabel('TRANSLATION')
+            translated_heading.setObjectName('heading')
+            content_lay.addWidget(translated_heading)
+
+        translation = self.result.get('translation', '')
+        if self.compact and len(translation) > 90:
+            translation = translation[:90].rstrip() + '...'
+        trans_lbl = QLabel(translation)
         trans_lbl.setObjectName('translation')
         trans_lbl.setWordWrap(True)
         trans_lbl.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
@@ -168,7 +210,7 @@ class TranslationCard(QWidget):
         ms  = self.result.get('ms', 0)
         ms_lbl = QLabel('cached \u26a1' if ms == 0 else f'{ms}ms')
         ms_lbl.setObjectName('badge')
-        reply_btn = QPushButton('\u21a9 Reply')
+        reply_btn = QPushButton('\u21a9  Reply')
         reply_btn.setObjectName('reply_btn')
         reply_btn.clicked.connect(lambda: self.reply_requested.emit(self.result))
         bot.addWidget(ms_lbl)
@@ -179,21 +221,44 @@ class TranslationCard(QWidget):
 
     def _apply_responsive_size(self):
         screen = QApplication.primaryScreen().availableGeometry()
-        target_width = max(320, min(460, int(screen.width() * 0.28)))
+        if self.compact:
+            target_width = max(290, min(380, int(screen.width() * 0.24)))
+        else:
+            target_width = max(320, min(460, int(screen.width() * 0.28)))
         self.setFixedWidth(target_width)
         self.setMaximumHeight(max(220, min(520, int(screen.height() * 0.55))))
 
     def _content_max_height(self):
         screen = QApplication.primaryScreen().availableGeometry()
+        if self.compact:
+            return max(64, min(110, int(screen.height() * 0.12)))
         return max(110, min(300, int(screen.height() * 0.32)))
 
     def _position(self):
-        pos    = QCursor.pos()
-        screen = QApplication.primaryScreen().geometry()
-        x = pos.x() + 16
-        y = pos.y() + 8
-        if x + self.width()  > screen.width():  x = pos.x() - self.width()  - 8
-        if y + self.height() > screen.height(): y = pos.y() - self.height() - 8
+        screen = QApplication.primaryScreen().availableGeometry()
+        margin = 18
+
+        if self.anchor == 'top_left':
+            x = screen.left() + margin
+            y = screen.top() + margin
+        elif self.anchor == 'top_right':
+            x = screen.right() - self.width() - margin
+            y = screen.top() + margin
+        elif self.anchor == 'bottom_left':
+            x = screen.left() + margin
+            y = screen.bottom() - self.height() - margin
+        elif self.anchor == 'bottom_right':
+            x = screen.right() - self.width() - margin
+            y = screen.bottom() - self.height() - margin
+        else:
+            # Fallback to cursor-relative behavior for unknown anchors.
+            pos = QCursor.pos()
+            x = pos.x() + 16
+            y = pos.y() + 8
+            if x + self.width() > screen.right():
+                x = pos.x() - self.width() - 8
+            if y + self.height() > screen.bottom():
+                y = pos.y() - self.height() - 8
         self.move(x, y)
 
     def mousePressEvent(self, event):

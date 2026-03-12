@@ -1,4 +1,5 @@
 ﻿import time, logging, threading
+from core.paths import models_path
 
 
 class FlashEngine:
@@ -8,8 +9,8 @@ class FlashEngine:
     Handles ALL translation -- incoming and reply.
     No Ollama. No external API. Fully embedded.
     """
-    HF_PATH  = 'models/nllb-200-distilled-600M'
-    CT2_PATH = 'models/nllb-ct2'
+    HF_PATH  = models_path('nllb-200-distilled-600M')
+    CT2_PATH = models_path('nllb-ct2')
 
     LANG_CODES = {
         'english':    'eng_Latn',

@@ -13,6 +13,7 @@ from PyQt6.QtWidgets import (
     QProgressBar, QPushButton, QSizePolicy,
 )
 from PyQt6.QtGui import QFont, QIcon
+from core.paths import BASE_DIR, asset_path
 
 
 # ── Worker ────────────────────────────────────────────────────────────────────
@@ -244,8 +245,10 @@ class DownloaderDialog(QDialog):
         super().__init__(parent)
         flash           = version_cfg.get('flash', {})
         self._hf_repo   = flash.get('repo',         'facebook/nllb-200-distilled-600M')
-        self._hf_path   = flash.get('local_hf_path','models/nllb-200-distilled-600M')
-        self._ct2_path  = flash.get('local_ct2_path','models/nllb-ct2')
+        hf_rel          = flash.get('local_hf_path', 'models/nllb-200-distilled-600M')
+        ct2_rel         = flash.get('local_ct2_path', 'models/nllb-ct2')
+        self._hf_path   = hf_rel if os.path.isabs(hf_rel) else os.path.join(BASE_DIR, hf_rel)
+        self._ct2_path  = ct2_rel if os.path.isabs(ct2_rel) else os.path.join(BASE_DIR, ct2_rel)
         self._quant     = flash.get('quantization',  'int8_float16')
 
         self._thread    = None
@@ -254,7 +257,7 @@ class DownloaderDialog(QDialog):
 
         self.setWindowTitle('BabelGG — First Run Setup')
         self.setFixedWidth(460)
-        self.setWindowIcon(QIcon('assets/icon.ico'))
+        self.setWindowIcon(QIcon(asset_path('icon.ico')))
         self.setWindowFlags(
             Qt.WindowType.Dialog |
             Qt.WindowType.WindowTitleHint |
@@ -371,4 +374,6 @@ class DownloaderDialog(QDialog):
 def needs_download(version_cfg: dict) -> bool:
     """Return True if the CT2 model folder is absent or empty."""
     ct2_path = version_cfg.get('flash', {}).get('local_ct2_path', 'models/nllb-ct2')
+    if not os.path.isabs(ct2_path):
+        ct2_path = os.path.join(BASE_DIR, ct2_path)
     return not os.path.isdir(ct2_path) or not os.listdir(ct2_path)

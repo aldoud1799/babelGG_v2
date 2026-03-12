@@ -7,30 +7,64 @@ import logging, pyperclip
 
 REPLY_STYLE = """
 QWidget {
-    background: #0F3460;
-    border: 1px solid #00C2A8;
-    border-radius: 10px;
+    background: #101A38;
+    border: 1px solid #20D8BE;
+    border-radius: 12px;
 }
 QTextEdit {
-    background: #1A1A2E;
+    background: #0D142B;
     color: #FFFFFF;
-    border: 1px solid #2D3748;
-    border-radius: 6px;
+    border: 1px solid #334668;
+    border-radius: 8px;
     font-size: 13px;
-    padding: 6px;
+    font-weight: 600;
+    font-family: 'Segoe UI Semibold';
+    padding: 8px;
 }
-QLabel#hint    { color: #94A3B8; font-size: 11px; padding: 2px; }
-QLabel#preview { color: #00C2A8; font-size: 13px; padding: 4px; font-weight: bold; }
+QLabel#title {
+    color: #E7F4FF;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Segoe UI Semibold';
+    padding: 0px 2px;
+}
+QLabel#hint {
+    color: #B3C4DD;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0px 2px;
+}
+QLabel#preview {
+    color: #8AF6E5;
+    font-size: 13px;
+    padding: 6px 4px;
+    font-weight: 800;
+    font-family: 'Segoe UI Semibold';
+}
 QPushButton#send {
-    background: #00C2A8; color: #000;
-    border-radius: 6px; padding: 6px 14px;
-    font-weight: bold; font-size: 12px;
+    background: #00C2A8;
+    color: #03171F;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 800;
+    font-size: 12px;
+    font-family: 'Segoe UI Semibold';
 }
-QPushButton#send:hover { background: #00A896; }
+QPushButton#send:hover { background: #20E1C9; }
+QPushButton#send:pressed { background: #00A693; }
 QPushButton#cancel {
-    background: transparent; color: #64748B;
-    border: 1px solid #2D3748; border-radius: 6px;
-    padding: 6px 14px; font-size: 12px;
+    background: transparent;
+    color: #9DB1CA;
+    border: 1px solid #425477;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 700;
+}
+QPushButton#cancel:hover {
+    color: #D5E5F7;
+    border-color: #5D759E;
 }
 """
 
@@ -38,9 +72,10 @@ QPushButton#cancel {
 class ReplyBox(QWidget):
     sent = pyqtSignal(str)   # emits translated text when user clicks send
 
-    def __init__(self, flash, original_result: dict, parent=None):
+    def __init__(self, flash, original_result: dict, compact: bool = False, parent=None):
         super().__init__(parent)
         self.flash          = flash
+        self.compact        = bool(compact)
         self._tgt_lang_code = original_result.get('src_lang', 'jpn_Jpan')
         self._tgt_lang_name = original_result.get('src_lang', 'jpn')[:3].upper()
         self._pending       = ''
@@ -51,7 +86,7 @@ class ReplyBox(QWidget):
         )
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setStyleSheet(REPLY_STYLE)
-        self.setFixedWidth(320)
+        self.setFixedWidth(292 if self.compact else 320)
         self._build()
         self._debounce = QTimer()
         self._debounce.setSingleShot(True)
@@ -59,14 +94,22 @@ class ReplyBox(QWidget):
 
     def _build(self):
         lay = QVBoxLayout(self)
-        lay.setContentsMargins(12, 12, 12, 12)
-        lay.setSpacing(6)
-        hint = QLabel(f'Type your reply — will be translated to {self._tgt_lang_name}')
+        lay.setContentsMargins(10, 10, 10, 10)
+        lay.setSpacing(5 if self.compact else 6)
+
+        if not self.compact:
+            title = QLabel('Reply Composer')
+            title.setObjectName('title')
+            lay.addWidget(title)
+
+        hint_txt = (f'→ {self._tgt_lang_name}' if self.compact
+                    else f'Type your reply — will be translated to {self._tgt_lang_name}')
+        hint = QLabel(hint_txt)
         hint.setObjectName('hint')
         hint.setWordWrap(True)
         lay.addWidget(hint)
         self._input = QTextEdit()
-        self._input.setFixedHeight(64)
+        self._input.setFixedHeight(54 if self.compact else 72)
         self._input.setPlaceholderText('gg wp, good game...')
         self._input.textChanged.connect(lambda: self._debounce.start(500))
         lay.addWidget(self._input)
@@ -106,7 +149,10 @@ class ReplyBox(QWidget):
             result = self.flash.translate(clean, tgt_name)
             if result:
                 self._pending = result['translation']
-                self._preview_lbl.setText(self._pending)
+                preview = self._pending
+                if self.compact and len(preview) > 62:
+                    preview = preview[:62].rstrip() + '...'
+                self._preview_lbl.setText(preview)
         except Exception as e:
             logging.error(f'[REPLY] Preview failed: {type(e).__name__}: {e}')
 

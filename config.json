@@ -1,15 +1,18 @@
 {
   "app_name": "BabelGG",
   "version": "0.1.0",
-  "my_language": "english",
+  "my_language": "arabic",
   "flash_device": "cuda",
   "card_timeout": 5,
+  "card_anchor": "bottom_right",
+  "card_compact": true,
+  "card_rate_limit_s": 1.2,
   "max_clipboard_length": 600,
   "hotkeys": {
-    "toggle":   "ctrl+shift+h",
-    "reply":    "ctrl+shift+r",
-    "settings": "ctrl+shift+comma"
+    "toggle": "Ctrl+Shift+H",
+    "reply": "Ctrl+Shift+R",
+    "settings": "Ctrl+Shift+Comma"
   },
   "theme": "dark",
-  "first_run": true
+  "first_run": false
 }
