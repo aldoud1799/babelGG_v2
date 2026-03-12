@@ -4,8 +4,16 @@ import sys, logging, json, os, threading
 import ctranslate2  # noqa
 from transformers import NllbTokenizer  # noqa: loads torch before Qt DLLs
 
-from PyQt6.QtWidgets import QApplication
-from PyQt6.QtCore    import QObject, pyqtSignal
+from PyQt6.QtWidgets import QApplication, QDialog
+from PyQt6.QtCore    import QObject, pyqtSignal, QMetaObject, Qt, pyqtSlot
+
+# keyboard — optional; hotkey registration silently degrades without admin rights
+try:
+    import keyboard as _keyboard
+    _KEYBOARD_AVAILABLE = True
+except Exception as _kb_err:
+    _keyboard = None
+    _KEYBOARD_AVAILABLE = False
 
 # ── Logging — must be first ──────────────────────────────────────────────────
 os.makedirs('data', exist_ok=True)
@@ -26,6 +34,7 @@ from ui.card        import TranslationCard
 from ui.reply       import ReplyBox
 from ui.tray        import TrayManager
 from ui.settings    import SettingsWindow
+from ui.downloader  import DownloaderDialog, needs_download
 
 
 def load_config() -> dict:
@@ -34,6 +43,15 @@ def load_config() -> dict:
             return json.load(f)
     except Exception as e:
         logging.error(f'[MAIN] Config load failed: {e}')
+        return {}
+
+
+def load_version() -> dict:
+    try:
+        with open('version.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        logging.error(f'[MAIN] version.json load failed: {e}')
         return {}
 
 
@@ -74,7 +92,23 @@ class BabelGG(QObject):
         self.tray.quit_requested.connect(self._quit)
         self.tray.pause_toggled.connect(self._on_pause_toggled)
 
-        # 2. VAULT — synchronous, fast
+        # 2. Global hotkeys
+        self._register_hotkeys()
+
+        # 3. First-run download (blocks until done or user cancels)
+        ver_cfg = load_version()
+        if needs_download(ver_cfg):
+            dlg = DownloaderDialog(ver_cfg, parent=None)
+            if dlg.exec() != QDialog.DialogCode.Accepted:
+                # User cancelled — quit cleanly
+                logging.info('[MAIN] Download cancelled by user — exiting')
+                QApplication.instance().quit()
+                return
+            # Mark first_run complete
+            self.config['first_run'] = False
+            save_config(self.config)
+
+        # 4. VAULT — synchronous, fast
         self.vault = TranslationVault()
 
         # 3. FLASH — background thread (loads model)
@@ -83,6 +117,53 @@ class BabelGG(QObject):
             target=self._warm_flash, daemon=True, name='FlashWarmup'
         ).start()
 
+    # ── Global hotkeys ────────────────────────────────────────────────────────
+    def _register_hotkeys(self):
+        if not _KEYBOARD_AVAILABLE:
+            logging.warning('[MAIN] keyboard module unavailable — hotkeys disabled')
+            self.tray.set_status('Hotkeys disabled (keyboard module missing)')
+            return
+        hk = self.cfg('hotkeys', {})
+        bindings = [
+            (hk.get('toggle',   'ctrl+shift+h'),     '_hotkey_toggle'),
+            (hk.get('reply',    'ctrl+shift+r'),     '_hotkey_reply'),
+            (hk.get('settings', 'ctrl+shift+comma'), '_hotkey_settings'),
+        ]
+        failed = []
+        for combo, slot_name in bindings:
+            try:
+                _keyboard.add_hotkey(
+                    combo,
+                    lambda s=slot_name: QMetaObject.invokeMethod(
+                        self, s, Qt.ConnectionType.QueuedConnection
+                    )
+                )
+                logging.info(f'[MAIN] Hotkey registered: {combo} → {slot_name}')
+            except Exception as e:
+                logging.error(f'[MAIN] Failed to register hotkey {combo!r}: {e}')
+                failed.append(combo)
+        if failed:
+            self.tray.set_status(
+                f'Hotkeys partial ({len(failed)} failed — try running as admin)'
+            )
+
+    @pyqtSlot()
+    def _hotkey_toggle(self):
+        self.tray.toggle_pause()
+
+    @pyqtSlot()
+    def _hotkey_reply(self):
+        visible = [c for c in self._cards if c.isVisible()]
+        if visible:
+            self._open_reply(visible[-1].result)
+        else:
+            logging.info('[MAIN] Hotkey reply: no visible cards to reply to')
+
+    @pyqtSlot()
+    def _hotkey_settings(self):
+        self._open_settings()
+
+    # ── Warmup ────────────────────────────────────────────────────────────────
     def _warm_flash(self):
         try:
             hw     = hardware.detect()
