@@ -30,6 +30,7 @@ from core   import hardware
 from core.vault     import TranslationVault
 from core.flash     import FlashEngine
 from core.catch     import ClipboardMonitor
+from core   import updater as _updater
 from ui.card        import TranslationCard
 from ui.reply       import ReplyBox
 from ui.tray        import TrayManager
@@ -178,6 +179,11 @@ class BabelGG(QObject):
                 self.catch.start()
                 self.tray.set_status('Ready ⚡ — Copy foreign text to translate')
                 logging.info('[MAIN] All systems go')
+                # Spawn silent update check (once per day)
+                _updater.start(
+                    running_ver=self.config.get('version', '0.1.0'),
+                    tray=self.tray,
+                )
             else:
                 self.tray.set_status('FLASH failed to load — check data/babelgg.log')
         except Exception as e:
