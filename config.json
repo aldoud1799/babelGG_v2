@@ -1,0 +1,15 @@
+{
+  "app_name": "BabelGG",
+  "version": "0.1.0",
+  "my_language": "english",
+  "flash_device": "cuda",
+  "card_timeout": 5,
+  "max_clipboard_length": 600,
+  "hotkeys": {
+    "toggle":   "ctrl+shift+h",
+    "reply":    "ctrl+shift+r",
+    "settings": "ctrl+shift+comma"
+  },
+  "theme": "dark",
+  "first_run": true
+}

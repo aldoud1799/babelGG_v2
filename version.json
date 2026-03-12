@@ -1,0 +1,10 @@
+{
+  "app_version": "0.1.0",
+  "minimum_version": "0.1.0",
+  "flash": {
+    "repo": "facebook/nllb-200-distilled-600M",
+    "local_hf_path": "models/nllb-200-distilled-600M",
+    "local_ct2_path": "models/nllb-ct2",
+    "quantization": "int8_float16"
+  }
+}
