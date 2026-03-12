@@ -1,11 +1,11 @@
-import time, logging, threading
+﻿import time, logging, threading
 
 
 class FlashEngine:
     """
     NLLB-200 distilled 600M via CTranslate2 CUDA int8.
     200 languages. <500ms per translation on CUDA.
-    Handles ALL translation — incoming and reply.
+    Handles ALL translation -- incoming and reply.
     No Ollama. No external API. Fully embedded.
     """
     HF_PATH  = 'models/nllb-200-distilled-600M'
@@ -28,7 +28,7 @@ class FlashEngine:
         'turkish':    'tur_Latn',
     }
 
-    # Unicode ranges for auto language detection
+    # Unicode ranges for auto language detection (non-Latin scripts)
     _DETECT = {
         'jpn_Jpan': [(0x3040, 0x30FF), (0x31F0, 0x31FF), (0xFF65, 0xFF9F)],
         'kor_Hang': [(0xAC00, 0xD7A3), (0x1100, 0x11FF)],
@@ -36,6 +36,17 @@ class FlashEngine:
         'arb_Arab': [(0x0600, 0x06FF), (0x0750, 0x077F)],
         'tha_Thai': [(0x0E00, 0x0E7F)],
         'rus_Cyrl': [(0x0400, 0x04FF)],
+    }
+
+    # ISO 639-1 -> FLORES-200 mapping for langdetect fallback (Latin-script languages)
+    _LANGDETECT_MAP = {
+        'en': 'eng_Latn', 'fr': 'fra_Latn', 'es': 'spa_Latn',
+        'de': 'deu_Latn', 'pt': 'por_Latn', 'vi': 'vie_Latn',
+        'id': 'ind_Latn', 'tr': 'tur_Latn', 'it': 'ita_Latn',
+        'nl': 'nld_Latn', 'pl': 'pol_Latn', 'sv': 'swe_Latn',
+        'ja': 'jpn_Jpan', 'ko': 'kor_Hang', 'zh-cn': 'zho_Hans',
+        'zh-tw': 'zho_Hant', 'ar': 'arb_Arab', 'ru': 'rus_Cyrl',
+        'th': 'tha_Thai',
     }
 
     def __init__(self, device: str = 'cuda', vault=None):
@@ -47,7 +58,7 @@ class FlashEngine:
         self._lock       = threading.Lock()
         self._load()
 
-    # ── Loading ─────────────────────────────────────────────────────────────
+    # -- Loading ---------------------------------------------------------------
     def _load(self):
         import ctranslate2 as _ct2
         try:
@@ -72,32 +83,41 @@ class FlashEngine:
                     )
                     self._warmup()
                     self.ready = True
-                    logging.warning('[FLASH] Running on CPU — 3-5s per translation')
+                    logging.warning('[FLASH] Running on CPU -- 3-5s per translation')
                 except Exception as e2:
                     logging.error(f'[FLASH] CPU fallback also failed: {e2}')
 
     def _warmup(self):
-        # Runs one translation to load CUDA kernels — makes first real translation fast
-        self._raw('テスト', 'jpn_Jpan', 'eng_Latn')
+        # Runs one translation to load kernels -- makes first real translation fast
+        self._raw('\u30c6\u30b9\u30c8', 'jpn_Jpan', 'eng_Latn')
         logging.info('[FLASH] Warmup complete')
 
-    # ── Language detection ───────────────────────────────────────────────────
+    # -- Language detection ---------------------------------------------------
     def detect_lang(self, text: str) -> str:
+        # Fast Unicode-range check for non-Latin scripts
         scores = {lang: 0 for lang in self._DETECT}
         for ch in text:
             cp = ord(ch)
             for lang, ranges in self._DETECT.items():
                 for lo, hi in ranges:
                     if lo <= cp <= hi:
-                        # Hiragana/katakana are unique to Japanese — give extra weight
+                        # Hiragana/katakana are unique to Japanese -- give extra weight
                         scores[lang] += 2 if lang == 'jpn_Jpan' else 1
         best = max(scores, key=scores.get)
-        return best if scores[best] > 0 else 'eng_Latn'
+        if scores[best] > 0:
+            return best
+        # Latin-script text: use langdetect to distinguish French/Spanish/etc from English
+        try:
+            from langdetect import detect as _ld_detect
+            code = _ld_detect(text)
+            return self._LANGDETECT_MAP.get(code, 'eng_Latn')
+        except Exception:
+            return 'eng_Latn'
 
     def is_foreign(self, text: str) -> bool:
         return self.detect_lang(text) != 'eng_Latn'
 
-    # ── Core translation ─────────────────────────────────────────────────────
+    # -- Core translation -----------------------------------------------------
     def _get_tokenizer(self, src_lang: str):
         if src_lang not in self._tokenizers:
             from transformers import NllbTokenizer
@@ -108,7 +128,7 @@ class FlashEngine:
 
     def _raw(self, text: str, src: str, tgt: str) -> str:
         tok     = self._get_tokenizer(src)
-        ids     = tok(text).input_ids      # plain Python list — no torch required
+        ids     = tok(text).input_ids      # plain Python list -- no torch required
         tokens  = tok.convert_ids_to_tokens(ids)
         tgt_pfx = [tgt]   # language code strings are tokens in the NLLB vocabulary
         res     = self._translator.translate_batch(
@@ -132,13 +152,13 @@ class FlashEngine:
         tgt = self.LANG_CODES.get(tgt_language.lower(), 'eng_Latn')
         src = self.detect_lang(text)
         if src == tgt:
-            return None  # already in target language — nothing to do
+            return None  # already in target language -- nothing to do
 
         # Check VAULT first
         if self.vault:
             cached = self.vault.lookup(text, tgt)
             if cached:
-                logging.info('[FLASH] VAULT hit — returning cached')
+                logging.info('[FLASH] VAULT hit -- returning cached')
                 return {
                     'original': text, 'translation': cached,
                     'src_lang': src, 'tgt_lang': tgt, 'ms': 0

@@ -258,7 +258,7 @@ QLabel#about_pill {{
 /* ── Footer buttons ── */
 QPushButton#btn_save {{
     background: {_ACCENT};
-    color: #000000;
+     color: #FFFFFF;
     border: none;
     border-radius: 7px;
     padding: 9px 28px;
@@ -268,9 +268,11 @@ QPushButton#btn_save {{
 }}
 QPushButton#btn_save:hover {{
     background: #00E5CC;
+     color: #FFFFFF;
 }}
 QPushButton#btn_save:pressed {{
     background: #009E88;
+     color: #FFFFFF;
 }}
 QPushButton#btn_cancel {{
     background: transparent;

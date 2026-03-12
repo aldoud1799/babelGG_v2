@@ -1,6 +1,6 @@
-import sys, logging, json, os, threading, msvcrt
+﻿import sys, logging, json, os, threading, msvcrt
 
-# Pre-load ML libraries before Qt — prevents DLL init conflicts on Windows
+# Pre-load ML libraries before Qt â€” prevents DLL init conflicts on Windows
 import ctranslate2  # noqa
 from transformers import NllbTokenizer  # noqa: loads torch before Qt DLLs
 
@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import QApplication, QDialog
 from PyQt6.QtCore    import QObject, pyqtSignal, QMetaObject, Qt, pyqtSlot
 from PyQt6.QtGui     import QIcon
 
-# keyboard — optional; hotkey registration silently degrades without admin rights
+# keyboard â€” optional; hotkey registration silently degrades without admin rights
 try:
     import keyboard as _keyboard
     _KEYBOARD_AVAILABLE = True
@@ -16,7 +16,7 @@ except Exception as _kb_err:
     _keyboard = None
     _KEYBOARD_AVAILABLE = False
 
-# ── Logging — must be first ──────────────────────────────────────────────────
+# â”€â”€ Logging â€” must be first â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 os.makedirs('data', exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
@@ -67,7 +67,7 @@ def save_config(cfg: dict):
 
 
 class BabelGG(QObject):
-    # Emitted from background thread — shows card on main Qt thread
+    # Emitted from background thread â€” shows card on main Qt thread
     card_signal = pyqtSignal(dict)
 
     def __init__(self):
@@ -78,16 +78,16 @@ class BabelGG(QObject):
         self.catch   = None
         self._paused = False
         self._cards: list[TranslationCard] = []
-        # Wire signal to card display — runs on main Qt thread
+        # Wire signal to card display â€” runs on main Qt thread
         self.card_signal.connect(self._show_card)
         logging.info('[MAIN] BabelGG v2 initialised')
 
     def cfg(self, key, default=None):
         return self.config.get(key, default)
 
-    # ── Startup ──────────────────────────────────────────────────────────────
+    # â”€â”€ Startup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def start(self):
-        # 1. Tray icon — shown immediately
+        # 1. Tray icon â€” shown immediately
         self.tray = TrayManager('assets/icon.ico', parent=self)
         self.tray.set_status('Starting...')
         self.tray.settings_requested.connect(self._open_settings)
@@ -102,27 +102,27 @@ class BabelGG(QObject):
         if needs_download(ver_cfg):
             dlg = DownloaderDialog(ver_cfg, parent=None)
             if dlg.exec() != QDialog.DialogCode.Accepted:
-                # User cancelled — quit cleanly
-                logging.info('[MAIN] Download cancelled by user — exiting')
+                # User cancelled â€” quit cleanly
+                logging.info('[MAIN] Download cancelled by user â€” exiting')
                 QApplication.instance().quit()
                 return
             # Mark first_run complete
             self.config['first_run'] = False
             save_config(self.config)
 
-        # 4. VAULT — synchronous, fast
+        # 4. VAULT â€” synchronous, fast
         self.vault = TranslationVault()
 
-        # 3. FLASH — background thread (loads model)
+        # 3. FLASH â€” background thread (loads model)
         self.tray.set_status('Warming FLASH engine...')
         threading.Thread(
             target=self._warm_flash, daemon=True, name='FlashWarmup'
         ).start()
 
-    # ── Global hotkeys ────────────────────────────────────────────────────────
+    # â”€â”€ Global hotkeys â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _register_hotkeys(self):
         if not _KEYBOARD_AVAILABLE:
-            logging.warning('[MAIN] keyboard module unavailable — hotkeys disabled')
+            logging.warning('[MAIN] keyboard module unavailable â€” hotkeys disabled')
             self.tray.set_status('Hotkeys disabled (keyboard module missing)')
             return
         hk = self.cfg('hotkeys', {})
@@ -140,13 +140,13 @@ class BabelGG(QObject):
                         self, s, Qt.ConnectionType.QueuedConnection
                     )
                 )
-                logging.info(f'[MAIN] Hotkey registered: {combo} → {slot_name}')
+                logging.info(f'[MAIN] Hotkey registered: {combo} â†’ {slot_name}')
             except Exception as e:
                 logging.error(f'[MAIN] Failed to register hotkey {combo!r}: {e}')
                 failed.append(combo)
         if failed:
             self.tray.set_status(
-                f'Hotkeys partial ({len(failed)} failed — try running as admin)'
+                f'Hotkeys partial ({len(failed)} failed â€” try running as admin)'
             )
 
     @pyqtSlot()
@@ -165,7 +165,7 @@ class BabelGG(QObject):
     def _hotkey_settings(self):
         self._open_settings()
 
-    # ── Warmup ────────────────────────────────────────────────────────────────
+    # â”€â”€ Warmup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _warm_flash(self):
         try:
             hw     = hardware.detect()
@@ -179,7 +179,7 @@ class BabelGG(QObject):
                     tgt_language=self.cfg('my_language', 'english'),
                 )
                 self.catch.start()
-                self.tray.set_status('Ready ⚡ — Copy foreign text to translate')
+                self.tray.set_status('Ready âš¡ â€” Copy foreign text to translate')
                 logging.info('[MAIN] All systems go')
                 # Spawn silent update check (once per day)
                 _updater.start(
@@ -187,12 +187,12 @@ class BabelGG(QObject):
                     tray=self.tray,
                 )
             else:
-                self.tray.set_status('FLASH failed to load — check data/babelgg.log')
+                self.tray.set_status('FLASH failed to load â€” check data/babelgg.log')
         except Exception as e:
             logging.error(f'[MAIN] Warmup failed: {type(e).__name__}: {e}')
-            self.tray.set_status('Startup error — check logs')
+            self.tray.set_status('Startup error â€” check logs')
 
-    # ── Card display ─────────────────────────────────────────────────────────
+    # â”€â”€ Card display â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _show_card(self, result: dict):
         # Always on main Qt thread via signal
         if self._paused:
@@ -217,7 +217,7 @@ class BabelGG(QObject):
         for i, card in enumerate(reversed(visible[:-1])):
             card.move(base.x(), base.y() - (i + 1) * (base.height() + 8))
 
-    # ── Reply ────────────────────────────────────────────────────────────────
+    # â”€â”€ Reply â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _open_reply(self, result: dict):
         if not self.flash or not self.flash.ready:
             logging.warning('[MAIN] Reply requested but FLASH not ready')
@@ -225,7 +225,7 @@ class BabelGG(QObject):
         reply = ReplyBox(self.flash, result, parent=None)
         reply.show()
 
-    # ── Settings ─────────────────────────────────────────────────────────────
+    # â”€â”€ Settings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _open_settings(self):
         def on_save(new_cfg: dict):
             self.config = new_cfg
@@ -235,11 +235,11 @@ class BabelGG(QObject):
                 self.catch.set_language(new_cfg.get('my_language', 'english'))
             # Apply device change if needed
             if self.flash and new_cfg.get('flash_device') != self.flash.device:
-                logging.info('[MAIN] Device changed — will apply on next start')
+                logging.info('[MAIN] Device changed â€” will apply on next start')
         win = SettingsWindow(self.config, on_save, parent=None)
         win.exec()
 
-    # ── Pause / Resume ───────────────────────────────────────────────────────
+    # â”€â”€ Pause / Resume â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _on_pause_toggled(self, paused: bool):
         self._paused = paused
         if self.catch:
@@ -248,12 +248,13 @@ class BabelGG(QObject):
             else:
                 self.catch.resume()
 
-    # ── Quit ─────────────────────────────────────────────────────────────────
+    # â”€â”€ Quit â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _quit(self):
         logging.info('[MAIN] Quitting')
         if self.catch:
             self.catch.stop()
         QApplication.instance().quit()
+
 
 
 if __name__ == '__main__':
@@ -264,9 +265,15 @@ if __name__ == '__main__':
         _lock_fh = open(_lock_path, 'w')
         msvcrt.locking(_lock_fh.fileno(), msvcrt.LK_NBLCK, 1)
     except OSError:
-        # Another instance already holds the lock
         print('[MAIN] BabelGG is already running.', file=sys.stderr)
         sys.exit(0)
+
+    # Tell Windows this process is BabelGG, not pythonw.exe — fixes taskbar icon.
+    try:
+        import ctypes
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('BabelGG.v2')
+    except Exception:
+        pass
 
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon('assets/icon.ico'))
