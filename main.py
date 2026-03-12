@@ -175,7 +175,8 @@ class BabelGG(QObject):
                 # CATCH starts only after FLASH is ready
                 self.catch = ClipboardMonitor(
                     flash=self.flash,
-                    callback=self.card_signal.emit   # thread-safe
+                    callback=self.card_signal.emit,   # thread-safe
+                    tgt_language=self.cfg('my_language', 'english'),
                 )
                 self.catch.start()
                 self.tray.set_status('Ready ⚡ — Copy foreign text to translate')
@@ -229,6 +230,9 @@ class BabelGG(QObject):
         def on_save(new_cfg: dict):
             self.config = new_cfg
             save_config(new_cfg)
+            # Apply language change live
+            if self.catch:
+                self.catch.set_language(new_cfg.get('my_language', 'english'))
             # Apply device change if needed
             if self.flash and new_cfg.get('flash_device') != self.flash.device:
                 logging.info('[MAIN] Device changed — will apply on next start')

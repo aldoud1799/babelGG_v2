@@ -11,12 +11,18 @@ class ClipboardMonitor:
     MAX_LENGTH       = 600
     MIN_FOREIGN_RATIO = 0.10
 
-    def __init__(self, flash, callback):
-        self.flash    = flash
-        self.callback = callback   # fn(result: dict) — called on translation ready
-        self._last    = ''
-        self._stop    = threading.Event()
-        self._paused  = False
+    def __init__(self, flash, callback, tgt_language: str = 'english'):
+        self.flash        = flash
+        self.callback     = callback   # fn(result: dict) — called on translation ready
+        self.tgt_language = tgt_language
+        self._last        = ''
+        self._stop        = threading.Event()
+        self._paused      = False
+
+    def set_language(self, tgt_language: str):
+        """Update target language live — thread-safe (simple attribute write)."""
+        self.tgt_language = tgt_language
+        logging.info(f'[CATCH] Target language updated to: {tgt_language}')
 
     def start(self):
         self._stop.clear()
@@ -78,7 +84,7 @@ class ClipboardMonitor:
         try:
             from core.slang import normalize_for_translation
             clean, was_slang = normalize_for_translation(text)
-            result = self.flash.translate(clean)
+            result = self.flash.translate(clean, self.tgt_language)
             if result:
                 result['original']   = text         # show original on card
                 result['normalized'] = clean if was_slang else None
