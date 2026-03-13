@@ -1,7 +1,8 @@
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QTextEdit, QPushButton, QLabel
 )
-from PyQt6.QtCore import Qt, QTimer, pyqtSignal
+from PyQt6.QtCore import Qt, QTimer, QEvent, pyqtSignal
+from PyQt6.QtGui import QKeyEvent, QTextCursor
 import logging, pyperclip
 
 
@@ -79,6 +80,7 @@ class ReplyBox(QWidget):
         self._tgt_lang_code = original_result.get('src_lang', 'jpn_Jpan')
         self._tgt_lang_name = original_result.get('src_lang', 'jpn')[:3].upper()
         self._pending       = ''
+        self._pending_src   = ''
         self.setWindowFlags(
             Qt.WindowType.FramelessWindowHint |
             Qt.WindowType.WindowStaysOnTopHint |
@@ -112,6 +114,7 @@ class ReplyBox(QWidget):
         self._input.setFixedHeight(54 if self.compact else 72)
         self._input.setPlaceholderText('gg wp, good game...')
         self._input.textChanged.connect(lambda: self._debounce.start(500))
+        self._input.installEventFilter(self)
         lay.addWidget(self._input)
         self._preview_lbl = QLabel('Translation will appear here...')
         self._preview_lbl.setObjectName('preview')
@@ -123,6 +126,7 @@ class ReplyBox(QWidget):
         cancel.clicked.connect(self.close)
         send = QPushButton('Copy & Send →')
         send.setObjectName('send')
+        self._send_btn = send
         send.clicked.connect(self._send)
         btns.addWidget(cancel)
         btns.addStretch()
@@ -130,10 +134,48 @@ class ReplyBox(QWidget):
         lay.addLayout(btns)
         self.adjustSize()
 
+    def showEvent(self, event):
+        super().showEvent(event)
+        # Delay long enough for the hotkey keys to be released before we grab focus
+        QTimer.singleShot(120, self.focus_input)
+
+    def keyPressEvent(self, event: QKeyEvent):
+        if event.key() == Qt.Key.Key_Escape:
+            self.close()
+            event.accept()
+            return
+        super().keyPressEvent(event)
+
+    def focus_input(self):
+        self.raise_()
+        self.activateWindow()
+        # Windows restricts focus-stealing; SetForegroundWindow bypasses it
+        try:
+            import ctypes
+            ctypes.windll.user32.SetForegroundWindow(int(self.winId()))
+        except Exception:
+            pass
+        self._input.setFocus(Qt.FocusReason.ActiveWindowFocusReason)
+        self._input.moveCursor(QTextCursor.MoveOperation.End)
+
+    def _input_is_send_enter(self, event: QKeyEvent) -> bool:
+        if event.key() not in (Qt.Key.Key_Return, Qt.Key.Key_Enter):
+            return False
+        mods = event.modifiers()
+        blocked = (
+            Qt.KeyboardModifier.ShiftModifier |
+            Qt.KeyboardModifier.ControlModifier |
+            Qt.KeyboardModifier.AltModifier |
+            Qt.KeyboardModifier.MetaModifier
+        )
+        return (mods & blocked) == Qt.KeyboardModifier.NoModifier
+
     def _update_preview(self):
         from core.slang import normalize_for_translation
         text = self._input.toPlainText().strip()
         if not text:
+            self._pending = ''
+            self._pending_src = ''
             self._preview_lbl.setText('Translation will appear here...')
             return
         if not self.flash:
@@ -149,6 +191,7 @@ class ReplyBox(QWidget):
             result = self.flash.translate(clean, tgt_name)
             if result:
                 self._pending = result['translation']
+                self._pending_src = text
                 preview = self._pending
                 if self.compact and len(preview) > 62:
                     preview = preview[:62].rstrip() + '...'
@@ -156,7 +199,17 @@ class ReplyBox(QWidget):
         except Exception as e:
             logging.error(f'[REPLY] Preview failed: {type(e).__name__}: {e}')
 
+    def eventFilter(self, watched, event):
+        if watched is self._input and isinstance(event, QKeyEvent):
+            if event.type() == QEvent.Type.KeyPress and self._input_is_send_enter(event):
+                self._send_btn.click()
+                return True
+        return super().eventFilter(watched, event)
+
     def _send(self):
+        text = self._input.toPlainText().strip()
+        if text and text != self._pending_src:
+            self._update_preview()
         if not self._pending:
             return
         try:

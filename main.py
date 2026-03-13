@@ -79,6 +79,9 @@ class BabelGG(QObject):
         self.catch   = None
         self._paused = False
         self._cards: list[TranslationCard] = []
+        self._reply_boxes: list[ReplyBox] = []
+        self._last_result: dict | None = None
+        self._settings_open = False
         # Wire signal to card display â€” runs on main Qt thread
         self.card_signal.connect(self._show_card)
         logging.info('[MAIN] BabelGG v2 initialised')
@@ -164,11 +167,18 @@ class BabelGG(QObject):
 
     @pyqtSlot()
     def _hotkey_reply(self):
-        visible = [c for c in self._cards if c.isVisible()]
-        if visible:
-            self._open_reply(visible[-1].result)
+        # If a reply box is already open, focus it instead of opening another
+        visible_reply = [r for r in self._reply_boxes if r.isVisible()]
+        if visible_reply:
+            visible_reply[-1].focus_input()
+            return
+        visible_cards = [c for c in self._cards if c.isVisible()]
+        if visible_cards:
+            self._open_reply(visible_cards[-1].result)
+        elif self._last_result:
+            self._open_reply(self._last_result)
         else:
-            logging.info('[MAIN] Hotkey reply: no visible cards to reply to')
+            logging.info('[MAIN] Hotkey reply: no translation context available')
 
     @pyqtSlot()
     def _hotkey_settings(self):
@@ -207,6 +217,7 @@ class BabelGG(QObject):
         # Always on main Qt thread via signal
         if self._paused:
             return
+        self._last_result = result
         timeout = self.cfg('card_timeout', 5)
         card_anchor = self.cfg('card_anchor', 'bottom_right')
         compact = bool(self.cfg('card_compact', True))
@@ -244,6 +255,7 @@ class BabelGG(QObject):
         if not self.flash or not self.flash.ready:
             logging.warning('[MAIN] Reply requested but FLASH not ready')
             return
+        self._last_result = result
         reply = ReplyBox(
             self.flash,
             result,
@@ -251,7 +263,13 @@ class BabelGG(QObject):
             parent=None,
         )
         reply.sent.connect(self._on_reply_sent)
+        reply.destroyed.connect(
+            lambda *_args, r=reply: self._reply_boxes.remove(r)
+            if r in self._reply_boxes else None
+        )
+        self._reply_boxes.append(reply)
         reply.show()
+        reply.focus_input()
 
     def _on_reply_sent(self, text: str):
         if self.catch:
@@ -260,6 +278,9 @@ class BabelGG(QObject):
 
     # â”€â”€ Settings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _open_settings(self):
+        if self._settings_open:
+            return
+        self._settings_open = True
         def on_save(new_cfg: dict):
             self.config = new_cfg
             save_config(new_cfg)
@@ -269,9 +290,10 @@ class BabelGG(QObject):
                 self.catch.set_rate_limit(float(new_cfg.get('card_rate_limit_s', 1.2)))
             # Apply device change if needed
             if self.flash and new_cfg.get('flash_device') != self.flash.device:
-                logging.info('[MAIN] Device changed â€” will apply on next start')
+                logging.info('[MAIN] Device changed — will apply on next start')
         win = SettingsWindow(self.config, on_save, parent=None)
         win.exec()
+        self._settings_open = False
 
     # â”€â”€ Pause / Resume â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     def _on_pause_toggled(self, paused: bool):
