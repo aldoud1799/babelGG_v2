@@ -1,0 +1,2818 @@
+﻿2026-04-07 22:08:18.115   Log opened. (Time zone: UTC+03:00)
+2026-04-07 22:08:18.116   Setup version: Inno Setup version 6.7.1
+2026-04-07 22:08:18.116   Original Setup EXE: D:\AbeSoft\BabelGG_v2\installer\BabelGG_Setup.exe
+2026-04-07 22:08:18.116   Setup command line: /SL5="$A07A2,53745189,892416,D:\AbeSoft\BabelGG_v2\installer\BabelGG_Setup.exe" /SPAWNWND=$90A3C /FIRSTWND=$12082C /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG="d:/AbeSoft/BabelGG_v2/_installer_smoketest/installer_live2.log" 
+2026-04-07 22:08:18.116   Windows version: 10.0.26200
+2026-04-07 22:08:18.116   Windows architecture: x64 (64-bit)
+2026-04-07 22:08:18.116   Machine types supported by system: x86 x64
+2026-04-07 22:08:18.116   User privileges: Administrative
+2026-04-07 22:08:18.615   Administrative install mode: Yes
+2026-04-07 22:08:18.615   Install mode root key: HKEY_LOCAL_MACHINE
+2026-04-07 22:08:18.615   64-bit install mode: Yes
+2026-04-07 22:08:18.615   RedirectionGuard status for current process: Enabled in enforcing mode
+2026-04-07 22:08:18.617   Created protected temporary directory: C:\Users\PC\AppData\Local\Temp\is-YIXU0ZU2GC.tmp
+2026-04-07 22:08:18.716   Found 89 files to register with RestartManager.
+2026-04-07 22:08:18.716   Calling RestartManager's RmGetList.
+2026-04-07 22:08:18.751   RmGetList finished successfully.
+2026-04-07 22:08:18.751   RestartManager found no applications using one of our files.
+2026-04-07 22:08:18.765   Starting the installation process.
+2026-04-07 22:08:18.770   Directory for uninstall files: C:\Program Files\BabelGG
+2026-04-07 22:08:18.770   Will append to existing uninstall log: C:\Program Files\BabelGG\unins000.dat
+2026-04-07 22:08:18.772   -- File entry --
+2026-04-07 22:08:18.772   Dest filename: C:\Program Files\BabelGG\unins000.exe
+2026-04-07 22:08:18.772   Non-default bitness: 32-bit
+2026-04-07 22:08:18.774   Time stamp of our file: 2026-04-07 22:08:17.983
+2026-04-07 22:08:18.774   Dest file exists.
+2026-04-07 22:08:18.774   Time stamp of existing file: 2026-04-07 22:02:45.024
+2026-04-07 22:08:18.774   Version of our file: 51.1054.0.0
+2026-04-07 22:08:18.777   Version of existing file: 51.1054.0.0
+2026-04-07 22:08:18.777   Installing the file.
+2026-04-07 22:08:18.786   Leaving temporary file in place for now.
+2026-04-07 22:08:18.787   -- File entry --
+2026-04-07 22:08:18.787   Dest filename: C:\Program Files\BabelGG\BabelGG.exe
+2026-04-07 22:08:18.787   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:18.787   Dest file exists.
+2026-04-07 22:08:18.787   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:18.787   Installing the file.
+2026-04-07 22:08:19.452   Successfully installed the file.
+2026-04-07 22:08:19.452   -- File entry --
+2026-04-07 22:08:19.452   Dest filename: C:\Program Files\BabelGG\_internal\81d243bd2c585b0f4821__mypyc.cp313-win_amd64.pyd
+2026-04-07 22:08:19.452   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.452   Dest file exists.
+2026-04-07 22:08:19.452   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.452   Installing the file.
+2026-04-07 22:08:19.459   Successfully installed the file.
+2026-04-07 22:08:19.459   -- File entry --
+2026-04-07 22:08:19.459   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-console-l1-1-0.dll
+2026-04-07 22:08:19.459   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.459   Dest file exists.
+2026-04-07 22:08:19.459   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.459   Installing the file.
+2026-04-07 22:08:19.462   Successfully installed the file.
+2026-04-07 22:08:19.462   -- File entry --
+2026-04-07 22:08:19.462   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-datetime-l1-1-0.dll
+2026-04-07 22:08:19.462   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.462   Dest file exists.
+2026-04-07 22:08:19.462   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.462   Installing the file.
+2026-04-07 22:08:19.464   Successfully installed the file.
+2026-04-07 22:08:19.464   -- File entry --
+2026-04-07 22:08:19.464   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-debug-l1-1-0.dll
+2026-04-07 22:08:19.464   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.464   Dest file exists.
+2026-04-07 22:08:19.464   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.464   Installing the file.
+2026-04-07 22:08:19.466   Successfully installed the file.
+2026-04-07 22:08:19.466   -- File entry --
+2026-04-07 22:08:19.466   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+2026-04-07 22:08:19.466   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.466   Dest file exists.
+2026-04-07 22:08:19.466   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.466   Installing the file.
+2026-04-07 22:08:19.468   Successfully installed the file.
+2026-04-07 22:08:19.469   -- File entry --
+2026-04-07 22:08:19.469   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-fibers-l1-1-0.dll
+2026-04-07 22:08:19.469   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.469   Dest file exists.
+2026-04-07 22:08:19.469   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.469   Installing the file.
+2026-04-07 22:08:19.471   Successfully installed the file.
+2026-04-07 22:08:19.471   -- File entry --
+2026-04-07 22:08:19.471   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-fibers-l1-1-1.dll
+2026-04-07 22:08:19.471   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.471   Dest file exists.
+2026-04-07 22:08:19.471   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.471   Installing the file.
+2026-04-07 22:08:19.473   Successfully installed the file.
+2026-04-07 22:08:19.473   -- File entry --
+2026-04-07 22:08:19.473   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-file-l1-1-0.dll
+2026-04-07 22:08:19.474   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.474   Dest file exists.
+2026-04-07 22:08:19.474   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.474   Installing the file.
+2026-04-07 22:08:19.476   Successfully installed the file.
+2026-04-07 22:08:19.476   -- File entry --
+2026-04-07 22:08:19.476   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-file-l1-2-0.dll
+2026-04-07 22:08:19.476   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.476   Dest file exists.
+2026-04-07 22:08:19.476   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.476   Installing the file.
+2026-04-07 22:08:19.478   Successfully installed the file.
+2026-04-07 22:08:19.478   -- File entry --
+2026-04-07 22:08:19.478   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-file-l2-1-0.dll
+2026-04-07 22:08:19.479   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.479   Dest file exists.
+2026-04-07 22:08:19.479   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.479   Installing the file.
+2026-04-07 22:08:19.481   Successfully installed the file.
+2026-04-07 22:08:19.481   -- File entry --
+2026-04-07 22:08:19.481   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-handle-l1-1-0.dll
+2026-04-07 22:08:19.481   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.481   Dest file exists.
+2026-04-07 22:08:19.481   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.481   Installing the file.
+2026-04-07 22:08:19.483   Successfully installed the file.
+2026-04-07 22:08:19.483   -- File entry --
+2026-04-07 22:08:19.483   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-heap-l1-1-0.dll
+2026-04-07 22:08:19.483   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.483   Dest file exists.
+2026-04-07 22:08:19.483   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.483   Installing the file.
+2026-04-07 22:08:19.485   Successfully installed the file.
+2026-04-07 22:08:19.485   -- File entry --
+2026-04-07 22:08:19.485   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+2026-04-07 22:08:19.485   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.485   Dest file exists.
+2026-04-07 22:08:19.486   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.486   Installing the file.
+2026-04-07 22:08:19.487   Successfully installed the file.
+2026-04-07 22:08:19.487   -- File entry --
+2026-04-07 22:08:19.487   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+2026-04-07 22:08:19.487   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.487   Dest file exists.
+2026-04-07 22:08:19.487   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.487   Installing the file.
+2026-04-07 22:08:19.489   Successfully installed the file.
+2026-04-07 22:08:19.489   -- File entry --
+2026-04-07 22:08:19.489   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+2026-04-07 22:08:19.490   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.490   Dest file exists.
+2026-04-07 22:08:19.490   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.490   Installing the file.
+2026-04-07 22:08:19.491   Successfully installed the file.
+2026-04-07 22:08:19.491   -- File entry --
+2026-04-07 22:08:19.491   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-localization-l1-2-0.dll
+2026-04-07 22:08:19.491   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.491   Dest file exists.
+2026-04-07 22:08:19.492   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.492   Installing the file.
+2026-04-07 22:08:19.494   Successfully installed the file.
+2026-04-07 22:08:19.494   -- File entry --
+2026-04-07 22:08:19.494   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-memory-l1-1-0.dll
+2026-04-07 22:08:19.494   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.494   Dest file exists.
+2026-04-07 22:08:19.494   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.494   Installing the file.
+2026-04-07 22:08:19.496   Successfully installed the file.
+2026-04-07 22:08:19.496   -- File entry --
+2026-04-07 22:08:19.496   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+2026-04-07 22:08:19.496   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.496   Dest file exists.
+2026-04-07 22:08:19.496   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.496   Installing the file.
+2026-04-07 22:08:19.497   Successfully installed the file.
+2026-04-07 22:08:19.498   -- File entry --
+2026-04-07 22:08:19.498   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+2026-04-07 22:08:19.498   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.498   Dest file exists.
+2026-04-07 22:08:19.498   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.498   Installing the file.
+2026-04-07 22:08:19.499   Successfully installed the file.
+2026-04-07 22:08:19.499   -- File entry --
+2026-04-07 22:08:19.499   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+2026-04-07 22:08:19.500   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.500   Dest file exists.
+2026-04-07 22:08:19.500   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.500   Installing the file.
+2026-04-07 22:08:19.502   Successfully installed the file.
+2026-04-07 22:08:19.502   -- File entry --
+2026-04-07 22:08:19.502   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+2026-04-07 22:08:19.502   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.502   Dest file exists.
+2026-04-07 22:08:19.502   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.502   Installing the file.
+2026-04-07 22:08:19.504   Successfully installed the file.
+2026-04-07 22:08:19.504   -- File entry --
+2026-04-07 22:08:19.504   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-profile-l1-1-0.dll
+2026-04-07 22:08:19.504   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.504   Dest file exists.
+2026-04-07 22:08:19.505   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.505   Installing the file.
+2026-04-07 22:08:19.506   Successfully installed the file.
+2026-04-07 22:08:19.506   -- File entry --
+2026-04-07 22:08:19.506   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+2026-04-07 22:08:19.506   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.506   Dest file exists.
+2026-04-07 22:08:19.506   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.507   Installing the file.
+2026-04-07 22:08:19.508   Successfully installed the file.
+2026-04-07 22:08:19.508   -- File entry --
+2026-04-07 22:08:19.508   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-string-l1-1-0.dll
+2026-04-07 22:08:19.508   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.508   Dest file exists.
+2026-04-07 22:08:19.509   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.509   Installing the file.
+2026-04-07 22:08:19.510   Successfully installed the file.
+2026-04-07 22:08:19.510   -- File entry --
+2026-04-07 22:08:19.510   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-synch-l1-1-0.dll
+2026-04-07 22:08:19.511   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.511   Dest file exists.
+2026-04-07 22:08:19.511   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.511   Installing the file.
+2026-04-07 22:08:19.512   Successfully installed the file.
+2026-04-07 22:08:19.512   -- File entry --
+2026-04-07 22:08:19.512   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-synch-l1-2-0.dll
+2026-04-07 22:08:19.513   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.513   Dest file exists.
+2026-04-07 22:08:19.513   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.513   Installing the file.
+2026-04-07 22:08:19.514   Successfully installed the file.
+2026-04-07 22:08:19.514   -- File entry --
+2026-04-07 22:08:19.514   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+2026-04-07 22:08:19.514   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.514   Dest file exists.
+2026-04-07 22:08:19.515   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.515   Installing the file.
+2026-04-07 22:08:19.516   Successfully installed the file.
+2026-04-07 22:08:19.516   -- File entry --
+2026-04-07 22:08:19.516   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+2026-04-07 22:08:19.516   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.516   Dest file exists.
+2026-04-07 22:08:19.516   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.517   Installing the file.
+2026-04-07 22:08:19.519   Successfully installed the file.
+2026-04-07 22:08:19.519   -- File entry --
+2026-04-07 22:08:19.519   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-timezone-l1-1-0.dll
+2026-04-07 22:08:19.519   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.519   Dest file exists.
+2026-04-07 22:08:19.520   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.520   Installing the file.
+2026-04-07 22:08:19.521   Successfully installed the file.
+2026-04-07 22:08:19.521   -- File entry --
+2026-04-07 22:08:19.521   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-core-util-l1-1-0.dll
+2026-04-07 22:08:19.521   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.521   Dest file exists.
+2026-04-07 22:08:19.522   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.522   Installing the file.
+2026-04-07 22:08:19.523   Successfully installed the file.
+2026-04-07 22:08:19.523   -- File entry --
+2026-04-07 22:08:19.523   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-conio-l1-1-0.dll
+2026-04-07 22:08:19.523   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.523   Dest file exists.
+2026-04-07 22:08:19.524   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.524   Installing the file.
+2026-04-07 22:08:19.525   Successfully installed the file.
+2026-04-07 22:08:19.525   -- File entry --
+2026-04-07 22:08:19.525   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-convert-l1-1-0.dll
+2026-04-07 22:08:19.525   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.525   Dest file exists.
+2026-04-07 22:08:19.525   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.525   Installing the file.
+2026-04-07 22:08:19.527   Successfully installed the file.
+2026-04-07 22:08:19.527   -- File entry --
+2026-04-07 22:08:19.527   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-environment-l1-1-0.dll
+2026-04-07 22:08:19.527   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.527   Dest file exists.
+2026-04-07 22:08:19.527   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.528   Installing the file.
+2026-04-07 22:08:19.529   Successfully installed the file.
+2026-04-07 22:08:19.529   -- File entry --
+2026-04-07 22:08:19.529   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+2026-04-07 22:08:19.529   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.529   Dest file exists.
+2026-04-07 22:08:19.529   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.529   Installing the file.
+2026-04-07 22:08:19.531   Successfully installed the file.
+2026-04-07 22:08:19.531   -- File entry --
+2026-04-07 22:08:19.531   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-heap-l1-1-0.dll
+2026-04-07 22:08:19.531   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.531   Dest file exists.
+2026-04-07 22:08:19.531   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.531   Installing the file.
+2026-04-07 22:08:19.533   Successfully installed the file.
+2026-04-07 22:08:19.533   -- File entry --
+2026-04-07 22:08:19.533   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-locale-l1-1-0.dll
+2026-04-07 22:08:19.534   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.534   Dest file exists.
+2026-04-07 22:08:19.534   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.534   Installing the file.
+2026-04-07 22:08:19.536   Successfully installed the file.
+2026-04-07 22:08:19.536   -- File entry --
+2026-04-07 22:08:19.536   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-math-l1-1-0.dll
+2026-04-07 22:08:19.536   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.536   Dest file exists.
+2026-04-07 22:08:19.536   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.536   Installing the file.
+2026-04-07 22:08:19.538   Successfully installed the file.
+2026-04-07 22:08:19.538   -- File entry --
+2026-04-07 22:08:19.538   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-private-l1-1-0.dll
+2026-04-07 22:08:19.538   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.538   Dest file exists.
+2026-04-07 22:08:19.538   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.538   Installing the file.
+2026-04-07 22:08:19.540   Successfully installed the file.
+2026-04-07 22:08:19.540   -- File entry --
+2026-04-07 22:08:19.540   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-process-l1-1-0.dll
+2026-04-07 22:08:19.540   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.540   Dest file exists.
+2026-04-07 22:08:19.541   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.541   Installing the file.
+2026-04-07 22:08:19.542   Successfully installed the file.
+2026-04-07 22:08:19.542   -- File entry --
+2026-04-07 22:08:19.543   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+2026-04-07 22:08:19.543   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.543   Dest file exists.
+2026-04-07 22:08:19.543   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.543   Installing the file.
+2026-04-07 22:08:19.545   Successfully installed the file.
+2026-04-07 22:08:19.545   -- File entry --
+2026-04-07 22:08:19.545   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+2026-04-07 22:08:19.545   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.545   Dest file exists.
+2026-04-07 22:08:19.545   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.545   Installing the file.
+2026-04-07 22:08:19.547   Successfully installed the file.
+2026-04-07 22:08:19.547   -- File entry --
+2026-04-07 22:08:19.547   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-string-l1-1-0.dll
+2026-04-07 22:08:19.547   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.547   Dest file exists.
+2026-04-07 22:08:19.547   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.547   Installing the file.
+2026-04-07 22:08:19.549   Successfully installed the file.
+2026-04-07 22:08:19.549   -- File entry --
+2026-04-07 22:08:19.549   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-time-l1-1-0.dll
+2026-04-07 22:08:19.549   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.549   Dest file exists.
+2026-04-07 22:08:19.550   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.550   Installing the file.
+2026-04-07 22:08:19.552   Successfully installed the file.
+2026-04-07 22:08:19.552   -- File entry --
+2026-04-07 22:08:19.552   Dest filename: C:\Program Files\BabelGG\_internal\api-ms-win-crt-utility-l1-1-0.dll
+2026-04-07 22:08:19.552   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.552   Dest file exists.
+2026-04-07 22:08:19.552   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.552   Installing the file.
+2026-04-07 22:08:19.553   Successfully installed the file.
+2026-04-07 22:08:19.554   -- File entry --
+2026-04-07 22:08:19.554   Dest filename: C:\Program Files\BabelGG\_internal\base_library.zip
+2026-04-07 22:08:19.554   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.554   Dest file exists.
+2026-04-07 22:08:19.554   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.554   Installing the file.
+2026-04-07 22:08:19.578   Successfully installed the file.
+2026-04-07 22:08:19.578   -- File entry --
+2026-04-07 22:08:19.578   Dest filename: C:\Program Files\BabelGG\_internal\config.json
+2026-04-07 22:08:19.579   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.579   Dest file exists.
+2026-04-07 22:08:19.579   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.579   Installing the file.
+2026-04-07 22:08:19.580   Successfully installed the file.
+2026-04-07 22:08:19.580   -- File entry --
+2026-04-07 22:08:19.580   Dest filename: C:\Program Files\BabelGG\_internal\libcrypto-3.dll
+2026-04-07 22:08:19.580   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.580   Dest file exists.
+2026-04-07 22:08:19.581   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.581   Installing the file.
+2026-04-07 22:08:19.687   Successfully installed the file.
+2026-04-07 22:08:19.687   -- File entry --
+2026-04-07 22:08:19.687   Dest filename: C:\Program Files\BabelGG\_internal\libffi-8.dll
+2026-04-07 22:08:19.687   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.687   Dest file exists.
+2026-04-07 22:08:19.687   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.687   Installing the file.
+2026-04-07 22:08:19.690   Successfully installed the file.
+2026-04-07 22:08:19.690   -- File entry --
+2026-04-07 22:08:19.690   Dest filename: C:\Program Files\BabelGG\_internal\libssl-3.dll
+2026-04-07 22:08:19.690   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.690   Dest file exists.
+2026-04-07 22:08:19.690   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.690   Installing the file.
+2026-04-07 22:08:19.707   Successfully installed the file.
+2026-04-07 22:08:19.707   -- File entry --
+2026-04-07 22:08:19.707   Dest filename: C:\Program Files\BabelGG\_internal\pyexpat.pyd
+2026-04-07 22:08:19.707   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.707   Dest file exists.
+2026-04-07 22:08:19.707   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.708   Installing the file.
+2026-04-07 22:08:19.714   Successfully installed the file.
+2026-04-07 22:08:19.714   -- File entry --
+2026-04-07 22:08:19.714   Dest filename: C:\Program Files\BabelGG\_internal\python3.dll
+2026-04-07 22:08:19.714   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.714   Dest file exists.
+2026-04-07 22:08:19.715   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.715   Installing the file.
+2026-04-07 22:08:19.718   Successfully installed the file.
+2026-04-07 22:08:19.718   -- File entry --
+2026-04-07 22:08:19.718   Dest filename: C:\Program Files\BabelGG\_internal\python313.dll
+2026-04-07 22:08:19.718   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.718   Dest file exists.
+2026-04-07 22:08:19.718   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.718   Installing the file.
+2026-04-07 22:08:19.849   Successfully installed the file.
+2026-04-07 22:08:19.849   -- File entry --
+2026-04-07 22:08:19.849   Dest filename: C:\Program Files\BabelGG\_internal\select.pyd
+2026-04-07 22:08:19.850   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.850   Dest file exists.
+2026-04-07 22:08:19.850   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.850   Installing the file.
+2026-04-07 22:08:19.853   Successfully installed the file.
+2026-04-07 22:08:19.853   -- File entry --
+2026-04-07 22:08:19.853   Dest filename: C:\Program Files\BabelGG\_internal\sqlite3.dll
+2026-04-07 22:08:19.853   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.853   Dest file exists.
+2026-04-07 22:08:19.854   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.854   Installing the file.
+2026-04-07 22:08:19.897   Successfully installed the file.
+2026-04-07 22:08:19.897   -- File entry --
+2026-04-07 22:08:19.897   Dest filename: C:\Program Files\BabelGG\_internal\ucrtbase.dll
+2026-04-07 22:08:19.898   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.898   Dest file exists.
+2026-04-07 22:08:19.898   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.898   Installing the file.
+2026-04-07 22:08:19.932   Successfully installed the file.
+2026-04-07 22:08:19.932   -- File entry --
+2026-04-07 22:08:19.932   Dest filename: C:\Program Files\BabelGG\_internal\unicodedata.pyd
+2026-04-07 22:08:19.933   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.933   Dest file exists.
+2026-04-07 22:08:19.933   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.933   Installing the file.
+2026-04-07 22:08:19.952   Successfully installed the file.
+2026-04-07 22:08:19.952   -- File entry --
+2026-04-07 22:08:19.952   Dest filename: C:\Program Files\BabelGG\_internal\VCOMP140.DLL
+2026-04-07 22:08:19.953   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.953   Dest file exists.
+2026-04-07 22:08:19.953   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.953   Installing the file.
+2026-04-07 22:08:19.959   Successfully installed the file.
+2026-04-07 22:08:19.960   -- File entry --
+2026-04-07 22:08:19.960   Dest filename: C:\Program Files\BabelGG\_internal\VCRUNTIME140.dll
+2026-04-07 22:08:19.960   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.960   Dest file exists.
+2026-04-07 22:08:19.960   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.960   Installing the file.
+2026-04-07 22:08:19.964   Successfully installed the file.
+2026-04-07 22:08:19.964   -- File entry --
+2026-04-07 22:08:19.964   Dest filename: C:\Program Files\BabelGG\_internal\VCRUNTIME140_1.dll
+2026-04-07 22:08:19.964   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.964   Dest file exists.
+2026-04-07 22:08:19.964   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.964   Installing the file.
+2026-04-07 22:08:19.967   Successfully installed the file.
+2026-04-07 22:08:19.968   -- File entry --
+2026-04-07 22:08:19.968   Dest filename: C:\Program Files\BabelGG\_internal\version.json
+2026-04-07 22:08:19.968   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.968   Dest file exists.
+2026-04-07 22:08:19.968   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.968   Installing the file.
+2026-04-07 22:08:19.969   Successfully installed the file.
+2026-04-07 22:08:19.969   -- File entry --
+2026-04-07 22:08:19.969   Dest filename: C:\Program Files\BabelGG\_internal\_asyncio.pyd
+2026-04-07 22:08:19.970   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.970   Dest file exists.
+2026-04-07 22:08:19.970   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.970   Installing the file.
+2026-04-07 22:08:19.973   Successfully installed the file.
+2026-04-07 22:08:19.973   -- File entry --
+2026-04-07 22:08:19.973   Dest filename: C:\Program Files\BabelGG\_internal\_bz2.pyd
+2026-04-07 22:08:19.974   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.974   Dest file exists.
+2026-04-07 22:08:19.974   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.974   Installing the file.
+2026-04-07 22:08:19.978   Successfully installed the file.
+2026-04-07 22:08:19.978   -- File entry --
+2026-04-07 22:08:19.978   Dest filename: C:\Program Files\BabelGG\_internal\_ctypes.pyd
+2026-04-07 22:08:19.978   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.978   Dest file exists.
+2026-04-07 22:08:19.978   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.978   Installing the file.
+2026-04-07 22:08:19.983   Successfully installed the file.
+2026-04-07 22:08:19.983   -- File entry --
+2026-04-07 22:08:19.983   Dest filename: C:\Program Files\BabelGG\_internal\_decimal.pyd
+2026-04-07 22:08:19.983   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.983   Dest file exists.
+2026-04-07 22:08:19.983   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.984   Installing the file.
+2026-04-07 22:08:19.993   Successfully installed the file.
+2026-04-07 22:08:19.993   -- File entry --
+2026-04-07 22:08:19.993   Dest filename: C:\Program Files\BabelGG\_internal\_elementtree.pyd
+2026-04-07 22:08:19.993   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.993   Dest file exists.
+2026-04-07 22:08:19.993   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:19.993   Installing the file.
+2026-04-07 22:08:19.997   Successfully installed the file.
+2026-04-07 22:08:19.998   -- File entry --
+2026-04-07 22:08:19.998   Dest filename: C:\Program Files\BabelGG\_internal\_hashlib.pyd
+2026-04-07 22:08:19.998   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:19.998   Dest file exists.
+2026-04-07 22:08:19.998   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:19.998   Installing the file.
+2026-04-07 22:08:20.001   Successfully installed the file.
+2026-04-07 22:08:20.001   -- File entry --
+2026-04-07 22:08:20.001   Dest filename: C:\Program Files\BabelGG\_internal\_lzma.pyd
+2026-04-07 22:08:20.002   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.002   Dest file exists.
+2026-04-07 22:08:20.002   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.002   Installing the file.
+2026-04-07 22:08:20.007   Successfully installed the file.
+2026-04-07 22:08:20.008   -- File entry --
+2026-04-07 22:08:20.008   Dest filename: C:\Program Files\BabelGG\_internal\_multiprocessing.pyd
+2026-04-07 22:08:20.008   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.008   Dest file exists.
+2026-04-07 22:08:20.008   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.008   Installing the file.
+2026-04-07 22:08:20.010   Successfully installed the file.
+2026-04-07 22:08:20.010   -- File entry --
+2026-04-07 22:08:20.010   Dest filename: C:\Program Files\BabelGG\_internal\_overlapped.pyd
+2026-04-07 22:08:20.010   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.010   Dest file exists.
+2026-04-07 22:08:20.011   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.011   Installing the file.
+2026-04-07 22:08:20.013   Successfully installed the file.
+2026-04-07 22:08:20.013   -- File entry --
+2026-04-07 22:08:20.013   Dest filename: C:\Program Files\BabelGG\_internal\_queue.pyd
+2026-04-07 22:08:20.013   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.014   Dest file exists.
+2026-04-07 22:08:20.014   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.014   Installing the file.
+2026-04-07 22:08:20.016   Successfully installed the file.
+2026-04-07 22:08:20.016   -- File entry --
+2026-04-07 22:08:20.016   Dest filename: C:\Program Files\BabelGG\_internal\_socket.pyd
+2026-04-07 22:08:20.016   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.016   Dest file exists.
+2026-04-07 22:08:20.016   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.016   Installing the file.
+2026-04-07 22:08:20.020   Successfully installed the file.
+2026-04-07 22:08:20.020   -- File entry --
+2026-04-07 22:08:20.020   Dest filename: C:\Program Files\BabelGG\_internal\_sqlite3.pyd
+2026-04-07 22:08:20.020   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.020   Dest file exists.
+2026-04-07 22:08:20.020   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.020   Installing the file.
+2026-04-07 22:08:20.025   Successfully installed the file.
+2026-04-07 22:08:20.026   -- File entry --
+2026-04-07 22:08:20.026   Dest filename: C:\Program Files\BabelGG\_internal\_ssl.pyd
+2026-04-07 22:08:20.026   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.026   Dest file exists.
+2026-04-07 22:08:20.026   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.026   Installing the file.
+2026-04-07 22:08:20.032   Successfully installed the file.
+2026-04-07 22:08:20.033   -- File entry --
+2026-04-07 22:08:20.033   Dest filename: C:\Program Files\BabelGG\_internal\_uuid.pyd
+2026-04-07 22:08:20.033   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.033   Dest file exists.
+2026-04-07 22:08:20.034   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.034   Installing the file.
+2026-04-07 22:08:20.036   Successfully installed the file.
+2026-04-07 22:08:20.036   -- File entry --
+2026-04-07 22:08:20.036   Dest filename: C:\Program Files\BabelGG\_internal\_wmi.pyd
+2026-04-07 22:08:20.036   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.036   Dest file exists.
+2026-04-07 22:08:20.036   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.036   Installing the file.
+2026-04-07 22:08:20.039   Successfully installed the file.
+2026-04-07 22:08:20.039   -- File entry --
+2026-04-07 22:08:20.039   Dest filename: C:\Program Files\BabelGG\_internal\assets\babelgg.ico
+2026-04-07 22:08:20.040   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.040   Dest file exists.
+2026-04-07 22:08:20.040   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.040   Installing the file.
+2026-04-07 22:08:20.044   Successfully installed the file.
+2026-04-07 22:08:20.044   -- File entry --
+2026-04-07 22:08:20.044   Dest filename: C:\Program Files\BabelGG\_internal\assets\babelgg.png
+2026-04-07 22:08:20.044   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.045   Dest file exists.
+2026-04-07 22:08:20.045   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.045   Installing the file.
+2026-04-07 22:08:20.048   Successfully installed the file.
+2026-04-07 22:08:20.048   -- File entry --
+2026-04-07 22:08:20.048   Dest filename: C:\Program Files\BabelGG\_internal\assets\icon.ico
+2026-04-07 22:08:20.048   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.048   Dest file exists.
+2026-04-07 22:08:20.048   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.048   Installing the file.
+2026-04-07 22:08:20.049   Successfully installed the file.
+2026-04-07 22:08:20.049   -- File entry --
+2026-04-07 22:08:20.049   Dest filename: C:\Program Files\BabelGG\_internal\assets\installer_wizard.bmp
+2026-04-07 22:08:20.050   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.050   Dest file exists.
+2026-04-07 22:08:20.050   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.050   Installing the file.
+2026-04-07 22:08:20.053   Successfully installed the file.
+2026-04-07 22:08:20.053   -- File entry --
+2026-04-07 22:08:20.053   Dest filename: C:\Program Files\BabelGG\_internal\assets\installer_wizard_small.bmp
+2026-04-07 22:08:20.053   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.053   Dest file exists.
+2026-04-07 22:08:20.053   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.054   Installing the file.
+2026-04-07 22:08:20.055   Successfully installed the file.
+2026-04-07 22:08:20.055   -- File entry --
+2026-04-07 22:08:20.055   Dest filename: C:\Program Files\BabelGG\_internal\assets\traylogo.png
+2026-04-07 22:08:20.055   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.055   Dest file exists.
+2026-04-07 22:08:20.055   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.055   Installing the file.
+2026-04-07 22:08:20.057   Successfully installed the file.
+2026-04-07 22:08:20.057   -- File entry --
+2026-04-07 22:08:20.057   Dest filename: C:\Program Files\BabelGG\_internal\certifi\cacert.pem
+2026-04-07 22:08:20.057   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.057   Dest file exists.
+2026-04-07 22:08:20.058   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.058   Installing the file.
+2026-04-07 22:08:20.067   Successfully installed the file.
+2026-04-07 22:08:20.068   -- File entry --
+2026-04-07 22:08:20.068   Dest filename: C:\Program Files\BabelGG\_internal\certifi\py.typed
+2026-04-07 22:08:20.068   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.068   Dest file exists.
+2026-04-07 22:08:20.068   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.068   Installing the file.
+2026-04-07 22:08:20.069   Successfully installed the file.
+2026-04-07 22:08:20.069   -- File entry --
+2026-04-07 22:08:20.069   Dest filename: C:\Program Files\BabelGG\_internal\charset_normalizer\cd.cp313-win_amd64.pyd
+2026-04-07 22:08:20.070   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.070   Dest file exists.
+2026-04-07 22:08:20.070   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.070   Installing the file.
+2026-04-07 22:08:20.072   Successfully installed the file.
+2026-04-07 22:08:20.072   -- File entry --
+2026-04-07 22:08:20.072   Dest filename: C:\Program Files\BabelGG\_internal\charset_normalizer\md.cp313-win_amd64.pyd
+2026-04-07 22:08:20.072   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.072   Dest file exists.
+2026-04-07 22:08:20.072   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.073   Installing the file.
+2026-04-07 22:08:20.074   Successfully installed the file.
+2026-04-07 22:08:20.074   -- File entry --
+2026-04-07 22:08:20.074   Dest filename: C:\Program Files\BabelGG\_internal\click-8.3.2.dist-info\INSTALLER
+2026-04-07 22:08:20.074   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.074   Dest file exists.
+2026-04-07 22:08:20.074   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.074   Installing the file.
+2026-04-07 22:08:20.076   Successfully installed the file.
+2026-04-07 22:08:20.076   -- File entry --
+2026-04-07 22:08:20.076   Dest filename: C:\Program Files\BabelGG\_internal\click-8.3.2.dist-info\METADATA
+2026-04-07 22:08:20.076   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.076   Dest file exists.
+2026-04-07 22:08:20.076   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.077   Installing the file.
+2026-04-07 22:08:20.078   Successfully installed the file.
+2026-04-07 22:08:20.078   -- File entry --
+2026-04-07 22:08:20.078   Dest filename: C:\Program Files\BabelGG\_internal\click-8.3.2.dist-info\RECORD
+2026-04-07 22:08:20.078   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.078   Dest file exists.
+2026-04-07 22:08:20.078   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.079   Installing the file.
+2026-04-07 22:08:20.080   Successfully installed the file.
+2026-04-07 22:08:20.080   -- File entry --
+2026-04-07 22:08:20.080   Dest filename: C:\Program Files\BabelGG\_internal\click-8.3.2.dist-info\WHEEL
+2026-04-07 22:08:20.080   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.080   Dest file exists.
+2026-04-07 22:08:20.080   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.080   Installing the file.
+2026-04-07 22:08:20.081   Successfully installed the file.
+2026-04-07 22:08:20.081   -- File entry --
+2026-04-07 22:08:20.081   Dest filename: C:\Program Files\BabelGG\_internal\click-8.3.2.dist-info\licenses\LICENSE.txt
+2026-04-07 22:08:20.082   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.082   Dest file exists.
+2026-04-07 22:08:20.082   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.082   Installing the file.
+2026-04-07 22:08:20.083   Successfully installed the file.
+2026-04-07 22:08:20.083   -- File entry --
+2026-04-07 22:08:20.083   Dest filename: C:\Program Files\BabelGG\_internal\data\phrases.json
+2026-04-07 22:08:20.083   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.083   Dest file exists.
+2026-04-07 22:08:20.083   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.083   Installing the file.
+2026-04-07 22:08:20.086   Successfully installed the file.
+2026-04-07 22:08:20.086   -- File entry --
+2026-04-07 22:08:20.086   Dest filename: C:\Program Files\BabelGG\_internal\hf_xet\hf_xet.pyd
+2026-04-07 22:08:20.086   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.086   Dest file exists.
+2026-04-07 22:08:20.086   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.086   Installing the file.
+2026-04-07 22:08:20.295   Successfully installed the file.
+2026-04-07 22:08:20.295   -- File entry --
+2026-04-07 22:08:20.295   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\af
+2026-04-07 22:08:20.295   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.295   Dest file exists.
+2026-04-07 22:08:20.295   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.295   Installing the file.
+2026-04-07 22:08:20.297   Successfully installed the file.
+2026-04-07 22:08:20.297   -- File entry --
+2026-04-07 22:08:20.297   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ar
+2026-04-07 22:08:20.298   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.298   Dest file exists.
+2026-04-07 22:08:20.298   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.298   Installing the file.
+2026-04-07 22:08:20.300   Successfully installed the file.
+2026-04-07 22:08:20.300   -- File entry --
+2026-04-07 22:08:20.300   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\bg
+2026-04-07 22:08:20.301   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.301   Dest file exists.
+2026-04-07 22:08:20.301   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.301   Installing the file.
+2026-04-07 22:08:20.305   Successfully installed the file.
+2026-04-07 22:08:20.305   -- File entry --
+2026-04-07 22:08:20.305   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\bn
+2026-04-07 22:08:20.306   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.306   Dest file exists.
+2026-04-07 22:08:20.306   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.306   Installing the file.
+2026-04-07 22:08:20.308   Successfully installed the file.
+2026-04-07 22:08:20.309   -- File entry --
+2026-04-07 22:08:20.309   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ca
+2026-04-07 22:08:20.309   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.309   Dest file exists.
+2026-04-07 22:08:20.309   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.309   Installing the file.
+2026-04-07 22:08:20.312   Successfully installed the file.
+2026-04-07 22:08:20.312   -- File entry --
+2026-04-07 22:08:20.312   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\cs
+2026-04-07 22:08:20.313   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.313   Dest file exists.
+2026-04-07 22:08:20.313   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.313   Installing the file.
+2026-04-07 22:08:20.315   Successfully installed the file.
+2026-04-07 22:08:20.315   -- File entry --
+2026-04-07 22:08:20.315   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\cy
+2026-04-07 22:08:20.315   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.315   Dest file exists.
+2026-04-07 22:08:20.316   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.316   Installing the file.
+2026-04-07 22:08:20.319   Successfully installed the file.
+2026-04-07 22:08:20.320   -- File entry --
+2026-04-07 22:08:20.320   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\da
+2026-04-07 22:08:20.320   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.320   Dest file exists.
+2026-04-07 22:08:20.320   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.320   Installing the file.
+2026-04-07 22:08:20.322   Successfully installed the file.
+2026-04-07 22:08:20.322   -- File entry --
+2026-04-07 22:08:20.322   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\de
+2026-04-07 22:08:20.322   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.322   Dest file exists.
+2026-04-07 22:08:20.323   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.323   Installing the file.
+2026-04-07 22:08:20.324   Successfully installed the file.
+2026-04-07 22:08:20.325   -- File entry --
+2026-04-07 22:08:20.325   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\el
+2026-04-07 22:08:20.325   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.325   Dest file exists.
+2026-04-07 22:08:20.325   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.325   Installing the file.
+2026-04-07 22:08:20.327   Successfully installed the file.
+2026-04-07 22:08:20.327   -- File entry --
+2026-04-07 22:08:20.327   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\en
+2026-04-07 22:08:20.328   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.328   Dest file exists.
+2026-04-07 22:08:20.328   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.328   Installing the file.
+2026-04-07 22:08:20.330   Successfully installed the file.
+2026-04-07 22:08:20.330   -- File entry --
+2026-04-07 22:08:20.330   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\es
+2026-04-07 22:08:20.330   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.330   Dest file exists.
+2026-04-07 22:08:20.330   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.330   Installing the file.
+2026-04-07 22:08:20.333   Successfully installed the file.
+2026-04-07 22:08:20.333   -- File entry --
+2026-04-07 22:08:20.333   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\et
+2026-04-07 22:08:20.333   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.333   Dest file exists.
+2026-04-07 22:08:20.333   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.333   Installing the file.
+2026-04-07 22:08:20.337   Successfully installed the file.
+2026-04-07 22:08:20.337   -- File entry --
+2026-04-07 22:08:20.337   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\fa
+2026-04-07 22:08:20.338   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.338   Dest file exists.
+2026-04-07 22:08:20.338   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.338   Installing the file.
+2026-04-07 22:08:20.340   Successfully installed the file.
+2026-04-07 22:08:20.340   -- File entry --
+2026-04-07 22:08:20.340   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\fi
+2026-04-07 22:08:20.340   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.340   Dest file exists.
+2026-04-07 22:08:20.340   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.340   Installing the file.
+2026-04-07 22:08:20.343   Successfully installed the file.
+2026-04-07 22:08:20.343   -- File entry --
+2026-04-07 22:08:20.343   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\fr
+2026-04-07 22:08:20.343   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.343   Dest file exists.
+2026-04-07 22:08:20.343   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.343   Installing the file.
+2026-04-07 22:08:20.345   Successfully installed the file.
+2026-04-07 22:08:20.345   -- File entry --
+2026-04-07 22:08:20.345   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\gu
+2026-04-07 22:08:20.346   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.346   Dest file exists.
+2026-04-07 22:08:20.346   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.346   Installing the file.
+2026-04-07 22:08:20.349   Successfully installed the file.
+2026-04-07 22:08:20.349   -- File entry --
+2026-04-07 22:08:20.349   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\he
+2026-04-07 22:08:20.349   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.349   Dest file exists.
+2026-04-07 22:08:20.349   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.349   Installing the file.
+2026-04-07 22:08:20.351   Successfully installed the file.
+2026-04-07 22:08:20.351   -- File entry --
+2026-04-07 22:08:20.351   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\hi
+2026-04-07 22:08:20.352   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.352   Dest file exists.
+2026-04-07 22:08:20.352   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.352   Installing the file.
+2026-04-07 22:08:20.354   Successfully installed the file.
+2026-04-07 22:08:20.354   -- File entry --
+2026-04-07 22:08:20.354   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\hr
+2026-04-07 22:08:20.354   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.354   Dest file exists.
+2026-04-07 22:08:20.355   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.355   Installing the file.
+2026-04-07 22:08:20.356   Successfully installed the file.
+2026-04-07 22:08:20.357   -- File entry --
+2026-04-07 22:08:20.357   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\hu
+2026-04-07 22:08:20.357   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.357   Dest file exists.
+2026-04-07 22:08:20.357   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.357   Installing the file.
+2026-04-07 22:08:20.359   Successfully installed the file.
+2026-04-07 22:08:20.359   -- File entry --
+2026-04-07 22:08:20.359   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\id
+2026-04-07 22:08:20.360   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.360   Dest file exists.
+2026-04-07 22:08:20.360   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.360   Installing the file.
+2026-04-07 22:08:20.362   Successfully installed the file.
+2026-04-07 22:08:20.362   -- File entry --
+2026-04-07 22:08:20.362   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\it
+2026-04-07 22:08:20.362   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.362   Dest file exists.
+2026-04-07 22:08:20.363   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.363   Installing the file.
+2026-04-07 22:08:20.364   Successfully installed the file.
+2026-04-07 22:08:20.365   -- File entry --
+2026-04-07 22:08:20.365   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ja
+2026-04-07 22:08:20.365   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.365   Dest file exists.
+2026-04-07 22:08:20.365   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.365   Installing the file.
+2026-04-07 22:08:20.367   Successfully installed the file.
+2026-04-07 22:08:20.367   -- File entry --
+2026-04-07 22:08:20.367   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\kn
+2026-04-07 22:08:20.368   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.368   Dest file exists.
+2026-04-07 22:08:20.368   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.368   Installing the file.
+2026-04-07 22:08:20.370   Successfully installed the file.
+2026-04-07 22:08:20.370   -- File entry --
+2026-04-07 22:08:20.370   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ko
+2026-04-07 22:08:20.370   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.370   Dest file exists.
+2026-04-07 22:08:20.371   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.371   Installing the file.
+2026-04-07 22:08:20.380   Successfully installed the file.
+2026-04-07 22:08:20.380   -- File entry --
+2026-04-07 22:08:20.380   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\lt
+2026-04-07 22:08:20.380   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.380   Dest file exists.
+2026-04-07 22:08:20.380   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.381   Installing the file.
+2026-04-07 22:08:20.384   Successfully installed the file.
+2026-04-07 22:08:20.384   -- File entry --
+2026-04-07 22:08:20.384   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\lv
+2026-04-07 22:08:20.384   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.384   Dest file exists.
+2026-04-07 22:08:20.384   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.384   Installing the file.
+2026-04-07 22:08:20.387   Successfully installed the file.
+2026-04-07 22:08:20.388   -- File entry --
+2026-04-07 22:08:20.388   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\mk
+2026-04-07 22:08:20.388   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.388   Dest file exists.
+2026-04-07 22:08:20.388   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.388   Installing the file.
+2026-04-07 22:08:20.390   Successfully installed the file.
+2026-04-07 22:08:20.390   -- File entry --
+2026-04-07 22:08:20.390   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ml
+2026-04-07 22:08:20.390   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.390   Dest file exists.
+2026-04-07 22:08:20.390   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.390   Installing the file.
+2026-04-07 22:08:20.393   Successfully installed the file.
+2026-04-07 22:08:20.394   -- File entry --
+2026-04-07 22:08:20.394   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\mr
+2026-04-07 22:08:20.394   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.394   Dest file exists.
+2026-04-07 22:08:20.394   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.394   Installing the file.
+2026-04-07 22:08:20.396   Successfully installed the file.
+2026-04-07 22:08:20.396   -- File entry --
+2026-04-07 22:08:20.396   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ne
+2026-04-07 22:08:20.396   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.396   Dest file exists.
+2026-04-07 22:08:20.396   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.396   Installing the file.
+2026-04-07 22:08:20.398   Successfully installed the file.
+2026-04-07 22:08:20.398   -- File entry --
+2026-04-07 22:08:20.398   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\nl
+2026-04-07 22:08:20.398   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.399   Dest file exists.
+2026-04-07 22:08:20.399   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.399   Installing the file.
+2026-04-07 22:08:20.401   Successfully installed the file.
+2026-04-07 22:08:20.401   -- File entry --
+2026-04-07 22:08:20.401   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\no
+2026-04-07 22:08:20.401   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.401   Dest file exists.
+2026-04-07 22:08:20.401   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.401   Installing the file.
+2026-04-07 22:08:20.403   Successfully installed the file.
+2026-04-07 22:08:20.403   -- File entry --
+2026-04-07 22:08:20.403   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\pa
+2026-04-07 22:08:20.403   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.403   Dest file exists.
+2026-04-07 22:08:20.403   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.403   Installing the file.
+2026-04-07 22:08:20.405   Successfully installed the file.
+2026-04-07 22:08:20.405   -- File entry --
+2026-04-07 22:08:20.405   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\pl
+2026-04-07 22:08:20.405   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.405   Dest file exists.
+2026-04-07 22:08:20.406   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.406   Installing the file.
+2026-04-07 22:08:20.408   Successfully installed the file.
+2026-04-07 22:08:20.408   -- File entry --
+2026-04-07 22:08:20.408   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\pt
+2026-04-07 22:08:20.408   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.409   Dest file exists.
+2026-04-07 22:08:20.409   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.409   Installing the file.
+2026-04-07 22:08:20.411   Successfully installed the file.
+2026-04-07 22:08:20.411   -- File entry --
+2026-04-07 22:08:20.411   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ro
+2026-04-07 22:08:20.411   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.411   Dest file exists.
+2026-04-07 22:08:20.411   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.411   Installing the file.
+2026-04-07 22:08:20.414   Successfully installed the file.
+2026-04-07 22:08:20.414   -- File entry --
+2026-04-07 22:08:20.414   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ru
+2026-04-07 22:08:20.414   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.414   Dest file exists.
+2026-04-07 22:08:20.414   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.414   Installing the file.
+2026-04-07 22:08:20.416   Successfully installed the file.
+2026-04-07 22:08:20.417   -- File entry --
+2026-04-07 22:08:20.417   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\sk
+2026-04-07 22:08:20.417   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.417   Dest file exists.
+2026-04-07 22:08:20.417   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.417   Installing the file.
+2026-04-07 22:08:20.419   Successfully installed the file.
+2026-04-07 22:08:20.419   -- File entry --
+2026-04-07 22:08:20.419   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\sl
+2026-04-07 22:08:20.420   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.420   Dest file exists.
+2026-04-07 22:08:20.420   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.420   Installing the file.
+2026-04-07 22:08:20.423   Successfully installed the file.
+2026-04-07 22:08:20.423   -- File entry --
+2026-04-07 22:08:20.424   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\so
+2026-04-07 22:08:20.424   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.424   Dest file exists.
+2026-04-07 22:08:20.424   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.424   Installing the file.
+2026-04-07 22:08:20.426   Successfully installed the file.
+2026-04-07 22:08:20.426   -- File entry --
+2026-04-07 22:08:20.426   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\sq
+2026-04-07 22:08:20.426   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.426   Dest file exists.
+2026-04-07 22:08:20.426   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.426   Installing the file.
+2026-04-07 22:08:20.428   Successfully installed the file.
+2026-04-07 22:08:20.428   -- File entry --
+2026-04-07 22:08:20.428   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\sv
+2026-04-07 22:08:20.428   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.428   Dest file exists.
+2026-04-07 22:08:20.428   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.428   Installing the file.
+2026-04-07 22:08:20.430   Successfully installed the file.
+2026-04-07 22:08:20.430   -- File entry --
+2026-04-07 22:08:20.430   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\sw
+2026-04-07 22:08:20.431   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.431   Dest file exists.
+2026-04-07 22:08:20.431   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.431   Installing the file.
+2026-04-07 22:08:20.432   Successfully installed the file.
+2026-04-07 22:08:20.432   -- File entry --
+2026-04-07 22:08:20.432   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ta
+2026-04-07 22:08:20.432   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.432   Dest file exists.
+2026-04-07 22:08:20.433   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.433   Installing the file.
+2026-04-07 22:08:20.435   Successfully installed the file.
+2026-04-07 22:08:20.435   -- File entry --
+2026-04-07 22:08:20.435   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\te
+2026-04-07 22:08:20.435   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.435   Dest file exists.
+2026-04-07 22:08:20.435   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.435   Installing the file.
+2026-04-07 22:08:20.438   Successfully installed the file.
+2026-04-07 22:08:20.438   -- File entry --
+2026-04-07 22:08:20.438   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\th
+2026-04-07 22:08:20.438   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.438   Dest file exists.
+2026-04-07 22:08:20.439   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.439   Installing the file.
+2026-04-07 22:08:20.441   Successfully installed the file.
+2026-04-07 22:08:20.441   -- File entry --
+2026-04-07 22:08:20.441   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\tl
+2026-04-07 22:08:20.441   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.441   Dest file exists.
+2026-04-07 22:08:20.441   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.441   Installing the file.
+2026-04-07 22:08:20.443   Successfully installed the file.
+2026-04-07 22:08:20.443   -- File entry --
+2026-04-07 22:08:20.443   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\tr
+2026-04-07 22:08:20.443   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.444   Dest file exists.
+2026-04-07 22:08:20.444   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.444   Installing the file.
+2026-04-07 22:08:20.446   Successfully installed the file.
+2026-04-07 22:08:20.446   -- File entry --
+2026-04-07 22:08:20.446   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\uk
+2026-04-07 22:08:20.446   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.446   Dest file exists.
+2026-04-07 22:08:20.446   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.446   Installing the file.
+2026-04-07 22:08:20.448   Successfully installed the file.
+2026-04-07 22:08:20.448   -- File entry --
+2026-04-07 22:08:20.448   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\ur
+2026-04-07 22:08:20.448   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.448   Dest file exists.
+2026-04-07 22:08:20.448   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.449   Installing the file.
+2026-04-07 22:08:20.450   Successfully installed the file.
+2026-04-07 22:08:20.450   -- File entry --
+2026-04-07 22:08:20.450   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\vi
+2026-04-07 22:08:20.450   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.450   Dest file exists.
+2026-04-07 22:08:20.451   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.451   Installing the file.
+2026-04-07 22:08:20.454   Successfully installed the file.
+2026-04-07 22:08:20.454   -- File entry --
+2026-04-07 22:08:20.454   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\zh-cn
+2026-04-07 22:08:20.454   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.454   Dest file exists.
+2026-04-07 22:08:20.454   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.454   Installing the file.
+2026-04-07 22:08:20.456   Successfully installed the file.
+2026-04-07 22:08:20.456   -- File entry --
+2026-04-07 22:08:20.456   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\profiles\zh-tw
+2026-04-07 22:08:20.456   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.457   Dest file exists.
+2026-04-07 22:08:20.457   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.457   Installing the file.
+2026-04-07 22:08:20.459   Successfully installed the file.
+2026-04-07 22:08:20.459   -- File entry --
+2026-04-07 22:08:20.459   Dest filename: C:\Program Files\BabelGG\_internal\langdetect\utils\messages.properties
+2026-04-07 22:08:20.459   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.459   Dest file exists.
+2026-04-07 22:08:20.459   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.459   Installing the file.
+2026-04-07 22:08:20.461   Successfully installed the file.
+2026-04-07 22:08:20.461   -- File entry --
+2026-04-07 22:08:20.461   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama.py
+2026-04-07 22:08:20.462   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.462   Dest file exists.
+2026-04-07 22:08:20.462   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.462   Installing the file.
+2026-04-07 22:08:20.464   Successfully installed the file.
+2026-04-07 22:08:20.464   -- File entry --
+2026-04-07 22:08:20.464   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama_cache.py
+2026-04-07 22:08:20.465   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.465   Dest file exists.
+2026-04-07 22:08:20.465   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.465   Installing the file.
+2026-04-07 22:08:20.466   Successfully installed the file.
+2026-04-07 22:08:20.466   -- File entry --
+2026-04-07 22:08:20.466   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama_chat_format.py
+2026-04-07 22:08:20.466   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.466   Dest file exists.
+2026-04-07 22:08:20.467   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.467   Installing the file.
+2026-04-07 22:08:20.471   Successfully installed the file.
+2026-04-07 22:08:20.471   -- File entry --
+2026-04-07 22:08:20.471   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama_cpp.py
+2026-04-07 22:08:20.471   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.471   Dest file exists.
+2026-04-07 22:08:20.471   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.471   Installing the file.
+2026-04-07 22:08:20.475   Successfully installed the file.
+2026-04-07 22:08:20.475   -- File entry --
+2026-04-07 22:08:20.475   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama_grammar.py
+2026-04-07 22:08:20.475   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.475   Dest file exists.
+2026-04-07 22:08:20.475   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.475   Installing the file.
+2026-04-07 22:08:20.477   Successfully installed the file.
+2026-04-07 22:08:20.477   -- File entry --
+2026-04-07 22:08:20.477   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama_speculative.py
+2026-04-07 22:08:20.477   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.477   Dest file exists.
+2026-04-07 22:08:20.477   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.478   Installing the file.
+2026-04-07 22:08:20.479   Successfully installed the file.
+2026-04-07 22:08:20.479   -- File entry --
+2026-04-07 22:08:20.479   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama_tokenizer.py
+2026-04-07 22:08:20.479   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.479   Dest file exists.
+2026-04-07 22:08:20.479   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.479   Installing the file.
+2026-04-07 22:08:20.480   Successfully installed the file.
+2026-04-07 22:08:20.480   -- File entry --
+2026-04-07 22:08:20.480   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llama_types.py
+2026-04-07 22:08:20.481   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.481   Dest file exists.
+2026-04-07 22:08:20.481   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.481   Installing the file.
+2026-04-07 22:08:20.482   Successfully installed the file.
+2026-04-07 22:08:20.482   -- File entry --
+2026-04-07 22:08:20.482   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\llava_cpp.py
+2026-04-07 22:08:20.483   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.483   Dest file exists.
+2026-04-07 22:08:20.483   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.483   Installing the file.
+2026-04-07 22:08:20.484   Successfully installed the file.
+2026-04-07 22:08:20.484   -- File entry --
+2026-04-07 22:08:20.484   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\mtmd_cpp.py
+2026-04-07 22:08:20.485   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.485   Dest file exists.
+2026-04-07 22:08:20.485   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.485   Installing the file.
+2026-04-07 22:08:20.486   Successfully installed the file.
+2026-04-07 22:08:20.486   -- File entry --
+2026-04-07 22:08:20.486   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\py.typed
+2026-04-07 22:08:20.486   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.486   Dest file exists.
+2026-04-07 22:08:20.486   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.486   Installing the file.
+2026-04-07 22:08:20.487   Successfully installed the file.
+2026-04-07 22:08:20.487   -- File entry --
+2026-04-07 22:08:20.487   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\_ctypes_extensions.py
+2026-04-07 22:08:20.488   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.488   Dest file exists.
+2026-04-07 22:08:20.488   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.488   Installing the file.
+2026-04-07 22:08:20.489   Successfully installed the file.
+2026-04-07 22:08:20.489   -- File entry --
+2026-04-07 22:08:20.489   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\_ggml.py
+2026-04-07 22:08:20.489   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.489   Dest file exists.
+2026-04-07 22:08:20.489   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.489   Installing the file.
+2026-04-07 22:08:20.490   Successfully installed the file.
+2026-04-07 22:08:20.491   -- File entry --
+2026-04-07 22:08:20.491   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\_internals.py
+2026-04-07 22:08:20.491   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.491   Dest file exists.
+2026-04-07 22:08:20.491   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.491   Installing the file.
+2026-04-07 22:08:20.492   Successfully installed the file.
+2026-04-07 22:08:20.493   -- File entry --
+2026-04-07 22:08:20.493   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\_logger.py
+2026-04-07 22:08:20.493   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.493   Dest file exists.
+2026-04-07 22:08:20.493   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.493   Installing the file.
+2026-04-07 22:08:20.494   Successfully installed the file.
+2026-04-07 22:08:20.494   -- File entry --
+2026-04-07 22:08:20.494   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\_utils.py
+2026-04-07 22:08:20.494   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.494   Dest file exists.
+2026-04-07 22:08:20.495   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.495   Installing the file.
+2026-04-07 22:08:20.496   Successfully installed the file.
+2026-04-07 22:08:20.496   -- File entry --
+2026-04-07 22:08:20.496   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\__init__.py
+2026-04-07 22:08:20.496   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.496   Dest file exists.
+2026-04-07 22:08:20.496   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.496   Installing the file.
+2026-04-07 22:08:20.497   Successfully installed the file.
+2026-04-07 22:08:20.497   -- File entry --
+2026-04-07 22:08:20.497   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\ggml-base.dll
+2026-04-07 22:08:20.498   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.498   Dest file exists.
+2026-04-07 22:08:20.498   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.498   Installing the file.
+2026-04-07 22:08:20.513   Successfully installed the file.
+2026-04-07 22:08:20.513   -- File entry --
+2026-04-07 22:08:20.513   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\ggml-base.lib
+2026-04-07 22:08:20.513   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.513   Dest file exists.
+2026-04-07 22:08:20.513   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.513   Installing the file.
+2026-04-07 22:08:20.516   Successfully installed the file.
+2026-04-07 22:08:20.516   -- File entry --
+2026-04-07 22:08:20.516   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\ggml-cpu.dll
+2026-04-07 22:08:20.517   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.517   Dest file exists.
+2026-04-07 22:08:20.517   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.517   Installing the file.
+2026-04-07 22:08:20.536   Successfully installed the file.
+2026-04-07 22:08:20.536   -- File entry --
+2026-04-07 22:08:20.536   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\ggml-cpu.lib
+2026-04-07 22:08:20.536   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.536   Dest file exists.
+2026-04-07 22:08:20.536   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.536   Installing the file.
+2026-04-07 22:08:20.538   Successfully installed the file.
+2026-04-07 22:08:20.538   -- File entry --
+2026-04-07 22:08:20.538   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\ggml.dll
+2026-04-07 22:08:20.538   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.538   Dest file exists.
+2026-04-07 22:08:20.538   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.538   Installing the file.
+2026-04-07 22:08:20.541   Successfully installed the file.
+2026-04-07 22:08:20.541   -- File entry --
+2026-04-07 22:08:20.541   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\ggml.lib
+2026-04-07 22:08:20.541   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.541   Dest file exists.
+2026-04-07 22:08:20.542   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.542   Installing the file.
+2026-04-07 22:08:20.543   Successfully installed the file.
+2026-04-07 22:08:20.543   -- File entry --
+2026-04-07 22:08:20.543   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\llama.dll
+2026-04-07 22:08:20.544   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.544   Dest file exists.
+2026-04-07 22:08:20.544   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.544   Installing the file.
+2026-04-07 22:08:20.634   Successfully installed the file.
+2026-04-07 22:08:20.634   -- File entry --
+2026-04-07 22:08:20.634   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\llama.lib
+2026-04-07 22:08:20.634   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.634   Dest file exists.
+2026-04-07 22:08:20.634   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.634   Installing the file.
+2026-04-07 22:08:20.807   Successfully installed the file.
+2026-04-07 22:08:20.807   -- File entry --
+2026-04-07 22:08:20.807   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\mtmd.dll
+2026-04-07 22:08:20.807   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.807   Dest file exists.
+2026-04-07 22:08:20.807   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.808   Installing the file.
+2026-04-07 22:08:20.826   Successfully installed the file.
+2026-04-07 22:08:20.826   -- File entry --
+2026-04-07 22:08:20.826   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\lib\mtmd.lib
+2026-04-07 22:08:20.827   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.827   Dest file exists.
+2026-04-07 22:08:20.827   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.827   Installing the file.
+2026-04-07 22:08:20.828   Successfully installed the file.
+2026-04-07 22:08:20.828   -- File entry --
+2026-04-07 22:08:20.828   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\app.py
+2026-04-07 22:08:20.828   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.828   Dest file exists.
+2026-04-07 22:08:20.828   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.828   Installing the file.
+2026-04-07 22:08:20.830   Successfully installed the file.
+2026-04-07 22:08:20.830   -- File entry --
+2026-04-07 22:08:20.830   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\cli.py
+2026-04-07 22:08:20.831   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.831   Dest file exists.
+2026-04-07 22:08:20.831   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.831   Installing the file.
+2026-04-07 22:08:20.832   Successfully installed the file.
+2026-04-07 22:08:20.832   -- File entry --
+2026-04-07 22:08:20.832   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\errors.py
+2026-04-07 22:08:20.832   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.832   Dest file exists.
+2026-04-07 22:08:20.832   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.832   Installing the file.
+2026-04-07 22:08:20.833   Successfully installed the file.
+2026-04-07 22:08:20.833   -- File entry --
+2026-04-07 22:08:20.833   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\model.py
+2026-04-07 22:08:20.834   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.834   Dest file exists.
+2026-04-07 22:08:20.834   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.834   Installing the file.
+2026-04-07 22:08:20.835   Successfully installed the file.
+2026-04-07 22:08:20.835   -- File entry --
+2026-04-07 22:08:20.835   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\settings.py
+2026-04-07 22:08:20.835   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.835   Dest file exists.
+2026-04-07 22:08:20.835   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.835   Installing the file.
+2026-04-07 22:08:20.836   Successfully installed the file.
+2026-04-07 22:08:20.836   -- File entry --
+2026-04-07 22:08:20.836   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\types.py
+2026-04-07 22:08:20.836   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.836   Dest file exists.
+2026-04-07 22:08:20.836   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.836   Installing the file.
+2026-04-07 22:08:20.839   Successfully installed the file.
+2026-04-07 22:08:20.839   -- File entry --
+2026-04-07 22:08:20.839   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\__init__.py
+2026-04-07 22:08:20.839   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.839   Dest file exists.
+2026-04-07 22:08:20.839   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.839   Installing the file.
+2026-04-07 22:08:20.840   Successfully installed the file.
+2026-04-07 22:08:20.840   -- File entry --
+2026-04-07 22:08:20.840   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp\server\__main__.py
+2026-04-07 22:08:20.840   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.840   Dest file exists.
+2026-04-07 22:08:20.840   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.840   Installing the file.
+2026-04-07 22:08:20.841   Successfully installed the file.
+2026-04-07 22:08:20.841   -- File entry --
+2026-04-07 22:08:20.841   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp_python-0.3.20.dist-info\INSTALLER
+2026-04-07 22:08:20.842   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.842   Dest file exists.
+2026-04-07 22:08:20.842   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.842   Installing the file.
+2026-04-07 22:08:20.843   Successfully installed the file.
+2026-04-07 22:08:20.843   -- File entry --
+2026-04-07 22:08:20.843   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp_python-0.3.20.dist-info\METADATA
+2026-04-07 22:08:20.843   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.843   Dest file exists.
+2026-04-07 22:08:20.843   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.843   Installing the file.
+2026-04-07 22:08:20.845   Successfully installed the file.
+2026-04-07 22:08:20.845   -- File entry --
+2026-04-07 22:08:20.845   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp_python-0.3.20.dist-info\RECORD
+2026-04-07 22:08:20.846   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.846   Dest file exists.
+2026-04-07 22:08:20.846   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.846   Installing the file.
+2026-04-07 22:08:20.847   Successfully installed the file.
+2026-04-07 22:08:20.847   -- File entry --
+2026-04-07 22:08:20.847   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp_python-0.3.20.dist-info\REQUESTED
+2026-04-07 22:08:20.847   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.847   Dest file exists.
+2026-04-07 22:08:20.847   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.847   Installing the file.
+2026-04-07 22:08:20.848   Successfully installed the file.
+2026-04-07 22:08:20.848   -- File entry --
+2026-04-07 22:08:20.848   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp_python-0.3.20.dist-info\WHEEL
+2026-04-07 22:08:20.849   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.849   Dest file exists.
+2026-04-07 22:08:20.849   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.849   Installing the file.
+2026-04-07 22:08:20.850   Successfully installed the file.
+2026-04-07 22:08:20.850   -- File entry --
+2026-04-07 22:08:20.850   Dest filename: C:\Program Files\BabelGG\_internal\llama_cpp_python-0.3.20.dist-info\licenses\LICENSE.md
+2026-04-07 22:08:20.850   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.850   Dest file exists.
+2026-04-07 22:08:20.850   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.851   Installing the file.
+2026-04-07 22:08:20.852   Successfully installed the file.
+2026-04-07 22:08:20.852   -- File entry --
+2026-04-07 22:08:20.852   Dest filename: C:\Program Files\BabelGG\_internal\markupsafe\_speedups.cp313-win_amd64.pyd
+2026-04-07 22:08:20.852   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.852   Dest file exists.
+2026-04-07 22:08:20.852   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.852   Installing the file.
+2026-04-07 22:08:20.854   Successfully installed the file.
+2026-04-07 22:08:20.854   -- File entry --
+2026-04-07 22:08:20.854   Dest filename: C:\Program Files\BabelGG\_internal\markupsafe-3.0.3.dist-info\INSTALLER
+2026-04-07 22:08:20.855   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.855   Dest file exists.
+2026-04-07 22:08:20.855   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.855   Installing the file.
+2026-04-07 22:08:20.856   Successfully installed the file.
+2026-04-07 22:08:20.856   -- File entry --
+2026-04-07 22:08:20.856   Dest filename: C:\Program Files\BabelGG\_internal\markupsafe-3.0.3.dist-info\METADATA
+2026-04-07 22:08:20.857   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.857   Dest file exists.
+2026-04-07 22:08:20.857   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.857   Installing the file.
+2026-04-07 22:08:20.858   Successfully installed the file.
+2026-04-07 22:08:20.859   -- File entry --
+2026-04-07 22:08:20.859   Dest filename: C:\Program Files\BabelGG\_internal\markupsafe-3.0.3.dist-info\RECORD
+2026-04-07 22:08:20.860   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.860   Dest file exists.
+2026-04-07 22:08:20.860   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.860   Installing the file.
+2026-04-07 22:08:20.862   Successfully installed the file.
+2026-04-07 22:08:20.862   -- File entry --
+2026-04-07 22:08:20.862   Dest filename: C:\Program Files\BabelGG\_internal\markupsafe-3.0.3.dist-info\top_level.txt
+2026-04-07 22:08:20.862   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.862   Dest file exists.
+2026-04-07 22:08:20.862   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.862   Installing the file.
+2026-04-07 22:08:20.864   Successfully installed the file.
+2026-04-07 22:08:20.864   -- File entry --
+2026-04-07 22:08:20.864   Dest filename: C:\Program Files\BabelGG\_internal\markupsafe-3.0.3.dist-info\WHEEL
+2026-04-07 22:08:20.864   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.864   Dest file exists.
+2026-04-07 22:08:20.864   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.864   Installing the file.
+2026-04-07 22:08:20.865   Successfully installed the file.
+2026-04-07 22:08:20.866   -- File entry --
+2026-04-07 22:08:20.866   Dest filename: C:\Program Files\BabelGG\_internal\markupsafe-3.0.3.dist-info\licenses\LICENSE.txt
+2026-04-07 22:08:20.866   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.866   Dest file exists.
+2026-04-07 22:08:20.866   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:20.866   Installing the file.
+2026-04-07 22:08:20.868   Successfully installed the file.
+2026-04-07 22:08:20.868   -- File entry --
+2026-04-07 22:08:20.868   Dest filename: C:\Program Files\BabelGG\_internal\numpy\fft\_pocketfft_umath.cp313-win_amd64.pyd
+2026-04-07 22:08:20.868   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.868   Dest file exists.
+2026-04-07 22:08:20.868   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.869   Installing the file.
+2026-04-07 22:08:20.878   Successfully installed the file.
+2026-04-07 22:08:20.878   -- File entry --
+2026-04-07 22:08:20.878   Dest filename: C:\Program Files\BabelGG\_internal\numpy\linalg\_umath_linalg.cp313-win_amd64.pyd
+2026-04-07 22:08:20.878   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.878   Dest file exists.
+2026-04-07 22:08:20.878   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.878   Installing the file.
+2026-04-07 22:08:20.883   Successfully installed the file.
+2026-04-07 22:08:20.883   -- File entry --
+2026-04-07 22:08:20.883   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\bit_generator.cp313-win_amd64.pyd
+2026-04-07 22:08:20.884   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.884   Dest file exists.
+2026-04-07 22:08:20.884   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.884   Installing the file.
+2026-04-07 22:08:20.889   Successfully installed the file.
+2026-04-07 22:08:20.889   -- File entry --
+2026-04-07 22:08:20.889   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\mtrand.cp313-win_amd64.pyd
+2026-04-07 22:08:20.890   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.890   Dest file exists.
+2026-04-07 22:08:20.890   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.890   Installing the file.
+2026-04-07 22:08:20.904   Successfully installed the file.
+2026-04-07 22:08:20.904   -- File entry --
+2026-04-07 22:08:20.904   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\_bounded_integers.cp313-win_amd64.pyd
+2026-04-07 22:08:20.904   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.904   Dest file exists.
+2026-04-07 22:08:20.904   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.904   Installing the file.
+2026-04-07 22:08:20.910   Successfully installed the file.
+2026-04-07 22:08:20.910   -- File entry --
+2026-04-07 22:08:20.910   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\_common.cp313-win_amd64.pyd
+2026-04-07 22:08:20.910   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.910   Dest file exists.
+2026-04-07 22:08:20.910   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.910   Installing the file.
+2026-04-07 22:08:20.915   Successfully installed the file.
+2026-04-07 22:08:20.916   -- File entry --
+2026-04-07 22:08:20.916   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\_generator.cp313-win_amd64.pyd
+2026-04-07 22:08:20.916   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.916   Dest file exists.
+2026-04-07 22:08:20.916   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.916   Installing the file.
+2026-04-07 22:08:20.930   Successfully installed the file.
+2026-04-07 22:08:20.930   -- File entry --
+2026-04-07 22:08:20.930   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\_mt19937.cp313-win_amd64.pyd
+2026-04-07 22:08:20.931   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.931   Dest file exists.
+2026-04-07 22:08:20.931   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.931   Installing the file.
+2026-04-07 22:08:20.934   Successfully installed the file.
+2026-04-07 22:08:20.934   -- File entry --
+2026-04-07 22:08:20.935   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\_pcg64.cp313-win_amd64.pyd
+2026-04-07 22:08:20.935   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.935   Dest file exists.
+2026-04-07 22:08:20.935   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.935   Installing the file.
+2026-04-07 22:08:20.938   Successfully installed the file.
+2026-04-07 22:08:20.938   -- File entry --
+2026-04-07 22:08:20.938   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\_philox.cp313-win_amd64.pyd
+2026-04-07 22:08:20.938   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.938   Dest file exists.
+2026-04-07 22:08:20.938   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.938   Installing the file.
+2026-04-07 22:08:20.941   Successfully installed the file.
+2026-04-07 22:08:20.941   -- File entry --
+2026-04-07 22:08:20.941   Dest filename: C:\Program Files\BabelGG\_internal\numpy\random\_sfc64.cp313-win_amd64.pyd
+2026-04-07 22:08:20.941   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.941   Dest file exists.
+2026-04-07 22:08:20.941   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.941   Installing the file.
+2026-04-07 22:08:20.944   Successfully installed the file.
+2026-04-07 22:08:20.944   -- File entry --
+2026-04-07 22:08:20.944   Dest filename: C:\Program Files\BabelGG\_internal\numpy\_core\_multiarray_tests.cp313-win_amd64.pyd
+2026-04-07 22:08:20.945   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.945   Dest file exists.
+2026-04-07 22:08:20.945   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.945   Installing the file.
+2026-04-07 22:08:20.948   Successfully installed the file.
+2026-04-07 22:08:20.948   -- File entry --
+2026-04-07 22:08:20.948   Dest filename: C:\Program Files\BabelGG\_internal\numpy\_core\_multiarray_umath.cp313-win_amd64.pyd
+2026-04-07 22:08:20.948   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:20.948   Dest file exists.
+2026-04-07 22:08:20.948   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:20.948   Installing the file.
+2026-04-07 22:08:21.019   Successfully installed the file.
+2026-04-07 22:08:21.019   -- File entry --
+2026-04-07 22:08:21.019   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\DELVEWHEEL
+2026-04-07 22:08:21.019   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.019   Dest file exists.
+2026-04-07 22:08:21.019   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.019   Installing the file.
+2026-04-07 22:08:21.020   Successfully installed the file.
+2026-04-07 22:08:21.020   -- File entry --
+2026-04-07 22:08:21.020   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\entry_points.txt
+2026-04-07 22:08:21.021   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.021   Dest file exists.
+2026-04-07 22:08:21.021   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.021   Installing the file.
+2026-04-07 22:08:21.022   Successfully installed the file.
+2026-04-07 22:08:21.022   -- File entry --
+2026-04-07 22:08:21.022   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\INSTALLER
+2026-04-07 22:08:21.022   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.022   Dest file exists.
+2026-04-07 22:08:21.022   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.022   Installing the file.
+2026-04-07 22:08:21.023   Successfully installed the file.
+2026-04-07 22:08:21.023   -- File entry --
+2026-04-07 22:08:21.023   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\METADATA
+2026-04-07 22:08:21.023   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.024   Dest file exists.
+2026-04-07 22:08:21.024   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.024   Installing the file.
+2026-04-07 22:08:21.025   Successfully installed the file.
+2026-04-07 22:08:21.025   -- File entry --
+2026-04-07 22:08:21.025   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\RECORD
+2026-04-07 22:08:21.025   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.026   Dest file exists.
+2026-04-07 22:08:21.026   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.026   Installing the file.
+2026-04-07 22:08:21.029   Successfully installed the file.
+2026-04-07 22:08:21.029   -- File entry --
+2026-04-07 22:08:21.030   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\WHEEL
+2026-04-07 22:08:21.030   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.030   Dest file exists.
+2026-04-07 22:08:21.030   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.030   Installing the file.
+2026-04-07 22:08:21.031   Successfully installed the file.
+2026-04-07 22:08:21.031   -- File entry --
+2026-04-07 22:08:21.031   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\LICENSE.txt
+2026-04-07 22:08:21.031   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.031   Dest file exists.
+2026-04-07 22:08:21.031   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.031   Installing the file.
+2026-04-07 22:08:21.033   Successfully installed the file.
+2026-04-07 22:08:21.033   -- File entry --
+2026-04-07 22:08:21.033   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\fft\pocketfft\LICENSE.md
+2026-04-07 22:08:21.034   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.034   Dest file exists.
+2026-04-07 22:08:21.034   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.034   Installing the file.
+2026-04-07 22:08:21.035   Successfully installed the file.
+2026-04-07 22:08:21.035   -- File entry --
+2026-04-07 22:08:21.035   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\linalg\lapack_lite\LICENSE.txt
+2026-04-07 22:08:21.035   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.035   Dest file exists.
+2026-04-07 22:08:21.035   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.035   Installing the file.
+2026-04-07 22:08:21.036   Successfully installed the file.
+2026-04-07 22:08:21.036   -- File entry --
+2026-04-07 22:08:21.036   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\ma\LICENSE
+2026-04-07 22:08:21.036   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.036   Dest file exists.
+2026-04-07 22:08:21.036   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.036   Installing the file.
+2026-04-07 22:08:21.038   Successfully installed the file.
+2026-04-07 22:08:21.038   -- File entry --
+2026-04-07 22:08:21.038   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\random\LICENSE.md
+2026-04-07 22:08:21.039   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.039   Dest file exists.
+2026-04-07 22:08:21.039   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.039   Installing the file.
+2026-04-07 22:08:21.040   Successfully installed the file.
+2026-04-07 22:08:21.040   -- File entry --
+2026-04-07 22:08:21.040   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\random\src\distributions\LICENSE.md
+2026-04-07 22:08:21.040   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.040   Dest file exists.
+2026-04-07 22:08:21.040   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.040   Installing the file.
+2026-04-07 22:08:21.042   Successfully installed the file.
+2026-04-07 22:08:21.042   -- File entry --
+2026-04-07 22:08:21.042   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\random\src\mt19937\LICENSE.md
+2026-04-07 22:08:21.043   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.043   Dest file exists.
+2026-04-07 22:08:21.043   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.043   Installing the file.
+2026-04-07 22:08:21.044   Successfully installed the file.
+2026-04-07 22:08:21.045   -- File entry --
+2026-04-07 22:08:21.045   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\random\src\pcg64\LICENSE.md
+2026-04-07 22:08:21.045   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.045   Dest file exists.
+2026-04-07 22:08:21.045   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.045   Installing the file.
+2026-04-07 22:08:21.046   Successfully installed the file.
+2026-04-07 22:08:21.046   -- File entry --
+2026-04-07 22:08:21.046   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\random\src\philox\LICENSE.md
+2026-04-07 22:08:21.046   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.046   Dest file exists.
+2026-04-07 22:08:21.046   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.046   Installing the file.
+2026-04-07 22:08:21.047   Successfully installed the file.
+2026-04-07 22:08:21.047   -- File entry --
+2026-04-07 22:08:21.047   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\random\src\sfc64\LICENSE.md
+2026-04-07 22:08:21.048   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.048   Dest file exists.
+2026-04-07 22:08:21.048   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.048   Installing the file.
+2026-04-07 22:08:21.049   Successfully installed the file.
+2026-04-07 22:08:21.049   -- File entry --
+2026-04-07 22:08:21.049   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\random\src\splitmix64\LICENSE.md
+2026-04-07 22:08:21.049   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.049   Dest file exists.
+2026-04-07 22:08:21.049   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.049   Installing the file.
+2026-04-07 22:08:21.051   Successfully installed the file.
+2026-04-07 22:08:21.051   -- File entry --
+2026-04-07 22:08:21.051   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\_core\include\numpy\libdivide\LICENSE.txt
+2026-04-07 22:08:21.051   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.051   Dest file exists.
+2026-04-07 22:08:21.051   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.051   Installing the file.
+2026-04-07 22:08:21.053   Successfully installed the file.
+2026-04-07 22:08:21.053   -- File entry --
+2026-04-07 22:08:21.053   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\_core\src\common\pythoncapi-compat\COPYING
+2026-04-07 22:08:21.053   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.053   Dest file exists.
+2026-04-07 22:08:21.053   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.053   Installing the file.
+2026-04-07 22:08:21.054   Successfully installed the file.
+2026-04-07 22:08:21.054   -- File entry --
+2026-04-07 22:08:21.054   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\_core\src\highway\LICENSE
+2026-04-07 22:08:21.055   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.055   Dest file exists.
+2026-04-07 22:08:21.055   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.055   Installing the file.
+2026-04-07 22:08:21.056   Successfully installed the file.
+2026-04-07 22:08:21.057   -- File entry --
+2026-04-07 22:08:21.057   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\_core\src\multiarray\dragon4_LICENSE.txt
+2026-04-07 22:08:21.058   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.058   Dest file exists.
+2026-04-07 22:08:21.058   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.058   Installing the file.
+2026-04-07 22:08:21.059   Successfully installed the file.
+2026-04-07 22:08:21.059   -- File entry --
+2026-04-07 22:08:21.059   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\_core\src\npysort\x86-simd-sort\LICENSE.md
+2026-04-07 22:08:21.060   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.060   Dest file exists.
+2026-04-07 22:08:21.060   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.060   Installing the file.
+2026-04-07 22:08:21.061   Successfully installed the file.
+2026-04-07 22:08:21.061   -- File entry --
+2026-04-07 22:08:21.061   Dest filename: C:\Program Files\BabelGG\_internal\numpy-2.4.4.dist-info\licenses\numpy\_core\src\umath\svml\LICENSE
+2026-04-07 22:08:21.061   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.061   Dest file exists.
+2026-04-07 22:08:21.061   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.062   Installing the file.
+2026-04-07 22:08:21.063   Successfully installed the file.
+2026-04-07 22:08:21.063   -- File entry --
+2026-04-07 22:08:21.063   Dest filename: C:\Program Files\BabelGG\_internal\numpy.libs\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll
+2026-04-07 22:08:21.063   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.063   Dest file exists.
+2026-04-07 22:08:21.063   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:21.063   Installing the file.
+2026-04-07 22:08:21.429   Successfully installed the file.
+2026-04-07 22:08:21.429   -- File entry --
+2026-04-07 22:08:21.429   Dest filename: C:\Program Files\BabelGG\_internal\numpy.libs\msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll
+2026-04-07 22:08:21.429   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.429   Dest file exists.
+2026-04-07 22:08:21.429   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:21.429   Installing the file.
+2026-04-07 22:08:21.445   Successfully installed the file.
+2026-04-07 22:08:21.445   -- File entry --
+2026-04-07 22:08:21.445   Dest filename: C:\Program Files\BabelGG\_internal\PIL\_avif.cp313-win_amd64.pyd
+2026-04-07 22:08:21.446   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.446   Dest file exists.
+2026-04-07 22:08:21.446   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.446   Installing the file.
+2026-04-07 22:08:21.603   Successfully installed the file.
+2026-04-07 22:08:21.603   -- File entry --
+2026-04-07 22:08:21.603   Dest filename: C:\Program Files\BabelGG\_internal\PIL\_imaging.cp313-win_amd64.pyd
+2026-04-07 22:08:21.603   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.603   Dest file exists.
+2026-04-07 22:08:21.603   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.603   Installing the file.
+2026-04-07 22:08:21.666   Successfully installed the file.
+2026-04-07 22:08:21.666   -- File entry --
+2026-04-07 22:08:21.666   Dest filename: C:\Program Files\BabelGG\_internal\PIL\_imagingcms.cp313-win_amd64.pyd
+2026-04-07 22:08:21.667   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.667   Dest file exists.
+2026-04-07 22:08:21.667   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.667   Installing the file.
+2026-04-07 22:08:21.675   Successfully installed the file.
+2026-04-07 22:08:21.675   -- File entry --
+2026-04-07 22:08:21.675   Dest filename: C:\Program Files\BabelGG\_internal\PIL\_imagingft.cp313-win_amd64.pyd
+2026-04-07 22:08:21.676   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.676   Dest file exists.
+2026-04-07 22:08:21.676   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.676   Installing the file.
+2026-04-07 22:08:21.737   Successfully installed the file.
+2026-04-07 22:08:21.737   -- File entry --
+2026-04-07 22:08:21.737   Dest filename: C:\Program Files\BabelGG\_internal\PIL\_imagingmath.cp313-win_amd64.pyd
+2026-04-07 22:08:21.737   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.737   Dest file exists.
+2026-04-07 22:08:21.738   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.738   Installing the file.
+2026-04-07 22:08:21.740   Successfully installed the file.
+2026-04-07 22:08:21.740   -- File entry --
+2026-04-07 22:08:21.740   Dest filename: C:\Program Files\BabelGG\_internal\PIL\_imagingtk.cp313-win_amd64.pyd
+2026-04-07 22:08:21.740   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.740   Dest file exists.
+2026-04-07 22:08:21.740   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.741   Installing the file.
+2026-04-07 22:08:21.743   Successfully installed the file.
+2026-04-07 22:08:21.743   -- File entry --
+2026-04-07 22:08:21.743   Dest filename: C:\Program Files\BabelGG\_internal\PIL\_webp.cp313-win_amd64.pyd
+2026-04-07 22:08:21.743   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.743   Dest file exists.
+2026-04-07 22:08:21.743   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.743   Installing the file.
+2026-04-07 22:08:21.753   Successfully installed the file.
+2026-04-07 22:08:21.753   -- File entry --
+2026-04-07 22:08:21.753   Dest filename: C:\Program Files\BabelGG\_internal\psutil\_psutil_windows.pyd
+2026-04-07 22:08:21.753   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.753   Dest file exists.
+2026-04-07 22:08:21.753   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.753   Installing the file.
+2026-04-07 22:08:21.756   Successfully installed the file.
+2026-04-07 22:08:21.756   -- File entry --
+2026-04-07 22:08:21.756   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\QtCore.pyd
+2026-04-07 22:08:21.757   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.757   Dest file exists.
+2026-04-07 22:08:21.757   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.757   Installing the file.
+2026-04-07 22:08:21.810   Successfully installed the file.
+2026-04-07 22:08:21.810   -- File entry --
+2026-04-07 22:08:21.810   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\QtGui.pyd
+2026-04-07 22:08:21.810   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.810   Dest file exists.
+2026-04-07 22:08:21.811   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.811   Installing the file.
+2026-04-07 22:08:21.857   Successfully installed the file.
+2026-04-07 22:08:21.858   -- File entry --
+2026-04-07 22:08:21.858   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\QtWidgets.pyd
+2026-04-07 22:08:21.858   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.858   Dest file exists.
+2026-04-07 22:08:21.858   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.858   Installing the file.
+2026-04-07 22:08:21.944   Successfully installed the file.
+2026-04-07 22:08:21.944   -- File entry --
+2026-04-07 22:08:21.944   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\sip.cp313-win_amd64.pyd
+2026-04-07 22:08:21.945   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.945   Dest file exists.
+2026-04-07 22:08:21.945   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.945   Installing the file.
+2026-04-07 22:08:21.949   Successfully installed the file.
+2026-04-07 22:08:21.949   -- File entry --
+2026-04-07 22:08:21.949   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\MSVCP140.dll
+2026-04-07 22:08:21.949   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.949   Dest file exists.
+2026-04-07 22:08:21.949   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.949   Installing the file.
+2026-04-07 22:08:21.962   Successfully installed the file.
+2026-04-07 22:08:21.962   -- File entry --
+2026-04-07 22:08:21.962   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\MSVCP140_1.dll
+2026-04-07 22:08:21.962   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.962   Dest file exists.
+2026-04-07 22:08:21.963   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.963   Installing the file.
+2026-04-07 22:08:21.965   Successfully installed the file.
+2026-04-07 22:08:21.965   -- File entry --
+2026-04-07 22:08:21.965   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\MSVCP140_2.dll
+2026-04-07 22:08:21.965   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.965   Dest file exists.
+2026-04-07 22:08:21.965   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:21.965   Installing the file.
+2026-04-07 22:08:21.973   Successfully installed the file.
+2026-04-07 22:08:21.973   -- File entry --
+2026-04-07 22:08:21.973   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\opengl32sw.dll
+2026-04-07 22:08:21.973   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:21.973   Dest file exists.
+2026-04-07 22:08:21.973   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:21.973   Installing the file.
+2026-04-07 22:08:22.395   Successfully installed the file.
+2026-04-07 22:08:22.395   -- File entry --
+2026-04-07 22:08:22.395   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\Qt6Core.dll
+2026-04-07 22:08:22.395   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:22.395   Dest file exists.
+2026-04-07 22:08:22.395   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:22.395   Installing the file.
+2026-04-07 22:08:22.624   Successfully installed the file.
+2026-04-07 22:08:22.624   -- File entry --
+2026-04-07 22:08:22.624   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\Qt6Gui.dll
+2026-04-07 22:08:22.624   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:22.624   Dest file exists.
+2026-04-07 22:08:22.624   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:22.625   Installing the file.
+2026-04-07 22:08:22.852   Successfully installed the file.
+2026-04-07 22:08:22.852   -- File entry --
+2026-04-07 22:08:22.852   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\Qt6Network.dll
+2026-04-07 22:08:22.853   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:22.853   Dest file exists.
+2026-04-07 22:08:22.853   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:22.853   Installing the file.
+2026-04-07 22:08:22.894   Successfully installed the file.
+2026-04-07 22:08:22.894   -- File entry --
+2026-04-07 22:08:22.894   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\Qt6Pdf.dll
+2026-04-07 22:08:22.894   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:22.894   Dest file exists.
+2026-04-07 22:08:22.894   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:22.894   Installing the file.
+2026-04-07 22:08:23.011   Successfully installed the file.
+2026-04-07 22:08:23.011   -- File entry --
+2026-04-07 22:08:23.012   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\Qt6Svg.dll
+2026-04-07 22:08:23.012   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.012   Dest file exists.
+2026-04-07 22:08:23.012   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.012   Installing the file.
+2026-04-07 22:08:23.027   Successfully installed the file.
+2026-04-07 22:08:23.028   -- File entry --
+2026-04-07 22:08:23.028   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\Qt6Widgets.dll
+2026-04-07 22:08:23.028   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.028   Dest file exists.
+2026-04-07 22:08:23.028   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.028   Installing the file.
+2026-04-07 22:08:23.194   Successfully installed the file.
+2026-04-07 22:08:23.194   -- File entry --
+2026-04-07 22:08:23.194   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\VCRUNTIME140.dll
+2026-04-07 22:08:23.195   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.195   Dest file exists.
+2026-04-07 22:08:23.195   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.195   Installing the file.
+2026-04-07 22:08:23.199   Successfully installed the file.
+2026-04-07 22:08:23.199   -- File entry --
+2026-04-07 22:08:23.199   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\bin\VCRUNTIME140_1.dll
+2026-04-07 22:08:23.199   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.199   Dest file exists.
+2026-04-07 22:08:23.200   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.200   Installing the file.
+2026-04-07 22:08:23.202   Successfully installed the file.
+2026-04-07 22:08:23.202   -- File entry --
+2026-04-07 22:08:23.202   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\generic\qtuiotouchplugin.dll
+2026-04-07 22:08:23.203   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.203   Dest file exists.
+2026-04-07 22:08:23.203   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.203   Installing the file.
+2026-04-07 22:08:23.206   Successfully installed the file.
+2026-04-07 22:08:23.206   -- File entry --
+2026-04-07 22:08:23.206   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\iconengines\qsvgicon.dll
+2026-04-07 22:08:23.206   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.206   Dest file exists.
+2026-04-07 22:08:23.206   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.206   Installing the file.
+2026-04-07 22:08:23.209   Successfully installed the file.
+2026-04-07 22:08:23.209   -- File entry --
+2026-04-07 22:08:23.209   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qgif.dll
+2026-04-07 22:08:23.210   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.210   Dest file exists.
+2026-04-07 22:08:23.210   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.210   Installing the file.
+2026-04-07 22:08:23.213   Successfully installed the file.
+2026-04-07 22:08:23.213   -- File entry --
+2026-04-07 22:08:23.213   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qicns.dll
+2026-04-07 22:08:23.213   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.213   Dest file exists.
+2026-04-07 22:08:23.213   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.213   Installing the file.
+2026-04-07 22:08:23.216   Successfully installed the file.
+2026-04-07 22:08:23.216   -- File entry --
+2026-04-07 22:08:23.216   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qico.dll
+2026-04-07 22:08:23.216   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.216   Dest file exists.
+2026-04-07 22:08:23.216   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.216   Installing the file.
+2026-04-07 22:08:23.219   Successfully installed the file.
+2026-04-07 22:08:23.219   -- File entry --
+2026-04-07 22:08:23.219   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qjpeg.dll
+2026-04-07 22:08:23.219   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.219   Dest file exists.
+2026-04-07 22:08:23.219   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.219   Installing the file.
+2026-04-07 22:08:23.232   Successfully installed the file.
+2026-04-07 22:08:23.232   -- File entry --
+2026-04-07 22:08:23.232   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qpdf.dll
+2026-04-07 22:08:23.232   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.232   Dest file exists.
+2026-04-07 22:08:23.232   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.232   Installing the file.
+2026-04-07 22:08:23.235   Successfully installed the file.
+2026-04-07 22:08:23.235   -- File entry --
+2026-04-07 22:08:23.235   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qsvg.dll
+2026-04-07 22:08:23.235   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.235   Dest file exists.
+2026-04-07 22:08:23.235   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.235   Installing the file.
+2026-04-07 22:08:23.237   Successfully installed the file.
+2026-04-07 22:08:23.237   -- File entry --
+2026-04-07 22:08:23.237   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qtga.dll
+2026-04-07 22:08:23.238   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.238   Dest file exists.
+2026-04-07 22:08:23.238   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.238   Installing the file.
+2026-04-07 22:08:23.240   Successfully installed the file.
+2026-04-07 22:08:23.240   -- File entry --
+2026-04-07 22:08:23.240   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qtiff.dll
+2026-04-07 22:08:23.240   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.240   Dest file exists.
+2026-04-07 22:08:23.240   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.240   Installing the file.
+2026-04-07 22:08:23.252   Successfully installed the file.
+2026-04-07 22:08:23.252   -- File entry --
+2026-04-07 22:08:23.252   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qwbmp.dll
+2026-04-07 22:08:23.252   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.252   Dest file exists.
+2026-04-07 22:08:23.252   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.252   Installing the file.
+2026-04-07 22:08:23.254   Successfully installed the file.
+2026-04-07 22:08:23.254   -- File entry --
+2026-04-07 22:08:23.254   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\imageformats\qwebp.dll
+2026-04-07 22:08:23.254   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.254   Dest file exists.
+2026-04-07 22:08:23.255   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.255   Installing the file.
+2026-04-07 22:08:23.271   Successfully installed the file.
+2026-04-07 22:08:23.271   -- File entry --
+2026-04-07 22:08:23.271   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\platforms\qminimal.dll
+2026-04-07 22:08:23.271   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.271   Dest file exists.
+2026-04-07 22:08:23.271   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.271   Installing the file.
+2026-04-07 22:08:23.274   Successfully installed the file.
+2026-04-07 22:08:23.274   -- File entry --
+2026-04-07 22:08:23.274   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\platforms\qoffscreen.dll
+2026-04-07 22:08:23.274   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.274   Dest file exists.
+2026-04-07 22:08:23.274   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.274   Installing the file.
+2026-04-07 22:08:23.279   Successfully installed the file.
+2026-04-07 22:08:23.279   -- File entry --
+2026-04-07 22:08:23.279   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\platforms\qwindows.dll
+2026-04-07 22:08:23.280   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.280   Dest file exists.
+2026-04-07 22:08:23.280   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.280   Installing the file.
+2026-04-07 22:08:23.308   Successfully installed the file.
+2026-04-07 22:08:23.308   -- File entry --
+2026-04-07 22:08:23.308   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\plugins\styles\qmodernwindowsstyle.dll
+2026-04-07 22:08:23.308   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.308   Dest file exists.
+2026-04-07 22:08:23.309   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.309   Installing the file.
+2026-04-07 22:08:23.316   Successfully installed the file.
+2026-04-07 22:08:23.316   -- File entry --
+2026-04-07 22:08:23.316   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_ar.qm
+2026-04-07 22:08:23.317   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.317   Dest file exists.
+2026-04-07 22:08:23.317   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.317   Installing the file.
+2026-04-07 22:08:23.322   Successfully installed the file.
+2026-04-07 22:08:23.322   -- File entry --
+2026-04-07 22:08:23.322   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_bg.qm
+2026-04-07 22:08:23.323   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.323   Dest file exists.
+2026-04-07 22:08:23.323   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.323   Installing the file.
+2026-04-07 22:08:23.327   Successfully installed the file.
+2026-04-07 22:08:23.328   -- File entry --
+2026-04-07 22:08:23.328   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_ca.qm
+2026-04-07 22:08:23.328   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.328   Dest file exists.
+2026-04-07 22:08:23.328   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.328   Installing the file.
+2026-04-07 22:08:23.332   Successfully installed the file.
+2026-04-07 22:08:23.332   -- File entry --
+2026-04-07 22:08:23.332   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_cs.qm
+2026-04-07 22:08:23.332   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.332   Dest file exists.
+2026-04-07 22:08:23.332   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.333   Installing the file.
+2026-04-07 22:08:23.337   Successfully installed the file.
+2026-04-07 22:08:23.337   -- File entry --
+2026-04-07 22:08:23.337   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_da.qm
+2026-04-07 22:08:23.338   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.338   Dest file exists.
+2026-04-07 22:08:23.338   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.338   Installing the file.
+2026-04-07 22:08:23.341   Successfully installed the file.
+2026-04-07 22:08:23.341   -- File entry --
+2026-04-07 22:08:23.341   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_de.qm
+2026-04-07 22:08:23.341   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.341   Dest file exists.
+2026-04-07 22:08:23.341   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.341   Installing the file.
+2026-04-07 22:08:23.346   Successfully installed the file.
+2026-04-07 22:08:23.346   -- File entry --
+2026-04-07 22:08:23.346   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_en.qm
+2026-04-07 22:08:23.346   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.346   Dest file exists.
+2026-04-07 22:08:23.346   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.346   Installing the file.
+2026-04-07 22:08:23.348   Successfully installed the file.
+2026-04-07 22:08:23.348   -- File entry --
+2026-04-07 22:08:23.348   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_es.qm
+2026-04-07 22:08:23.348   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.348   Dest file exists.
+2026-04-07 22:08:23.348   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.349   Installing the file.
+2026-04-07 22:08:23.352   Successfully installed the file.
+2026-04-07 22:08:23.352   -- File entry --
+2026-04-07 22:08:23.352   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_fa.qm
+2026-04-07 22:08:23.353   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.353   Dest file exists.
+2026-04-07 22:08:23.353   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.353   Installing the file.
+2026-04-07 22:08:23.356   Successfully installed the file.
+2026-04-07 22:08:23.356   -- File entry --
+2026-04-07 22:08:23.356   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_fi.qm
+2026-04-07 22:08:23.356   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.356   Dest file exists.
+2026-04-07 22:08:23.356   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.356   Installing the file.
+2026-04-07 22:08:23.360   Successfully installed the file.
+2026-04-07 22:08:23.360   -- File entry --
+2026-04-07 22:08:23.361   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_fr.qm
+2026-04-07 22:08:23.361   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.361   Dest file exists.
+2026-04-07 22:08:23.361   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.361   Installing the file.
+2026-04-07 22:08:23.364   Successfully installed the file.
+2026-04-07 22:08:23.364   -- File entry --
+2026-04-07 22:08:23.365   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_gd.qm
+2026-04-07 22:08:23.365   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.365   Dest file exists.
+2026-04-07 22:08:23.365   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.365   Installing the file.
+2026-04-07 22:08:23.369   Successfully installed the file.
+2026-04-07 22:08:23.369   -- File entry --
+2026-04-07 22:08:23.369   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_he.qm
+2026-04-07 22:08:23.370   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.370   Dest file exists.
+2026-04-07 22:08:23.370   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.370   Installing the file.
+2026-04-07 22:08:23.373   Successfully installed the file.
+2026-04-07 22:08:23.373   -- File entry --
+2026-04-07 22:08:23.373   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_hr.qm
+2026-04-07 22:08:23.373   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.373   Dest file exists.
+2026-04-07 22:08:23.373   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.373   Installing the file.
+2026-04-07 22:08:23.378   Successfully installed the file.
+2026-04-07 22:08:23.378   -- File entry --
+2026-04-07 22:08:23.378   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_hu.qm
+2026-04-07 22:08:23.378   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.378   Dest file exists.
+2026-04-07 22:08:23.378   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.378   Installing the file.
+2026-04-07 22:08:23.382   Successfully installed the file.
+2026-04-07 22:08:23.382   -- File entry --
+2026-04-07 22:08:23.382   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_it.qm
+2026-04-07 22:08:23.382   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.382   Dest file exists.
+2026-04-07 22:08:23.383   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.383   Installing the file.
+2026-04-07 22:08:23.386   Successfully installed the file.
+2026-04-07 22:08:23.386   -- File entry --
+2026-04-07 22:08:23.386   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_ja.qm
+2026-04-07 22:08:23.386   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.386   Dest file exists.
+2026-04-07 22:08:23.387   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.387   Installing the file.
+2026-04-07 22:08:23.389   Successfully installed the file.
+2026-04-07 22:08:23.389   -- File entry --
+2026-04-07 22:08:23.390   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_ka.qm
+2026-04-07 22:08:23.390   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.390   Dest file exists.
+2026-04-07 22:08:23.390   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.390   Installing the file.
+2026-04-07 22:08:23.394   Successfully installed the file.
+2026-04-07 22:08:23.394   -- File entry --
+2026-04-07 22:08:23.394   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_ko.qm
+2026-04-07 22:08:23.394   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.394   Dest file exists.
+2026-04-07 22:08:23.395   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.395   Installing the file.
+2026-04-07 22:08:23.397   Successfully installed the file.
+2026-04-07 22:08:23.397   -- File entry --
+2026-04-07 22:08:23.397   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_lg.qm
+2026-04-07 22:08:23.399   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.399   Dest file exists.
+2026-04-07 22:08:23.399   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.399   Installing the file.
+2026-04-07 22:08:23.405   Successfully installed the file.
+2026-04-07 22:08:23.405   -- File entry --
+2026-04-07 22:08:23.405   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_lv.qm
+2026-04-07 22:08:23.405   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.405   Dest file exists.
+2026-04-07 22:08:23.405   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.405   Installing the file.
+2026-04-07 22:08:23.408   Successfully installed the file.
+2026-04-07 22:08:23.408   -- File entry --
+2026-04-07 22:08:23.408   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_nl.qm
+2026-04-07 22:08:23.408   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.408   Dest file exists.
+2026-04-07 22:08:23.408   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.409   Installing the file.
+2026-04-07 22:08:23.413   Successfully installed the file.
+2026-04-07 22:08:23.413   -- File entry --
+2026-04-07 22:08:23.413   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_nn.qm
+2026-04-07 22:08:23.413   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.413   Dest file exists.
+2026-04-07 22:08:23.413   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.413   Installing the file.
+2026-04-07 22:08:23.417   Successfully installed the file.
+2026-04-07 22:08:23.417   -- File entry --
+2026-04-07 22:08:23.418   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_pl.qm
+2026-04-07 22:08:23.418   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.418   Dest file exists.
+2026-04-07 22:08:23.418   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.418   Installing the file.
+2026-04-07 22:08:23.422   Successfully installed the file.
+2026-04-07 22:08:23.422   -- File entry --
+2026-04-07 22:08:23.422   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_pt_BR.qm
+2026-04-07 22:08:23.422   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.422   Dest file exists.
+2026-04-07 22:08:23.422   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.422   Installing the file.
+2026-04-07 22:08:23.428   Successfully installed the file.
+2026-04-07 22:08:23.428   -- File entry --
+2026-04-07 22:08:23.428   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_ru.qm
+2026-04-07 22:08:23.428   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.428   Dest file exists.
+2026-04-07 22:08:23.428   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.428   Installing the file.
+2026-04-07 22:08:23.432   Successfully installed the file.
+2026-04-07 22:08:23.432   -- File entry --
+2026-04-07 22:08:23.433   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_sk.qm
+2026-04-07 22:08:23.433   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.433   Dest file exists.
+2026-04-07 22:08:23.433   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.433   Installing the file.
+2026-04-07 22:08:23.437   Successfully installed the file.
+2026-04-07 22:08:23.437   -- File entry --
+2026-04-07 22:08:23.437   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_sv.qm
+2026-04-07 22:08:23.437   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.437   Dest file exists.
+2026-04-07 22:08:23.437   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.437   Installing the file.
+2026-04-07 22:08:23.442   Successfully installed the file.
+2026-04-07 22:08:23.442   -- File entry --
+2026-04-07 22:08:23.442   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_tr.qm
+2026-04-07 22:08:23.442   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.442   Dest file exists.
+2026-04-07 22:08:23.442   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.443   Installing the file.
+2026-04-07 22:08:23.447   Successfully installed the file.
+2026-04-07 22:08:23.447   -- File entry --
+2026-04-07 22:08:23.447   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_uk.qm
+2026-04-07 22:08:23.447   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.448   Dest file exists.
+2026-04-07 22:08:23.448   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.448   Installing the file.
+2026-04-07 22:08:23.451   Successfully installed the file.
+2026-04-07 22:08:23.451   -- File entry --
+2026-04-07 22:08:23.452   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_zh_CN.qm
+2026-04-07 22:08:23.452   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.452   Dest file exists.
+2026-04-07 22:08:23.452   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.452   Installing the file.
+2026-04-07 22:08:23.456   Successfully installed the file.
+2026-04-07 22:08:23.456   -- File entry --
+2026-04-07 22:08:23.456   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qtbase_zh_TW.qm
+2026-04-07 22:08:23.456   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.456   Dest file exists.
+2026-04-07 22:08:23.456   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.457   Installing the file.
+2026-04-07 22:08:23.460   Successfully installed the file.
+2026-04-07 22:08:23.460   -- File entry --
+2026-04-07 22:08:23.460   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_ar.qm
+2026-04-07 22:08:23.461   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.461   Dest file exists.
+2026-04-07 22:08:23.461   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.461   Installing the file.
+2026-04-07 22:08:23.462   Successfully installed the file.
+2026-04-07 22:08:23.462   -- File entry --
+2026-04-07 22:08:23.462   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_bg.qm
+2026-04-07 22:08:23.462   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.462   Dest file exists.
+2026-04-07 22:08:23.462   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.462   Installing the file.
+2026-04-07 22:08:23.463   Successfully installed the file.
+2026-04-07 22:08:23.463   -- File entry --
+2026-04-07 22:08:23.463   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_ca.qm
+2026-04-07 22:08:23.463   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.464   Dest file exists.
+2026-04-07 22:08:23.464   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.464   Installing the file.
+2026-04-07 22:08:23.465   Successfully installed the file.
+2026-04-07 22:08:23.465   -- File entry --
+2026-04-07 22:08:23.465   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_cs.qm
+2026-04-07 22:08:23.465   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.465   Dest file exists.
+2026-04-07 22:08:23.465   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.465   Installing the file.
+2026-04-07 22:08:23.466   Successfully installed the file.
+2026-04-07 22:08:23.466   -- File entry --
+2026-04-07 22:08:23.466   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_da.qm
+2026-04-07 22:08:23.467   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.467   Dest file exists.
+2026-04-07 22:08:23.467   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.467   Installing the file.
+2026-04-07 22:08:23.469   Successfully installed the file.
+2026-04-07 22:08:23.469   -- File entry --
+2026-04-07 22:08:23.469   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_de.qm
+2026-04-07 22:08:23.469   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.469   Dest file exists.
+2026-04-07 22:08:23.469   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.469   Installing the file.
+2026-04-07 22:08:23.470   Successfully installed the file.
+2026-04-07 22:08:23.471   -- File entry --
+2026-04-07 22:08:23.471   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_en.qm
+2026-04-07 22:08:23.471   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.471   Dest file exists.
+2026-04-07 22:08:23.471   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.471   Installing the file.
+2026-04-07 22:08:23.472   Successfully installed the file.
+2026-04-07 22:08:23.472   -- File entry --
+2026-04-07 22:08:23.472   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_es.qm
+2026-04-07 22:08:23.472   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.472   Dest file exists.
+2026-04-07 22:08:23.472   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.472   Installing the file.
+2026-04-07 22:08:23.473   Successfully installed the file.
+2026-04-07 22:08:23.473   -- File entry --
+2026-04-07 22:08:23.473   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_fa.qm
+2026-04-07 22:08:23.474   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.474   Dest file exists.
+2026-04-07 22:08:23.474   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.474   Installing the file.
+2026-04-07 22:08:23.475   Successfully installed the file.
+2026-04-07 22:08:23.475   -- File entry --
+2026-04-07 22:08:23.475   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_fi.qm
+2026-04-07 22:08:23.475   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.475   Dest file exists.
+2026-04-07 22:08:23.475   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.475   Installing the file.
+2026-04-07 22:08:23.477   Successfully installed the file.
+2026-04-07 22:08:23.477   -- File entry --
+2026-04-07 22:08:23.477   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_fr.qm
+2026-04-07 22:08:23.477   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.477   Dest file exists.
+2026-04-07 22:08:23.477   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.477   Installing the file.
+2026-04-07 22:08:23.478   Successfully installed the file.
+2026-04-07 22:08:23.478   -- File entry --
+2026-04-07 22:08:23.479   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_gd.qm
+2026-04-07 22:08:23.479   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.479   Dest file exists.
+2026-04-07 22:08:23.479   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.479   Installing the file.
+2026-04-07 22:08:23.480   Successfully installed the file.
+2026-04-07 22:08:23.480   -- File entry --
+2026-04-07 22:08:23.480   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_gl.qm
+2026-04-07 22:08:23.480   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.480   Dest file exists.
+2026-04-07 22:08:23.480   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.480   Installing the file.
+2026-04-07 22:08:23.487   Successfully installed the file.
+2026-04-07 22:08:23.487   -- File entry --
+2026-04-07 22:08:23.487   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_he.qm
+2026-04-07 22:08:23.487   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.487   Dest file exists.
+2026-04-07 22:08:23.487   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.487   Installing the file.
+2026-04-07 22:08:23.488   Successfully installed the file.
+2026-04-07 22:08:23.488   -- File entry --
+2026-04-07 22:08:23.488   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_ar.qm
+2026-04-07 22:08:23.488   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.489   Dest file exists.
+2026-04-07 22:08:23.489   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.489   Installing the file.
+2026-04-07 22:08:23.490   Successfully installed the file.
+2026-04-07 22:08:23.490   -- File entry --
+2026-04-07 22:08:23.490   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_bg.qm
+2026-04-07 22:08:23.490   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.490   Dest file exists.
+2026-04-07 22:08:23.490   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.490   Installing the file.
+2026-04-07 22:08:23.492   Successfully installed the file.
+2026-04-07 22:08:23.492   -- File entry --
+2026-04-07 22:08:23.492   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_ca.qm
+2026-04-07 22:08:23.492   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.492   Dest file exists.
+2026-04-07 22:08:23.492   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.492   Installing the file.
+2026-04-07 22:08:23.494   Successfully installed the file.
+2026-04-07 22:08:23.494   -- File entry --
+2026-04-07 22:08:23.494   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_cs.qm
+2026-04-07 22:08:23.494   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.494   Dest file exists.
+2026-04-07 22:08:23.494   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.494   Installing the file.
+2026-04-07 22:08:23.496   Successfully installed the file.
+2026-04-07 22:08:23.496   -- File entry --
+2026-04-07 22:08:23.496   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_da.qm
+2026-04-07 22:08:23.496   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.496   Dest file exists.
+2026-04-07 22:08:23.496   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.496   Installing the file.
+2026-04-07 22:08:23.497   Successfully installed the file.
+2026-04-07 22:08:23.497   -- File entry --
+2026-04-07 22:08:23.497   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_de.qm
+2026-04-07 22:08:23.497   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.497   Dest file exists.
+2026-04-07 22:08:23.498   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.498   Installing the file.
+2026-04-07 22:08:23.499   Successfully installed the file.
+2026-04-07 22:08:23.499   -- File entry --
+2026-04-07 22:08:23.499   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_en.qm
+2026-04-07 22:08:23.499   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.499   Dest file exists.
+2026-04-07 22:08:23.499   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.499   Installing the file.
+2026-04-07 22:08:23.500   Successfully installed the file.
+2026-04-07 22:08:23.500   -- File entry --
+2026-04-07 22:08:23.501   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_es.qm
+2026-04-07 22:08:23.501   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.501   Dest file exists.
+2026-04-07 22:08:23.501   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.501   Installing the file.
+2026-04-07 22:08:23.503   Successfully installed the file.
+2026-04-07 22:08:23.503   -- File entry --
+2026-04-07 22:08:23.503   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_fr.qm
+2026-04-07 22:08:23.503   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.503   Dest file exists.
+2026-04-07 22:08:23.503   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.503   Installing the file.
+2026-04-07 22:08:23.504   Successfully installed the file.
+2026-04-07 22:08:23.504   -- File entry --
+2026-04-07 22:08:23.504   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_gl.qm
+2026-04-07 22:08:23.504   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.504   Dest file exists.
+2026-04-07 22:08:23.505   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.505   Installing the file.
+2026-04-07 22:08:23.506   Successfully installed the file.
+2026-04-07 22:08:23.506   -- File entry --
+2026-04-07 22:08:23.506   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_hr.qm
+2026-04-07 22:08:23.506   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.506   Dest file exists.
+2026-04-07 22:08:23.506   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.506   Installing the file.
+2026-04-07 22:08:23.507   Successfully installed the file.
+2026-04-07 22:08:23.507   -- File entry --
+2026-04-07 22:08:23.507   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_hu.qm
+2026-04-07 22:08:23.507   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.507   Dest file exists.
+2026-04-07 22:08:23.508   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.508   Installing the file.
+2026-04-07 22:08:23.509   Successfully installed the file.
+2026-04-07 22:08:23.509   -- File entry --
+2026-04-07 22:08:23.509   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_it.qm
+2026-04-07 22:08:23.510   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.510   Dest file exists.
+2026-04-07 22:08:23.510   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.510   Installing the file.
+2026-04-07 22:08:23.511   Successfully installed the file.
+2026-04-07 22:08:23.511   -- File entry --
+2026-04-07 22:08:23.512   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_ja.qm
+2026-04-07 22:08:23.512   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.512   Dest file exists.
+2026-04-07 22:08:23.512   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.512   Installing the file.
+2026-04-07 22:08:23.513   Successfully installed the file.
+2026-04-07 22:08:23.513   -- File entry --
+2026-04-07 22:08:23.513   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_ka.qm
+2026-04-07 22:08:23.514   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.514   Dest file exists.
+2026-04-07 22:08:23.514   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.514   Installing the file.
+2026-04-07 22:08:23.515   Successfully installed the file.
+2026-04-07 22:08:23.515   -- File entry --
+2026-04-07 22:08:23.515   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_ko.qm
+2026-04-07 22:08:23.515   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.515   Dest file exists.
+2026-04-07 22:08:23.515   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.515   Installing the file.
+2026-04-07 22:08:23.517   Successfully installed the file.
+2026-04-07 22:08:23.517   -- File entry --
+2026-04-07 22:08:23.517   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_nl.qm
+2026-04-07 22:08:23.517   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.517   Dest file exists.
+2026-04-07 22:08:23.517   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.517   Installing the file.
+2026-04-07 22:08:23.519   Successfully installed the file.
+2026-04-07 22:08:23.519   -- File entry --
+2026-04-07 22:08:23.519   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_nn.qm
+2026-04-07 22:08:23.519   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.519   Dest file exists.
+2026-04-07 22:08:23.519   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.519   Installing the file.
+2026-04-07 22:08:23.521   Successfully installed the file.
+2026-04-07 22:08:23.521   -- File entry --
+2026-04-07 22:08:23.521   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_pl.qm
+2026-04-07 22:08:23.521   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.521   Dest file exists.
+2026-04-07 22:08:23.521   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.521   Installing the file.
+2026-04-07 22:08:23.522   Successfully installed the file.
+2026-04-07 22:08:23.522   -- File entry --
+2026-04-07 22:08:23.522   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_pt_BR.qm
+2026-04-07 22:08:23.522   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.522   Dest file exists.
+2026-04-07 22:08:23.523   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.523   Installing the file.
+2026-04-07 22:08:23.524   Successfully installed the file.
+2026-04-07 22:08:23.524   -- File entry --
+2026-04-07 22:08:23.524   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_ru.qm
+2026-04-07 22:08:23.524   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.524   Dest file exists.
+2026-04-07 22:08:23.524   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.524   Installing the file.
+2026-04-07 22:08:23.526   Successfully installed the file.
+2026-04-07 22:08:23.526   -- File entry --
+2026-04-07 22:08:23.526   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_sk.qm
+2026-04-07 22:08:23.527   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.527   Dest file exists.
+2026-04-07 22:08:23.527   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.527   Installing the file.
+2026-04-07 22:08:23.529   Successfully installed the file.
+2026-04-07 22:08:23.529   -- File entry --
+2026-04-07 22:08:23.529   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_sl.qm
+2026-04-07 22:08:23.529   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.529   Dest file exists.
+2026-04-07 22:08:23.529   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.529   Installing the file.
+2026-04-07 22:08:23.531   Successfully installed the file.
+2026-04-07 22:08:23.531   -- File entry --
+2026-04-07 22:08:23.531   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_sv.qm
+2026-04-07 22:08:23.531   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.531   Dest file exists.
+2026-04-07 22:08:23.531   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.531   Installing the file.
+2026-04-07 22:08:23.532   Successfully installed the file.
+2026-04-07 22:08:23.532   -- File entry --
+2026-04-07 22:08:23.532   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_tr.qm
+2026-04-07 22:08:23.533   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.533   Dest file exists.
+2026-04-07 22:08:23.533   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.533   Installing the file.
+2026-04-07 22:08:23.535   Successfully installed the file.
+2026-04-07 22:08:23.535   -- File entry --
+2026-04-07 22:08:23.535   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_uk.qm
+2026-04-07 22:08:23.535   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.535   Dest file exists.
+2026-04-07 22:08:23.535   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.535   Installing the file.
+2026-04-07 22:08:23.537   Successfully installed the file.
+2026-04-07 22:08:23.537   -- File entry --
+2026-04-07 22:08:23.537   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_zh_CN.qm
+2026-04-07 22:08:23.537   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.537   Dest file exists.
+2026-04-07 22:08:23.537   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.537   Installing the file.
+2026-04-07 22:08:23.539   Successfully installed the file.
+2026-04-07 22:08:23.539   -- File entry --
+2026-04-07 22:08:23.539   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_help_zh_TW.qm
+2026-04-07 22:08:23.539   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.539   Dest file exists.
+2026-04-07 22:08:23.539   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.539   Installing the file.
+2026-04-07 22:08:23.541   Successfully installed the file.
+2026-04-07 22:08:23.541   -- File entry --
+2026-04-07 22:08:23.541   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_hr.qm
+2026-04-07 22:08:23.541   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.541   Dest file exists.
+2026-04-07 22:08:23.541   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.541   Installing the file.
+2026-04-07 22:08:23.542   Successfully installed the file.
+2026-04-07 22:08:23.542   -- File entry --
+2026-04-07 22:08:23.542   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_hu.qm
+2026-04-07 22:08:23.543   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.544   Dest file exists.
+2026-04-07 22:08:23.544   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.544   Installing the file.
+2026-04-07 22:08:23.546   Successfully installed the file.
+2026-04-07 22:08:23.546   -- File entry --
+2026-04-07 22:08:23.546   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_it.qm
+2026-04-07 22:08:23.546   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.546   Dest file exists.
+2026-04-07 22:08:23.546   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.546   Installing the file.
+2026-04-07 22:08:23.547   Successfully installed the file.
+2026-04-07 22:08:23.547   -- File entry --
+2026-04-07 22:08:23.547   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_ja.qm
+2026-04-07 22:08:23.548   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.548   Dest file exists.
+2026-04-07 22:08:23.548   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.548   Installing the file.
+2026-04-07 22:08:23.549   Successfully installed the file.
+2026-04-07 22:08:23.549   -- File entry --
+2026-04-07 22:08:23.549   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_ka.qm
+2026-04-07 22:08:23.549   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.549   Dest file exists.
+2026-04-07 22:08:23.549   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.549   Installing the file.
+2026-04-07 22:08:23.552   Successfully installed the file.
+2026-04-07 22:08:23.552   -- File entry --
+2026-04-07 22:08:23.552   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_ko.qm
+2026-04-07 22:08:23.552   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.552   Dest file exists.
+2026-04-07 22:08:23.552   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.552   Installing the file.
+2026-04-07 22:08:23.554   Successfully installed the file.
+2026-04-07 22:08:23.554   -- File entry --
+2026-04-07 22:08:23.554   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_lg.qm
+2026-04-07 22:08:23.554   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.554   Dest file exists.
+2026-04-07 22:08:23.554   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.554   Installing the file.
+2026-04-07 22:08:23.555   Successfully installed the file.
+2026-04-07 22:08:23.555   -- File entry --
+2026-04-07 22:08:23.555   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_lt.qm
+2026-04-07 22:08:23.556   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.556   Dest file exists.
+2026-04-07 22:08:23.556   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.556   Installing the file.
+2026-04-07 22:08:23.561   Successfully installed the file.
+2026-04-07 22:08:23.561   -- File entry --
+2026-04-07 22:08:23.561   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_lv.qm
+2026-04-07 22:08:23.561   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.561   Dest file exists.
+2026-04-07 22:08:23.561   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.562   Installing the file.
+2026-04-07 22:08:23.563   Successfully installed the file.
+2026-04-07 22:08:23.563   -- File entry --
+2026-04-07 22:08:23.563   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_nl.qm
+2026-04-07 22:08:23.563   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.563   Dest file exists.
+2026-04-07 22:08:23.564   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.564   Installing the file.
+2026-04-07 22:08:23.565   Successfully installed the file.
+2026-04-07 22:08:23.565   -- File entry --
+2026-04-07 22:08:23.565   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_nn.qm
+2026-04-07 22:08:23.565   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.566   Dest file exists.
+2026-04-07 22:08:23.566   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.566   Installing the file.
+2026-04-07 22:08:23.567   Successfully installed the file.
+2026-04-07 22:08:23.567   -- File entry --
+2026-04-07 22:08:23.567   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_pl.qm
+2026-04-07 22:08:23.568   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.568   Dest file exists.
+2026-04-07 22:08:23.568   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.568   Installing the file.
+2026-04-07 22:08:23.570   Successfully installed the file.
+2026-04-07 22:08:23.570   -- File entry --
+2026-04-07 22:08:23.570   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_pt_BR.qm
+2026-04-07 22:08:23.570   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.570   Dest file exists.
+2026-04-07 22:08:23.570   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.570   Installing the file.
+2026-04-07 22:08:23.571   Successfully installed the file.
+2026-04-07 22:08:23.571   -- File entry --
+2026-04-07 22:08:23.572   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_pt_PT.qm
+2026-04-07 22:08:23.572   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.572   Dest file exists.
+2026-04-07 22:08:23.572   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.572   Installing the file.
+2026-04-07 22:08:23.575   Successfully installed the file.
+2026-04-07 22:08:23.575   -- File entry --
+2026-04-07 22:08:23.576   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_ru.qm
+2026-04-07 22:08:23.576   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.576   Dest file exists.
+2026-04-07 22:08:23.576   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.576   Installing the file.
+2026-04-07 22:08:23.578   Successfully installed the file.
+2026-04-07 22:08:23.578   -- File entry --
+2026-04-07 22:08:23.578   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_sk.qm
+2026-04-07 22:08:23.578   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.578   Dest file exists.
+2026-04-07 22:08:23.579   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.579   Installing the file.
+2026-04-07 22:08:23.580   Successfully installed the file.
+2026-04-07 22:08:23.580   -- File entry --
+2026-04-07 22:08:23.580   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_sl.qm
+2026-04-07 22:08:23.580   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.580   Dest file exists.
+2026-04-07 22:08:23.580   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.580   Installing the file.
+2026-04-07 22:08:23.585   Successfully installed the file.
+2026-04-07 22:08:23.585   -- File entry --
+2026-04-07 22:08:23.585   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_sv.qm
+2026-04-07 22:08:23.586   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.586   Dest file exists.
+2026-04-07 22:08:23.586   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.586   Installing the file.
+2026-04-07 22:08:23.588   Successfully installed the file.
+2026-04-07 22:08:23.588   -- File entry --
+2026-04-07 22:08:23.588   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_tr.qm
+2026-04-07 22:08:23.588   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.588   Dest file exists.
+2026-04-07 22:08:23.588   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.588   Installing the file.
+2026-04-07 22:08:23.589   Successfully installed the file.
+2026-04-07 22:08:23.590   -- File entry --
+2026-04-07 22:08:23.590   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_uk.qm
+2026-04-07 22:08:23.590   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.590   Dest file exists.
+2026-04-07 22:08:23.590   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.590   Installing the file.
+2026-04-07 22:08:23.591   Successfully installed the file.
+2026-04-07 22:08:23.591   -- File entry --
+2026-04-07 22:08:23.591   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_zh_CN.qm
+2026-04-07 22:08:23.591   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.591   Dest file exists.
+2026-04-07 22:08:23.591   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.592   Installing the file.
+2026-04-07 22:08:23.593   Successfully installed the file.
+2026-04-07 22:08:23.593   -- File entry --
+2026-04-07 22:08:23.593   Dest filename: C:\Program Files\BabelGG\_internal\PyQt6\Qt6\translations\qt_zh_TW.qm
+2026-04-07 22:08:23.594   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.594   Dest file exists.
+2026-04-07 22:08:23.594   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.594   Installing the file.
+2026-04-07 22:08:23.595   Successfully installed the file.
+2026-04-07 22:08:23.595   -- File entry --
+2026-04-07 22:08:23.595   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\fuzz_cpp.cp313-win_amd64.pyd
+2026-04-07 22:08:23.596   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.596   Dest file exists.
+2026-04-07 22:08:23.596   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.596   Installing the file.
+2026-04-07 22:08:23.616   Successfully installed the file.
+2026-04-07 22:08:23.616   -- File entry --
+2026-04-07 22:08:23.616   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\fuzz_cpp_avx2.cp313-win_amd64.pyd
+2026-04-07 22:08:23.616   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.616   Dest file exists.
+2026-04-07 22:08:23.617   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.617   Installing the file.
+2026-04-07 22:08:23.634   Successfully installed the file.
+2026-04-07 22:08:23.634   -- File entry --
+2026-04-07 22:08:23.634   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\process_cpp_impl.cp313-win_amd64.pyd
+2026-04-07 22:08:23.634   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.635   Dest file exists.
+2026-04-07 22:08:23.635   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.635   Installing the file.
+2026-04-07 22:08:23.647   Successfully installed the file.
+2026-04-07 22:08:23.647   -- File entry --
+2026-04-07 22:08:23.647   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\utils_cpp.cp313-win_amd64.pyd
+2026-04-07 22:08:23.647   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.647   Dest file exists.
+2026-04-07 22:08:23.647   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.647   Installing the file.
+2026-04-07 22:08:23.653   Successfully installed the file.
+2026-04-07 22:08:23.653   -- File entry --
+2026-04-07 22:08:23.653   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\_feature_detector_cpp.cp313-win_amd64.pyd
+2026-04-07 22:08:23.653   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.653   Dest file exists.
+2026-04-07 22:08:23.653   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.653   Installing the file.
+2026-04-07 22:08:23.655   Successfully installed the file.
+2026-04-07 22:08:23.656   -- File entry --
+2026-04-07 22:08:23.656   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\distance\metrics_cpp.cp313-win_amd64.pyd
+2026-04-07 22:08:23.656   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.656   Dest file exists.
+2026-04-07 22:08:23.656   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.656   Installing the file.
+2026-04-07 22:08:23.683   Successfully installed the file.
+2026-04-07 22:08:23.683   -- File entry --
+2026-04-07 22:08:23.683   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\distance\metrics_cpp_avx2.cp313-win_amd64.pyd
+2026-04-07 22:08:23.684   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.684   Dest file exists.
+2026-04-07 22:08:23.684   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.684   Installing the file.
+2026-04-07 22:08:23.709   Successfully installed the file.
+2026-04-07 22:08:23.710   -- File entry --
+2026-04-07 22:08:23.710   Dest filename: C:\Program Files\BabelGG\_internal\rapidfuzz\distance\_initialize_cpp.cp313-win_amd64.pyd
+2026-04-07 22:08:23.710   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.710   Dest file exists.
+2026-04-07 22:08:23.710   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.710   Installing the file.
+2026-04-07 22:08:23.716   Successfully installed the file.
+2026-04-07 22:08:23.716   -- File entry --
+2026-04-07 22:08:23.716   Dest filename: C:\Program Files\BabelGG\_internal\safetensors\_safetensors_rust.pyd
+2026-04-07 22:08:23.716   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.716   Dest file exists.
+2026-04-07 22:08:23.716   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.716   Installing the file.
+2026-04-07 22:08:23.735   Successfully installed the file.
+2026-04-07 22:08:23.735   -- File entry --
+2026-04-07 22:08:23.735   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\INSTALLER
+2026-04-07 22:08:23.736   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.736   Dest file exists.
+2026-04-07 22:08:23.736   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.736   Installing the file.
+2026-04-07 22:08:23.737   Successfully installed the file.
+2026-04-07 22:08:23.737   -- File entry --
+2026-04-07 22:08:23.737   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\METADATA
+2026-04-07 22:08:23.737   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.737   Dest file exists.
+2026-04-07 22:08:23.737   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.737   Installing the file.
+2026-04-07 22:08:23.739   Successfully installed the file.
+2026-04-07 22:08:23.739   -- File entry --
+2026-04-07 22:08:23.739   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\RECORD
+2026-04-07 22:08:23.740   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.740   Dest file exists.
+2026-04-07 22:08:23.740   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.740   Installing the file.
+2026-04-07 22:08:23.741   Successfully installed the file.
+2026-04-07 22:08:23.741   -- File entry --
+2026-04-07 22:08:23.741   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\REQUESTED
+2026-04-07 22:08:23.741   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.741   Dest file exists.
+2026-04-07 22:08:23.741   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.741   Installing the file.
+2026-04-07 22:08:23.743   Successfully installed the file.
+2026-04-07 22:08:23.743   -- File entry --
+2026-04-07 22:08:23.743   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\top_level.txt
+2026-04-07 22:08:23.743   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.743   Dest file exists.
+2026-04-07 22:08:23.743   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.743   Installing the file.
+2026-04-07 22:08:23.745   Successfully installed the file.
+2026-04-07 22:08:23.745   -- File entry --
+2026-04-07 22:08:23.745   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\WHEEL
+2026-04-07 22:08:23.745   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.745   Dest file exists.
+2026-04-07 22:08:23.745   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.746   Installing the file.
+2026-04-07 22:08:23.747   Successfully installed the file.
+2026-04-07 22:08:23.747   -- File entry --
+2026-04-07 22:08:23.747   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\importlib_metadata-8.7.1.dist-info\licenses\LICENSE
+2026-04-07 22:08:23.747   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.747   Dest file exists.
+2026-04-07 22:08:23.747   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.747   Installing the file.
+2026-04-07 22:08:23.748   Successfully installed the file.
+2026-04-07 22:08:23.748   -- File entry --
+2026-04-07 22:08:23.749   Dest filename: C:\Program Files\BabelGG\_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+2026-04-07 22:08:23.749   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.749   Dest file exists.
+2026-04-07 22:08:23.749   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.749   Installing the file.
+2026-04-07 22:08:23.750   Successfully installed the file.
+2026-04-07 22:08:23.750   -- File entry --
+2026-04-07 22:08:23.750   Dest filename: C:\Program Files\BabelGG\_internal\tqdm-4.67.3.dist-info\entry_points.txt
+2026-04-07 22:08:23.750   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.750   Dest file exists.
+2026-04-07 22:08:23.750   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.750   Installing the file.
+2026-04-07 22:08:23.752   Successfully installed the file.
+2026-04-07 22:08:23.752   -- File entry --
+2026-04-07 22:08:23.752   Dest filename: C:\Program Files\BabelGG\_internal\tqdm-4.67.3.dist-info\INSTALLER
+2026-04-07 22:08:23.752   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.752   Dest file exists.
+2026-04-07 22:08:23.752   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.752   Installing the file.
+2026-04-07 22:08:23.754   Successfully installed the file.
+2026-04-07 22:08:23.754   -- File entry --
+2026-04-07 22:08:23.754   Dest filename: C:\Program Files\BabelGG\_internal\tqdm-4.67.3.dist-info\METADATA
+2026-04-07 22:08:23.754   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.754   Dest file exists.
+2026-04-07 22:08:23.754   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.754   Installing the file.
+2026-04-07 22:08:23.757   Successfully installed the file.
+2026-04-07 22:08:23.757   -- File entry --
+2026-04-07 22:08:23.757   Dest filename: C:\Program Files\BabelGG\_internal\tqdm-4.67.3.dist-info\RECORD
+2026-04-07 22:08:23.757   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.757   Dest file exists.
+2026-04-07 22:08:23.757   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.758   Installing the file.
+2026-04-07 22:08:23.759   Successfully installed the file.
+2026-04-07 22:08:23.759   -- File entry --
+2026-04-07 22:08:23.759   Dest filename: C:\Program Files\BabelGG\_internal\tqdm-4.67.3.dist-info\top_level.txt
+2026-04-07 22:08:23.759   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.759   Dest file exists.
+2026-04-07 22:08:23.760   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.760   Installing the file.
+2026-04-07 22:08:23.761   Successfully installed the file.
+2026-04-07 22:08:23.761   -- File entry --
+2026-04-07 22:08:23.761   Dest filename: C:\Program Files\BabelGG\_internal\tqdm-4.67.3.dist-info\WHEEL
+2026-04-07 22:08:23.761   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.761   Dest file exists.
+2026-04-07 22:08:23.761   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.762   Installing the file.
+2026-04-07 22:08:23.763   Successfully installed the file.
+2026-04-07 22:08:23.763   -- File entry --
+2026-04-07 22:08:23.763   Dest filename: C:\Program Files\BabelGG\_internal\tqdm-4.67.3.dist-info\licenses\LICENCE
+2026-04-07 22:08:23.763   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.763   Dest file exists.
+2026-04-07 22:08:23.763   Time stamp of existing file: 2026-04-07 22:01:38.000
+2026-04-07 22:08:23.763   Installing the file.
+2026-04-07 22:08:23.764   Successfully installed the file.
+2026-04-07 22:08:23.764   -- File entry --
+2026-04-07 22:08:23.764   Dest filename: C:\Program Files\BabelGG\_internal\yaml\_yaml.cp313-win_amd64.pyd
+2026-04-07 22:08:23.764   Time stamp of our file: 2026-04-07 22:07:18.000
+2026-04-07 22:08:23.764   Dest file exists.
+2026-04-07 22:08:23.764   Time stamp of existing file: 2026-04-07 22:01:36.000
+2026-04-07 22:08:23.765   Installing the file.
+2026-04-07 22:08:23.772   Successfully installed the file.
+2026-04-07 22:08:23.772   -- Icon entry --
+2026-04-07 22:08:23.772   Dest filename: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\BabelGG\BabelGG.lnk
+2026-04-07 22:08:23.773   Creating the icon.
+2026-04-07 22:08:23.831   Successfully created the icon.
+2026-04-07 22:08:23.842   Saving uninstall information.
+2026-04-07 22:08:23.843   Renaming uninstaller.
+2026-04-07 22:08:23.845   Deleting uninstall key left over from previous administrative 64-bit install.
+2026-04-07 22:08:23.845   Creating new uninstall key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{2D8D3A86-4B10-4FE6-8915-3AF7AC91E0C7}_is1
+2026-04-07 22:08:23.845   Writing uninstall key values.
+2026-04-07 22:08:23.846   Detected previous non administrative install? No
+2026-04-07 22:08:23.846   Detected previous administrative 32-bit install? Yes
+2026-04-07 22:08:23.846   Marked uninstall display name to avoid duplicate entries. New display name: BabelGG version 0.1.0 (64-bit)
+2026-04-07 22:08:23.849   Installation process succeeded.
+2026-04-07 22:08:23.850   Need to restart Windows? No
+2026-04-07 22:08:23.854   Deinitializing Setup.
+2026-04-07 22:08:23.862   Log closed.

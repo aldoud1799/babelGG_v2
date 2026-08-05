@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: |
+  If you use this paper, code, or the described fix in your own work,
+  please cite the paper below.
+type: software
+title: "BabelGG v2: A Frozen-Executable NLLB-200 Deployment on Windows with a CUDA Silent-Fallback Fix and a Source-Language Detection Fix"
+version: 1.0.0
+date-released: 2026-08-06
+license: MIT
+url: "https://github.com/aldoud1799/babelGG_v2"
+repository-code: "https://github.com/aldoud1799/babelGG_v2"
+authors:
+  - family-names: "BabelGG Project"
+    given-names: "BabelGG Project"
+keywords:
+  - NLLB-200
+  - CTranslate2
+  - PyInstaller
+  - CUDA
+  - Windows
+  - language detection
+  - multilingual NMT
+  - consumer hardware
+  - frozen executable
+preferred-citation:
+  type: article
+  title: "BabelGG v2: A Frozen-Executable NLLB-200 Deployment on Windows with a CUDA Silent-Fallback Fix and a Source-Language Detection Fix"
+  authors:
+    - family-names: "BabelGG Project"
+      given-names: "BabelGG Project"
+  year: 2026
+  month: 8
+  date: 2026-08-06
+  url: "https://github.com/aldoud1799/babelGG_v2"
+  notes: "Includes paper.pdf, paper.md, and full benchmark harness."

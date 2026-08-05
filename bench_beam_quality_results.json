@@ -1,0 +1,1761 @@
+{
+  "test_corpus_size": 70,
+  "beam_sizes_tested": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "results": [
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "今日一緒にゲームしよう！",
+      "beam1": {
+        "translation": "Let's play a game together today!",
+        "score": -0.4741876721382141,
+        "latency_ms": 79
+      },
+      "beam2": {
+        "translation": "Let's play a game together today!",
+        "score": -0.4595170319080353,
+        "latency_ms": 98
+      },
+      "beam4": {
+        "translation": "Let's play a game together today!",
+        "score": -0.4595170319080353,
+        "latency_ms": 96
+      },
+      "beam8": {
+        "translation": "Let's play together today!",
+        "score": -0.5008680820465088,
+        "latency_ms": 123
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "ナイスプレイ！",
+      "beam1": {
+        "translation": "Nice play!",
+        "score": -0.6839599609375,
+        "latency_ms": 39
+      },
+      "beam2": {
+        "translation": "Nice play!",
+        "score": -0.684765636920929,
+        "latency_ms": 41
+      },
+      "beam4": {
+        "translation": "Nice play!",
+        "score": -0.684765636920929,
+        "latency_ms": 64
+      },
+      "beam8": {
+        "translation": "Nice play!",
+        "score": -0.684765636920929,
+        "latency_ms": 118
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "助けてくれ！敵が三人いる",
+      "beam1": {
+        "translation": "Help me, we have three enemies.",
+        "score": -0.6393188238143921,
+        "latency_ms": 76
+      },
+      "beam2": {
+        "translation": "We have three enemies.",
+        "score": -0.6875,
+        "latency_ms": 55
+      },
+      "beam4": {
+        "translation": "Help me, we have three enemies.",
+        "score": -0.65234375,
+        "latency_ms": 82
+      },
+      "beam8": {
+        "translation": "We've got three enemies.",
+        "score": -0.6453993320465088,
+        "latency_ms": 104
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "ちょっと待って",
+      "beam1": {
+        "translation": "Wait a minute.",
+        "score": -0.7616373896598816,
+        "latency_ms": 46
+      },
+      "beam2": {
+        "translation": "Hold on a second.",
+        "score": -0.6238839030265808,
+        "latency_ms": 60
+      },
+      "beam4": {
+        "translation": "Hold on a second.",
+        "score": -0.6238839030265808,
+        "latency_ms": 77
+      },
+      "beam8": {
+        "translation": "Hold on a second.",
+        "score": -0.6238839030265808,
+        "latency_ms": 98
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "ありがとう",
+      "beam1": {
+        "translation": "Thank you. Thank you.",
+        "score": -0.5693359375,
+        "latency_ms": 60
+      },
+      "beam2": {
+        "translation": "Thank you. Thank you.",
+        "score": -0.5517578125,
+        "latency_ms": 66
+      },
+      "beam4": {
+        "translation": "Thank you. Thank you.",
+        "score": -0.5517578125,
+        "latency_ms": 71
+      },
+      "beam8": {
+        "translation": "Thank you. Thank you.",
+        "score": -0.5517578125,
+        "latency_ms": 104
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "もう一度やろう",
+      "beam1": {
+        "translation": "Let's do it again.",
+        "score": -0.45574951171875,
+        "latency_ms": 63
+      },
+      "beam2": {
+        "translation": "Let's do it again.",
+        "score": -0.4561631977558136,
+        "latency_ms": 85
+      },
+      "beam4": {
+        "translation": "Let's do it again.",
+        "score": -0.4561631977558136,
+        "latency_ms": 74
+      },
+      "beam8": {
+        "translation": "Let's do it again.",
+        "score": -0.4561631977558136,
+        "latency_ms": 103
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "ごめん、遅れた",
+      "beam1": {
+        "translation": "Sorry, I'm late.",
+        "score": -0.5296088457107544,
+        "latency_ms": 64
+      },
+      "beam2": {
+        "translation": "I'm sorry, I was late.",
+        "score": -0.45809659361839294,
+        "latency_ms": 93
+      },
+      "beam4": {
+        "translation": "I'm sorry, I was late.",
+        "score": -0.45809659361839294,
+        "latency_ms": 94
+      },
+      "beam8": {
+        "translation": "I'm sorry, I was late.",
+        "score": -0.45809659361839294,
+        "latency_ms": 120
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "勝った！",
+      "beam1": {
+        "translation": "We won!",
+        "score": -0.6087402105331421,
+        "latency_ms": 38
+      },
+      "beam2": {
+        "translation": "We won!",
+        "score": -0.5960937738418579,
+        "latency_ms": 45
+      },
+      "beam4": {
+        "translation": "We won!",
+        "score": -0.5960937738418579,
+        "latency_ms": 46
+      },
+      "beam8": {
+        "translation": "We won!",
+        "score": -0.5960937738418579,
+        "latency_ms": 61
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "このボスは強すぎる",
+      "beam1": {
+        "translation": "This boss is too strong.",
+        "score": -0.48949432373046875,
+        "latency_ms": 79
+      },
+      "beam2": {
+        "translation": "This boss is too strong.",
+        "score": -0.482666015625,
+        "latency_ms": 64
+      },
+      "beam4": {
+        "translation": "This boss is too strong.",
+        "score": -0.482666015625,
+        "latency_ms": 112
+      },
+      "beam8": {
+        "translation": "This boss is too strong.",
+        "score": -0.482666015625,
+        "latency_ms": 96
+      }
+    },
+    {
+      "src": "jpn_Jpan",
+      "tgt": "eng_Latn",
+      "sentence": "次のラウンドいくぞ",
+      "beam1": {
+        "translation": "We'll go to the next round.",
+        "score": -0.5434847474098206,
+        "latency_ms": 84
+      },
+      "beam2": {
+        "translation": "We're going to the next round.",
+        "score": -0.5316051244735718,
+        "latency_ms": 115
+      },
+      "beam4": {
+        "translation": "Let's go to the next round.",
+        "score": -0.5255681872367859,
+        "latency_ms": 95
+      },
+      "beam8": {
+        "translation": "Let's go to the next round.",
+        "score": -0.5255681872367859,
+        "latency_ms": 153
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "오늘 같이 게임하자!",
+      "beam1": {
+        "translation": "Let's play today!",
+        "score": -0.4450531005859375,
+        "latency_ms": 83
+      },
+      "beam2": {
+        "translation": "Let's play today!",
+        "score": -0.4443359375,
+        "latency_ms": 64
+      },
+      "beam4": {
+        "translation": "Let's play today!",
+        "score": -0.4443359375,
+        "latency_ms": 94
+      },
+      "beam8": {
+        "translation": "Let's play today!",
+        "score": -0.4443359375,
+        "latency_ms": 112
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "잘 했어!",
+      "beam1": {
+        "translation": "You did good!",
+        "score": -0.6837158203125,
+        "latency_ms": 48
+      },
+      "beam2": {
+        "translation": "You did good!",
+        "score": -0.6673176884651184,
+        "latency_ms": 54
+      },
+      "beam4": {
+        "translation": "You did good!",
+        "score": -0.6673176884651184,
+        "latency_ms": 49
+      },
+      "beam8": {
+        "translation": "You did good!",
+        "score": -0.6673176884651184,
+        "latency_ms": 79
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "도와줘, 적이 셋이야",
+      "beam1": {
+        "translation": "Help me, we have three enemies.",
+        "score": -0.5061401128768921,
+        "latency_ms": 81
+      },
+      "beam2": {
+        "translation": "Help me, there are three enemies.",
+        "score": -0.5015624761581421,
+        "latency_ms": 101
+      },
+      "beam4": {
+        "translation": "Help me, there are three enemies.",
+        "score": -0.5015624761581421,
+        "latency_ms": 80
+      },
+      "beam8": {
+        "translation": "Help me, there are three enemies.",
+        "score": -0.5015624761581421,
+        "latency_ms": 124
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "잠깐만",
+      "beam1": {
+        "translation": "Wait a minute.",
+        "score": -0.687744140625,
+        "latency_ms": 53
+      },
+      "beam2": {
+        "translation": "Wait a minute.",
+        "score": -0.6940104365348816,
+        "latency_ms": 65
+      },
+      "beam4": {
+        "translation": "Hold on a second.",
+        "score": -0.6261160969734192,
+        "latency_ms": 84
+      },
+      "beam8": {
+        "translation": "Hold on a second.",
+        "score": -0.6261160969734192,
+        "latency_ms": 92
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "고마워",
+      "beam1": {
+        "translation": "Thank you.",
+        "score": -0.5978759527206421,
+        "latency_ms": 37
+      },
+      "beam2": {
+        "translation": "Thank you.",
+        "score": -0.61328125,
+        "latency_ms": 69
+      },
+      "beam4": {
+        "translation": "Thank you.",
+        "score": -0.61328125,
+        "latency_ms": 58
+      },
+      "beam8": {
+        "translation": "Thank you. Thank you.",
+        "score": -0.51611328125,
+        "latency_ms": 109
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "다시 하자",
+      "beam1": {
+        "translation": "Let's do it again.",
+        "score": -0.3655531108379364,
+        "latency_ms": 70
+      },
+      "beam2": {
+        "translation": "Let's do it again.",
+        "score": -0.3637152910232544,
+        "latency_ms": 78
+      },
+      "beam4": {
+        "translation": "Let's do it again.",
+        "score": -0.3637152910232544,
+        "latency_ms": 77
+      },
+      "beam8": {
+        "translation": "Let's do it again.",
+        "score": -0.3637152910232544,
+        "latency_ms": 107
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "미안, 늦었어",
+      "beam1": {
+        "translation": "Sorry, I'm late.",
+        "score": -0.4636298418045044,
+        "latency_ms": 80
+      },
+      "beam2": {
+        "translation": "Sorry, I'm late.",
+        "score": -0.44140625,
+        "latency_ms": 103
+      },
+      "beam4": {
+        "translation": "Sorry, I'm late.",
+        "score": -0.44140625,
+        "latency_ms": 108
+      },
+      "beam8": {
+        "translation": "Sorry, I'm late.",
+        "score": -0.44140625,
+        "latency_ms": 152
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "이겼다!",
+      "beam1": {
+        "translation": "We won!",
+        "score": -0.507861316204071,
+        "latency_ms": 41
+      },
+      "beam2": {
+        "translation": "We won!",
+        "score": -0.534375011920929,
+        "latency_ms": 49
+      },
+      "beam4": {
+        "translation": "We won!",
+        "score": -0.534375011920929,
+        "latency_ms": 43
+      },
+      "beam8": {
+        "translation": "We won!",
+        "score": -0.534375011920929,
+        "latency_ms": 75
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "이 보스는 너무 강해",
+      "beam1": {
+        "translation": "This boss is too strong.",
+        "score": -0.4510955810546875,
+        "latency_ms": 61
+      },
+      "beam2": {
+        "translation": "This boss is too strong.",
+        "score": -0.455810546875,
+        "latency_ms": 75
+      },
+      "beam4": {
+        "translation": "This boss is too strong.",
+        "score": -0.455810546875,
+        "latency_ms": 75
+      },
+      "beam8": {
+        "translation": "This boss is too strong.",
+        "score": -0.455810546875,
+        "latency_ms": 96
+      }
+    },
+    {
+      "src": "kor_Hang",
+      "tgt": "eng_Latn",
+      "sentence": "다음 라운드 가자",
+      "beam1": {
+        "translation": "Let's go to the next round.",
+        "score": -0.3536210358142853,
+        "latency_ms": 95
+      },
+      "beam2": {
+        "translation": "Let's go to the next round.",
+        "score": -0.3520951569080353,
+        "latency_ms": 86
+      },
+      "beam4": {
+        "translation": "Let's go to the next round.",
+        "score": -0.3520951569080353,
+        "latency_ms": 91
+      },
+      "beam8": {
+        "translation": "Let's go to the next round.",
+        "score": -0.3520951569080353,
+        "latency_ms": 130
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "今天一起打游戏吧！",
+      "beam1": {
+        "translation": "Play a game today!",
+        "score": -0.6313127875328064,
+        "latency_ms": 76
+      },
+      "beam2": {
+        "translation": "Let's play a game today!",
+        "score": -0.518359363079071,
+        "latency_ms": 84
+      },
+      "beam4": {
+        "translation": "Let's play a game today!",
+        "score": -0.518359363079071,
+        "latency_ms": 87
+      },
+      "beam8": {
+        "translation": "Let's play a game today!",
+        "score": -0.518359363079071,
+        "latency_ms": 136
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "打得好！",
+      "beam1": {
+        "translation": "You're playing well!",
+        "score": -1.3041610717773438,
+        "latency_ms": 62
+      },
+      "beam2": {
+        "translation": "You play well!",
+        "score": -1.2317708730697632,
+        "latency_ms": 49
+      },
+      "beam4": {
+        "translation": "Play it well!",
+        "score": -1.1041666269302368,
+        "latency_ms": 53
+      },
+      "beam8": {
+        "translation": "That's good!",
+        "score": -0.9972098469734192,
+        "latency_ms": 74
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "帮帮我，有三个敌人",
+      "beam1": {
+        "translation": "Help me, there are three enemies.",
+        "score": -0.3656005859375,
+        "latency_ms": 91
+      },
+      "beam2": {
+        "translation": "Help me, there are three enemies.",
+        "score": -0.3697265684604645,
+        "latency_ms": 98
+      },
+      "beam4": {
+        "translation": "Help me, there are three enemies.",
+        "score": -0.3697265684604645,
+        "latency_ms": 85
+      },
+      "beam8": {
+        "translation": "Help me, there are three enemies.",
+        "score": -0.3697265684604645,
+        "latency_ms": 107
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "等一下",
+      "beam1": {
+        "translation": "Wait a minute.",
+        "score": -0.7613728642463684,
+        "latency_ms": 47
+      },
+      "beam2": {
+        "translation": "Let's see.",
+        "score": -0.7293526530265808,
+        "latency_ms": 56
+      },
+      "beam4": {
+        "translation": "Let's see.",
+        "score": -0.7293526530265808,
+        "latency_ms": 65
+      },
+      "beam8": {
+        "translation": "Let's see.",
+        "score": -0.7293526530265808,
+        "latency_ms": 91
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "谢谢",
+      "beam1": {
+        "translation": "Thank you.",
+        "score": -0.519482433795929,
+        "latency_ms": 36
+      },
+      "beam2": {
+        "translation": "Thank you.",
+        "score": -0.5171874761581421,
+        "latency_ms": 60
+      },
+      "beam4": {
+        "translation": "Thank you.",
+        "score": -0.5171874761581421,
+        "latency_ms": 65
+      },
+      "beam8": {
+        "translation": "Thank you.",
+        "score": -0.5171874761581421,
+        "latency_ms": 74
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "再来一次",
+      "beam1": {
+        "translation": "I'll see you again.",
+        "score": -0.8808797001838684,
+        "latency_ms": 79
+      },
+      "beam2": {
+        "translation": "One more time.",
+        "score": -0.787109375,
+        "latency_ms": 52
+      },
+      "beam4": {
+        "translation": "One more time.",
+        "score": -0.787109375,
+        "latency_ms": 67
+      },
+      "beam8": {
+        "translation": "One more time.",
+        "score": -0.787109375,
+        "latency_ms": 96
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "对不起，我迟到了",
+      "beam1": {
+        "translation": "Sorry I'm late.",
+        "score": -0.37116241455078125,
+        "latency_ms": 60
+      },
+      "beam2": {
+        "translation": "Sorry I'm late.",
+        "score": -0.3828125,
+        "latency_ms": 73
+      },
+      "beam4": {
+        "translation": "Sorry I'm late.",
+        "score": -0.3828125,
+        "latency_ms": 104
+      },
+      "beam8": {
+        "translation": "Sorry I'm late.",
+        "score": -0.3828125,
+        "latency_ms": 125
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "赢了！",
+      "beam1": {
+        "translation": "You win!",
+        "score": -0.7175537347793579,
+        "latency_ms": 41
+      },
+      "beam2": {
+        "translation": "We won!",
+        "score": -0.682812511920929,
+        "latency_ms": 41
+      },
+      "beam4": {
+        "translation": "We won!",
+        "score": -0.682812511920929,
+        "latency_ms": 56
+      },
+      "beam8": {
+        "translation": "We won!",
+        "score": -0.682812511920929,
+        "latency_ms": 75
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "这个boss太强了",
+      "beam1": {
+        "translation": "This boss is too strong.",
+        "score": -0.494384765625,
+        "latency_ms": 58
+      },
+      "beam2": {
+        "translation": "This boss is too strong.",
+        "score": -0.486328125,
+        "latency_ms": 64
+      },
+      "beam4": {
+        "translation": "This boss is too strong.",
+        "score": -0.486328125,
+        "latency_ms": 106
+      },
+      "beam8": {
+        "translation": "This boss is too strong.",
+        "score": -0.486328125,
+        "latency_ms": 117
+      }
+    },
+    {
+      "src": "zho_Hans",
+      "tgt": "eng_Latn",
+      "sentence": "下一轮走起",
+      "beam1": {
+        "translation": "The next round starts.",
+        "score": -0.6946324110031128,
+        "latency_ms": 59
+      },
+      "beam2": {
+        "translation": "The next round starts.",
+        "score": -0.7003348469734192,
+        "latency_ms": 65
+      },
+      "beam4": {
+        "translation": "The next round starts.",
+        "score": -0.7003348469734192,
+        "latency_ms": 63
+      },
+      "beam8": {
+        "translation": "The next round starts.",
+        "score": -0.7003348469734192,
+        "latency_ms": 84
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "On joue ensemble aujourd'hui !",
+      "beam1": {
+        "translation": "We're playing together today!",
+        "score": -0.4653795063495636,
+        "latency_ms": 79
+      },
+      "beam2": {
+        "translation": "We're playing together today!",
+        "score": -0.4609375,
+        "latency_ms": 70
+      },
+      "beam4": {
+        "translation": "We're playing together today!",
+        "score": -0.4609375,
+        "latency_ms": 77
+      },
+      "beam8": {
+        "translation": "We're playing together today!",
+        "score": -0.4609375,
+        "latency_ms": 92
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Bien joué !",
+      "beam1": {
+        "translation": "Good play .",
+        "score": -1.0261719226837158,
+        "latency_ms": 36
+      },
+      "beam2": {
+        "translation": "That 's good .",
+        "score": -0.8258928656578064,
+        "latency_ms": 74
+      },
+      "beam4": {
+        "translation": "That 's good .",
+        "score": -0.8258928656578064,
+        "latency_ms": 59
+      },
+      "beam8": {
+        "translation": "That 's good .",
+        "score": -0.8258928656578064,
+        "latency_ms": 89
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Aide-moi, il y a trois ennemis",
+      "beam1": {
+        "translation": "Help me, there are three enemies",
+        "score": -0.3798149824142456,
+        "latency_ms": 82
+      },
+      "beam2": {
+        "translation": "Help me, there are three enemies",
+        "score": -0.3732638955116272,
+        "latency_ms": 97
+      },
+      "beam4": {
+        "translation": "Help me, there are three enemies",
+        "score": -0.3732638955116272,
+        "latency_ms": 91
+      },
+      "beam8": {
+        "translation": "Help me, there are three enemies",
+        "score": -0.3732638955116272,
+        "latency_ms": 105
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Attends une seconde",
+      "beam1": {
+        "translation": "Wait a second .",
+        "score": -0.6268513798713684,
+        "latency_ms": 43
+      },
+      "beam2": {
+        "translation": "Wait a second .",
+        "score": -0.6194661259651184,
+        "latency_ms": 58
+      },
+      "beam4": {
+        "translation": "Wait a second .",
+        "score": -0.6194661259651184,
+        "latency_ms": 59
+      },
+      "beam8": {
+        "translation": "Wait a second .",
+        "score": -0.6194661259651184,
+        "latency_ms": 76
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Merci",
+      "beam1": {
+        "translation": "Thank you .",
+        "score": -0.7350829839706421,
+        "latency_ms": 41
+      },
+      "beam2": {
+        "translation": "Thank you .",
+        "score": -0.72265625,
+        "latency_ms": 43
+      },
+      "beam4": {
+        "translation": "Thank you very much .",
+        "score": -0.6372767686843872,
+        "latency_ms": 64
+      },
+      "beam8": {
+        "translation": "Thank you very much .",
+        "score": -0.6372767686843872,
+        "latency_ms": 80
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "On refait ça",
+      "beam1": {
+        "translation": "We'll do it again.",
+        "score": -0.5491061806678772,
+        "latency_ms": 65
+      },
+      "beam2": {
+        "translation": "Let's do this again.",
+        "score": -0.5295138955116272,
+        "latency_ms": 71
+      },
+      "beam4": {
+        "translation": "Let's do this again.",
+        "score": -0.5295138955116272,
+        "latency_ms": 75
+      },
+      "beam8": {
+        "translation": "Let's do this again.",
+        "score": -0.5295138955116272,
+        "latency_ms": 105
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Désolé, je suis en retard",
+      "beam1": {
+        "translation": "Sorry I'm late.",
+        "score": -0.5023040771484375,
+        "latency_ms": 73
+      },
+      "beam2": {
+        "translation": "Sorry I'm late.",
+        "score": -0.479248046875,
+        "latency_ms": 63
+      },
+      "beam4": {
+        "translation": "Sorry I'm late.",
+        "score": -0.479248046875,
+        "latency_ms": 95
+      },
+      "beam8": {
+        "translation": "Sorry I'm late.",
+        "score": -0.479248046875,
+        "latency_ms": 104
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "On a gagné !",
+      "beam1": {
+        "translation": "We won !",
+        "score": -0.819042980670929,
+        "latency_ms": 36
+      },
+      "beam2": {
+        "translation": "We won !",
+        "score": -0.828125,
+        "latency_ms": 40
+      },
+      "beam4": {
+        "translation": "We 've won !",
+        "score": -0.765625,
+        "latency_ms": 60
+      },
+      "beam8": {
+        "translation": "We 've won !",
+        "score": -0.765625,
+        "latency_ms": 89
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Ce boss est trop fort",
+      "beam1": {
+        "translation": "That boss is too strong.",
+        "score": -0.6013031005859375,
+        "latency_ms": 60
+      },
+      "beam2": {
+        "translation": "That boss is too strong.",
+        "score": -0.59033203125,
+        "latency_ms": 62
+      },
+      "beam4": {
+        "translation": "That boss is too strong.",
+        "score": -0.59033203125,
+        "latency_ms": 66
+      },
+      "beam8": {
+        "translation": "That boss is too strong.",
+        "score": -0.59033203125,
+        "latency_ms": 86
+      }
+    },
+    {
+      "src": "fra_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Prochaine manche",
+      "beam1": {
+        "translation": "Next round",
+        "score": -0.51824951171875,
+        "latency_ms": 32
+      },
+      "beam2": {
+        "translation": "Next round",
+        "score": -0.5361328125,
+        "latency_ms": 42
+      },
+      "beam4": {
+        "translation": "Next round",
+        "score": -0.5361328125,
+        "latency_ms": 42
+      },
+      "beam8": {
+        "translation": "Next round",
+        "score": -0.5361328125,
+        "latency_ms": 89
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Jugamos juntos hoy",
+      "beam1": {
+        "translation": "Let's play together today.",
+        "score": -0.3032565712928772,
+        "latency_ms": 84
+      },
+      "beam2": {
+        "translation": "Let's play together today.",
+        "score": -0.2975260317325592,
+        "latency_ms": 83
+      },
+      "beam4": {
+        "translation": "Let's play together today.",
+        "score": -0.2975260317325592,
+        "latency_ms": 88
+      },
+      "beam8": {
+        "translation": "Let's play together today.",
+        "score": -0.2975260317325592,
+        "latency_ms": 104
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Bien jugado!",
+      "beam1": {
+        "translation": "Good play!",
+        "score": -0.7091308832168579,
+        "latency_ms": 46
+      },
+      "beam2": {
+        "translation": "Well played!",
+        "score": -0.633984386920929,
+        "latency_ms": 51
+      },
+      "beam4": {
+        "translation": "Well played!",
+        "score": -0.633984386920929,
+        "latency_ms": 70
+      },
+      "beam8": {
+        "translation": "Well played!",
+        "score": -0.633984386920929,
+        "latency_ms": 92
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Ayuda, hay tres enemigos",
+      "beam1": {
+        "translation": "Help, there are three enemies.",
+        "score": -0.3305257260799408,
+        "latency_ms": 66
+      },
+      "beam2": {
+        "translation": "Help, there are three enemies.",
+        "score": -0.3266059160232544,
+        "latency_ms": 71
+      },
+      "beam4": {
+        "translation": "Help, there are three enemies.",
+        "score": -0.3266059160232544,
+        "latency_ms": 72
+      },
+      "beam8": {
+        "translation": "Help, there are three enemies.",
+        "score": -0.3266059160232544,
+        "latency_ms": 116
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Espera un momento",
+      "beam1": {
+        "translation": "Wait a minute .",
+        "score": -0.7442626953125,
+        "latency_ms": 69
+      },
+      "beam2": {
+        "translation": "Hold on a second .",
+        "score": -0.6858258843421936,
+        "latency_ms": 58
+      },
+      "beam4": {
+        "translation": "Hold on a second .",
+        "score": -0.6858258843421936,
+        "latency_ms": 59
+      },
+      "beam8": {
+        "translation": "Hold on a second .",
+        "score": -0.6858258843421936,
+        "latency_ms": 83
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Gracias",
+      "beam1": {
+        "translation": "Thank you .",
+        "score": -0.8245605230331421,
+        "latency_ms": 38
+      },
+      "beam2": {
+        "translation": "Thank you .",
+        "score": -0.8359375,
+        "latency_ms": 48
+      },
+      "beam4": {
+        "translation": "Thank you .",
+        "score": -0.8359375,
+        "latency_ms": 61
+      },
+      "beam8": {
+        "translation": "Thank you very much.",
+        "score": -0.7935267686843872,
+        "latency_ms": 74
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Otra vez",
+      "beam1": {
+        "translation": "- Again .",
+        "score": -1.4760253429412842,
+        "latency_ms": 39
+      },
+      "beam2": {
+        "translation": "I 'm back again .",
+        "score": -1.181640625,
+        "latency_ms": 64
+      },
+      "beam4": {
+        "translation": "Once again .",
+        "score": -1.096093773841858,
+        "latency_ms": 57
+      },
+      "beam8": {
+        "translation": "One more time .",
+        "score": -0.9700520634651184,
+        "latency_ms": 80
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Perdón, llegué tarde",
+      "beam1": {
+        "translation": "Sorry, I was late.",
+        "score": -0.4040374755859375,
+        "latency_ms": 61
+      },
+      "beam2": {
+        "translation": "Sorry, I was late.",
+        "score": -0.41162109375,
+        "latency_ms": 74
+      },
+      "beam4": {
+        "translation": "Sorry, I was late.",
+        "score": -0.41162109375,
+        "latency_ms": 74
+      },
+      "beam8": {
+        "translation": "Sorry, I was late.",
+        "score": -0.41162109375,
+        "latency_ms": 118
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Ganamos!",
+      "beam1": {
+        "translation": "We won!",
+        "score": -0.574902355670929,
+        "latency_ms": 55
+      },
+      "beam2": {
+        "translation": "We won!",
+        "score": -0.5824218988418579,
+        "latency_ms": 55
+      },
+      "beam4": {
+        "translation": "We won!",
+        "score": -0.5824218988418579,
+        "latency_ms": 94
+      },
+      "beam8": {
+        "translation": "We won!",
+        "score": -0.5824218988418579,
+        "latency_ms": 103
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Este jefe es muy fuerte",
+      "beam1": {
+        "translation": "This boss is very strong",
+        "score": -0.5596400499343872,
+        "latency_ms": 74
+      },
+      "beam2": {
+        "translation": "This boss is very strong.",
+        "score": -0.5595703125,
+        "latency_ms": 88
+      },
+      "beam4": {
+        "translation": "This boss is very strong.",
+        "score": -0.5595703125,
+        "latency_ms": 85
+      },
+      "beam8": {
+        "translation": "This boss is very strong.",
+        "score": -0.5595703125,
+        "latency_ms": 101
+      }
+    },
+    {
+      "src": "spa_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Siguiente ronda",
+      "beam1": {
+        "translation": "Next round",
+        "score": -0.384796142578125,
+        "latency_ms": 30
+      },
+      "beam2": {
+        "translation": "Next round",
+        "score": -0.38232421875,
+        "latency_ms": 40
+      },
+      "beam4": {
+        "translation": "Next round",
+        "score": -0.38232421875,
+        "latency_ms": 45
+      },
+      "beam8": {
+        "translation": "Next round",
+        "score": -0.38232421875,
+        "latency_ms": 73
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Lasst uns heute zusammen spielen",
+      "beam1": {
+        "translation": "Let's play together today",
+        "score": -0.4084014892578125,
+        "latency_ms": 59
+      },
+      "beam2": {
+        "translation": "Let's play together tonight",
+        "score": -0.42041015625,
+        "latency_ms": 62
+      },
+      "beam4": {
+        "translation": "Let's play together tonight",
+        "score": -0.42041015625,
+        "latency_ms": 77
+      },
+      "beam8": {
+        "translation": "Let's play together tonight",
+        "score": -0.42041015625,
+        "latency_ms": 110
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Gut gespielt!",
+      "beam1": {
+        "translation": "Good play!",
+        "score": -0.863598644733429,
+        "latency_ms": 48
+      },
+      "beam2": {
+        "translation": "Good play!",
+        "score": -0.8578125238418579,
+        "latency_ms": 49
+      },
+      "beam4": {
+        "translation": "Well played!",
+        "score": -0.7933593988418579,
+        "latency_ms": 67
+      },
+      "beam8": {
+        "translation": "Well played!",
+        "score": -0.7933593988418579,
+        "latency_ms": 76
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Hilfe, drei Feinde",
+      "beam1": {
+        "translation": "Help, three enemies",
+        "score": -0.3718465268611908,
+        "latency_ms": 46
+      },
+      "beam2": {
+        "translation": "Help, three enemies",
+        "score": -0.369140625,
+        "latency_ms": 60
+      },
+      "beam4": {
+        "translation": "Help, three enemies",
+        "score": -0.369140625,
+        "latency_ms": 60
+      },
+      "beam8": {
+        "translation": "Help, three enemies",
+        "score": -0.369140625,
+        "latency_ms": 85
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Warte kurz",
+      "beam1": {
+        "translation": "Wait a minute .",
+        "score": -0.6272175908088684,
+        "latency_ms": 46
+      },
+      "beam2": {
+        "translation": "Wait a minute .",
+        "score": -0.6487630009651184,
+        "latency_ms": 63
+      },
+      "beam4": {
+        "translation": "Wait a minute .",
+        "score": -0.6487630009651184,
+        "latency_ms": 51
+      },
+      "beam8": {
+        "translation": "Wait a minute .",
+        "score": -0.6487630009651184,
+        "latency_ms": 77
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Danke",
+      "beam1": {
+        "translation": "Thank you .",
+        "score": -0.7492920160293579,
+        "latency_ms": 43
+      },
+      "beam2": {
+        "translation": "Thank you .",
+        "score": -0.7593749761581421,
+        "latency_ms": 51
+      },
+      "beam4": {
+        "translation": "Thank you .",
+        "score": -0.7593749761581421,
+        "latency_ms": 78
+      },
+      "beam8": {
+        "translation": "Thank you very much .",
+        "score": -0.6735491156578064,
+        "latency_ms": 85
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Nochmal",
+      "beam1": {
+        "translation": "I 'm going to go again .",
+        "score": -1.377410888671875,
+        "latency_ms": 94
+      },
+      "beam2": {
+        "translation": "I 'll tell you again .",
+        "score": -1.0190972089767456,
+        "latency_ms": 98
+      },
+      "beam4": {
+        "translation": "Once again .",
+        "score": -1.1484375,
+        "latency_ms": 74
+      },
+      "beam8": {
+        "translation": "One more time .",
+        "score": -1.0338541269302368,
+        "latency_ms": 98
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Sorry, bin spät",
+      "beam1": {
+        "translation": "Sorry I'm late.",
+        "score": -0.4084625244140625,
+        "latency_ms": 65
+      },
+      "beam2": {
+        "translation": "Sorry I'm late.",
+        "score": -0.395263671875,
+        "latency_ms": 65
+      },
+      "beam4": {
+        "translation": "Sorry I'm late.",
+        "score": -0.395263671875,
+        "latency_ms": 100
+      },
+      "beam8": {
+        "translation": "Sorry I'm late.",
+        "score": -0.395263671875,
+        "latency_ms": 105
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Gewonnen!",
+      "beam1": {
+        "translation": "- You won!",
+        "score": -1.1239827871322632,
+        "latency_ms": 45
+      },
+      "beam2": {
+        "translation": "I won!",
+        "score": -0.84765625,
+        "latency_ms": 48
+      },
+      "beam4": {
+        "translation": "We won!",
+        "score": -0.801562488079071,
+        "latency_ms": 46
+      },
+      "beam8": {
+        "translation": "We won!",
+        "score": -0.801562488079071,
+        "latency_ms": 85
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Dieser Boss ist zu stark",
+      "beam1": {
+        "translation": "This boss is too strong",
+        "score": -0.5658307671546936,
+        "latency_ms": 51
+      },
+      "beam2": {
+        "translation": "This boss is too strong",
+        "score": -0.5666852593421936,
+        "latency_ms": 58
+      },
+      "beam4": {
+        "translation": "This boss is too strong.",
+        "score": -0.5537109375,
+        "latency_ms": 71
+      },
+      "beam8": {
+        "translation": "This boss is too strong.",
+        "score": -0.5537109375,
+        "latency_ms": 90
+      }
+    },
+    {
+      "src": "deu_Latn",
+      "tgt": "eng_Latn",
+      "sentence": "Nächste Runde",
+      "beam1": {
+        "translation": "Next round",
+        "score": -0.49639892578125,
+        "latency_ms": 39
+      },
+      "beam2": {
+        "translation": "Next round",
+        "score": -0.50732421875,
+        "latency_ms": 46
+      },
+      "beam4": {
+        "translation": "Next round",
+        "score": -0.50732421875,
+        "latency_ms": 51
+      },
+      "beam8": {
+        "translation": "Next round",
+        "score": -0.50732421875,
+        "latency_ms": 86
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "good game, well played",
+      "beam1": {
+        "translation": "試合はいい",
+        "score": -1.530517578125,
+        "latency_ms": 42
+      },
+      "beam2": {
+        "translation": "いいゲーム,うまくプレーした",
+        "score": -1.1376953125,
+        "latency_ms": 64
+      },
+      "beam4": {
+        "translation": "良いゲーム,よくプレー",
+        "score": -1.1127232313156128,
+        "latency_ms": 64
+      },
+      "beam8": {
+        "translation": "良いゲーム,よくプレー",
+        "score": -1.1127232313156128,
+        "latency_ms": 101
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "nice shot",
+      "beam1": {
+        "translation": "ショットが良かった",
+        "score": -1.035400390625,
+        "latency_ms": 48
+      },
+      "beam2": {
+        "translation": "いいショット",
+        "score": -0.817187488079071,
+        "latency_ms": 47
+      },
+      "beam4": {
+        "translation": "いいショット",
+        "score": -0.817187488079071,
+        "latency_ms": 57
+      },
+      "beam8": {
+        "translation": "いいショット",
+        "score": -0.817187488079071,
+        "latency_ms": 74
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "need help",
+      "beam1": {
+        "translation": "支援が必要",
+        "score": -0.929003894329071,
+        "latency_ms": 36
+      },
+      "beam2": {
+        "translation": "支援が必要",
+        "score": -0.9140625,
+        "latency_ms": 43
+      },
+      "beam4": {
+        "translation": "支援が必要",
+        "score": -0.9140625,
+        "latency_ms": 47
+      },
+      "beam8": {
+        "translation": "支援が必要",
+        "score": -0.9140625,
+        "latency_ms": 69
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "one second",
+      "beam1": {
+        "translation": "1秒",
+        "score": -0.82379150390625,
+        "latency_ms": 31
+      },
+      "beam2": {
+        "translation": "1秒",
+        "score": -0.82861328125,
+        "latency_ms": 42
+      },
+      "beam4": {
+        "translation": "1秒",
+        "score": -0.82861328125,
+        "latency_ms": 43
+      },
+      "beam8": {
+        "translation": "1秒",
+        "score": -0.82861328125,
+        "latency_ms": 63
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "thanks",
+      "beam1": {
+        "translation": "ありがとうございました",
+        "score": -0.54864501953125,
+        "latency_ms": 31
+      },
+      "beam2": {
+        "translation": "ありがとうございました",
+        "score": -0.5732421875,
+        "latency_ms": 33
+      },
+      "beam4": {
+        "translation": "ありがとうございました",
+        "score": -0.5732421875,
+        "latency_ms": 53
+      },
+      "beam8": {
+        "translation": "ありがとうございました",
+        "score": -0.5732421875,
+        "latency_ms": 55
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "let's try again",
+      "beam1": {
+        "translation": "やってみよう",
+        "score": -0.81878662109375,
+        "latency_ms": 43
+      },
+      "beam2": {
+        "translation": "もう一度やってみよう",
+        "score": -0.6713169813156128,
+        "latency_ms": 56
+      },
+      "beam4": {
+        "translation": "もう一度やってみよう",
+        "score": -0.6713169813156128,
+        "latency_ms": 56
+      },
+      "beam8": {
+        "translation": "やってみよう",
+        "score": -0.7975260615348816,
+        "latency_ms": 74
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "sorry i'm late",
+      "beam1": {
+        "translation": "遅刻してすみません",
+        "score": -0.793731689453125,
+        "latency_ms": 60
+      },
+      "beam2": {
+        "translation": "遅刻してすみません",
+        "score": -0.80810546875,
+        "latency_ms": 73
+      },
+      "beam4": {
+        "translation": "遅刻してすみません",
+        "score": -0.80810546875,
+        "latency_ms": 69
+      },
+      "beam8": {
+        "translation": "遅刻してすみません",
+        "score": -0.80810546875,
+        "latency_ms": 97
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "we won",
+      "beam1": {
+        "translation": "勝った",
+        "score": -0.68896484375,
+        "latency_ms": 49
+      },
+      "beam2": {
+        "translation": "勝った",
+        "score": -0.684374988079071,
+        "latency_ms": 43
+      },
+      "beam4": {
+        "translation": "勝った",
+        "score": -0.684374988079071,
+        "latency_ms": 57
+      },
+      "beam8": {
+        "translation": "勝った",
+        "score": -0.684374988079071,
+        "latency_ms": 65
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "this boss is too strong",
+      "beam1": {
+        "translation": "このボスは強すぎる",
+        "score": -0.7429547905921936,
+        "latency_ms": 52
+      },
+      "beam2": {
+        "translation": "このボスは強すぎる",
+        "score": -0.7137276530265808,
+        "latency_ms": 57
+      },
+      "beam4": {
+        "translation": "このボスは強すぎる",
+        "score": -0.7137276530265808,
+        "latency_ms": 56
+      },
+      "beam8": {
+        "translation": "このボスは強すぎる",
+        "score": -0.7137276530265808,
+        "latency_ms": 86
+      }
+    },
+    {
+      "src": "eng_Latn",
+      "tgt": "jpn_Jpan",
+      "sentence": "next round",
+      "beam1": {
+        "translation": "次のラウンド",
+        "score": -0.5027405023574829,
+        "latency_ms": 36
+      },
+      "beam2": {
+        "translation": "次のラウンド",
+        "score": -0.5093749761581421,
+        "latency_ms": 40
+      },
+      "beam4": {
+        "translation": "次のラウンド",
+        "score": -0.5093749761581421,
+        "latency_ms": 45
+      },
+      "beam8": {
+        "translation": "次のラウンド",
+        "score": -0.5093749761581421,
+        "latency_ms": 64
+      }
+    }
+  ]
+}

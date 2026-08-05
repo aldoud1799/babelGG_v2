@@ -1,0 +1,7 @@
+[
+  {"label": "URL", "pattern": "https?://\\S+"},
+  {"label": "MENTION", "pattern": "@\\w+"},
+  {"label": "HASHTAG", "pattern": "#\\w+"},
+  {"label": "NUMBER", "pattern": "\\b\\d+(?:\\.\\d+)?[kKmM]?\\b"},
+  {"label": "ACRONYM", "pattern": "\\b[A-Z]{2,4}\\b"}
+]

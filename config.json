@@ -1,0 +1,26 @@
+{
+  "app_name": "BabelGG",
+  "version": "0.1.0",
+  "app_language": "english",
+  "language_auto_detect": false,
+  "my_language": "english",
+  "flash_device": "cuda",
+  "card_timeout": 5,
+  "card_anchor": "top_left",
+  "card_compact": true,
+  "card_rate_limit_s": 0.0,
+  "max_clipboard_length": 0,
+  "hotkeys": {
+    "toggle": "Ctrl+Shift+H",
+    "reply": "Ctrl+Shift+R",
+    "settings": "Ctrl+Shift+Comma",
+    "ocr": "Ctrl+Shift+G",
+    "reshow": "Ctrl+Shift+T"
+  },
+  "theme": "dark",
+  "first_run": false,
+  "gaming_preset": "balanced",
+  "natural_mode": true,
+  "telemetry_local_enabled": true,
+  "translation_cache_enabled": false
+}

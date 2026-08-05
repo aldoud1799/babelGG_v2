@@ -1,0 +1,14 @@
+{
+  "app_version": "0.1.0",
+  "minimum_version": "0.1.0",
+  "flash": {
+    "repo": "facebook/nllb-200-distilled-600M",
+    "runtime": "ctranslate2",
+    "local_hf_path": "models/nllb-200-distilled-600M",
+    "local_ct2_gpu_path": "models/nllb-ct2-gpu",
+    "local_ct2_cpu_path": "models/nllb-ct2-cpu",
+    "local_ct2_path": "models/nllb-ct2-cpu",
+    "quantization_gpu": "int8_float16",
+    "quantization_cpu": "int8"
+  }
+}

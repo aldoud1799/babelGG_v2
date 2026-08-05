@@ -1,0 +1,74 @@
+{
+  "gpu_with_fasttext_fix": {
+    "japanese->english": {
+      "mean_ms": 78.7,
+      "median_ms": 83.5,
+      "min_ms": 0,
+      "max_ms": 136,
+      "stdev_ms": 32.0,
+      "successes": 100,
+      "attempts": 100,
+      "failure_rate": 0.0
+    },
+    "korean->english": {
+      "mean_ms": 76.5,
+      "median_ms": 77,
+      "min_ms": 0,
+      "max_ms": 128,
+      "stdev_ms": 25.9,
+      "successes": 95,
+      "attempts": 100,
+      "failure_rate": 0.05
+    },
+    "chinese->english": {
+      "mean_ms": 65.0,
+      "median_ms": 69,
+      "min_ms": 0,
+      "max_ms": 128,
+      "stdev_ms": 27.8,
+      "successes": 85,
+      "attempts": 100,
+      "failure_rate": 0.15
+    },
+    "french->english": {
+      "mean_ms": 74.2,
+      "median_ms": 73,
+      "min_ms": 48,
+      "max_ms": 121,
+      "stdev_ms": 17.6,
+      "successes": 85,
+      "attempts": 100,
+      "failure_rate": 0.15
+    },
+    "spanish->english": {
+      "mean_ms": 65.0,
+      "median_ms": 62.5,
+      "min_ms": 41,
+      "max_ms": 105,
+      "stdev_ms": 15.5,
+      "successes": 90,
+      "attempts": 100,
+      "failure_rate": 0.1
+    },
+    "german->english": {
+      "mean_ms": 62.0,
+      "median_ms": 62.0,
+      "min_ms": 40,
+      "max_ms": 99,
+      "stdev_ms": 12.3,
+      "successes": 100,
+      "attempts": 100,
+      "failure_rate": 0.0
+    },
+    "portuguese->english": {
+      "mean_ms": 74.7,
+      "median_ms": 65.5,
+      "min_ms": 33,
+      "max_ms": 251,
+      "stdev_ms": 42.4,
+      "successes": 80,
+      "attempts": 100,
+      "failure_rate": 0.2
+    }
+  }
+}

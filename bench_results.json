@@ -1,0 +1,110 @@
+{
+  "cpu": {
+    "japanese->english": {
+      "mean_ms": 267.3,
+      "median_ms": 282,
+      "min_ms": 0,
+      "max_ms": 403,
+      "stdev_ms": 104.3,
+      "successes": 95,
+      "attempts": 100,
+      "failure_rate": 0.05
+    },
+    "korean->english": {
+      "mean_ms": 278.1,
+      "median_ms": 277,
+      "min_ms": 186,
+      "max_ms": 409,
+      "stdev_ms": 66.9,
+      "successes": 75,
+      "attempts": 100,
+      "failure_rate": 0.25
+    },
+    "chinese->english": {
+      "mean_ms": 278,
+      "median_ms": 280,
+      "min_ms": 247,
+      "max_ms": 318,
+      "stdev_ms": 28.4,
+      "successes": 45,
+      "attempts": 100,
+      "failure_rate": 0.55
+    },
+    "english->japanese": {
+      "mean_ms": 196.4,
+      "median_ms": 187.0,
+      "min_ms": 155,
+      "max_ms": 251,
+      "stdev_ms": 34.1,
+      "successes": 100,
+      "attempts": 100,
+      "failure_rate": 0.0
+    },
+    "english->korean": {
+      "mean_ms": 193.7,
+      "median_ms": 187.0,
+      "min_ms": 125,
+      "max_ms": 290,
+      "stdev_ms": 39.0,
+      "successes": 100,
+      "attempts": 100,
+      "failure_rate": 0.0
+    },
+    "english->chinese": {
+      "mean_ms": 225.9,
+      "median_ms": 216.0,
+      "min_ms": 155,
+      "max_ms": 343,
+      "stdev_ms": 50.2,
+      "successes": 100,
+      "attempts": 100,
+      "failure_rate": 0.0
+    },
+    "french->english": {
+      "mean_ms": 309.2,
+      "median_ms": 312.5,
+      "min_ms": 202,
+      "max_ms": 435,
+      "stdev_ms": 64.1,
+      "successes": 50,
+      "attempts": 100,
+      "failure_rate": 0.5
+    },
+    "spanish->english": {
+      "mean_ms": 260.2,
+      "median_ms": 259,
+      "min_ms": 194,
+      "max_ms": 391,
+      "stdev_ms": 46.7,
+      "successes": 25,
+      "attempts": 100,
+      "failure_rate": 0.75
+    },
+    "german->english": {
+      "mean_ms": 253.1,
+      "median_ms": 232,
+      "min_ms": 162,
+      "max_ms": 367,
+      "stdev_ms": 81.9,
+      "successes": 15,
+      "attempts": 100,
+      "failure_rate": 0.85
+    },
+    "portuguese->english": {
+      "mean_ms": 233.6,
+      "median_ms": 242,
+      "min_ms": 131,
+      "max_ms": 331,
+      "stdev_ms": 46.7,
+      "successes": 45,
+      "attempts": 100,
+      "failure_rate": 0.55
+    }
+  },
+  "meta": {
+    "ctranslate2_version": "4.7.1",
+    "gpu": "NVIDIA GeForce RTX 3080 10GB",
+    "cuda_driver": "610.74",
+    "timestamp": "2026-08-05T23:22:15"
+  }
+}

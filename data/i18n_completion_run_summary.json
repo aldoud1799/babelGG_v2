@@ -1,0 +1,92 @@
+{
+  "arabic": {
+    "pending_before": 0,
+    "translated": 0,
+    "failed": 0
+  },
+  "chinese": {
+    "pending_before": 0,
+    "translated": 0,
+    "failed": 0
+  },
+  "dutch": {
+    "pending_before": 62,
+    "translated": 62,
+    "failed": 0
+  },
+  "french": {
+    "pending_before": 1,
+    "translated": 1,
+    "failed": 0
+  },
+  "german": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "hindi": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "indonesian": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "italian": {
+    "pending_before": 62,
+    "translated": 62,
+    "failed": 0
+  },
+  "japanese": {
+    "pending_before": 0,
+    "translated": 0,
+    "failed": 0
+  },
+  "korean": {
+    "pending_before": 0,
+    "translated": 0,
+    "failed": 0
+  },
+  "polish": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "portuguese": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "russian": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "spanish": {
+    "pending_before": 1,
+    "translated": 1,
+    "failed": 0
+  },
+  "swedish": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "thai": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "turkish": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  },
+  "vietnamese": {
+    "pending_before": 61,
+    "translated": 61,
+    "failed": 0
+  }
+}

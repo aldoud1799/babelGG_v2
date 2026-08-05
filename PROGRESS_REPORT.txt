@@ -1,0 +1,149 @@
+BabelGG v2 - Progress Report
+Date: 2026-03-13
+
+Project Root
+- C:\Users\PC\Desktop\BabelGG_v2
+
+============================================================
+1) Major Features Completed
+============================================================
+
+Core App / Runtime
+- Global hotkeys integrated and working:
+  - Toggle: Ctrl+Shift+H
+  - Reply: Ctrl+Shift+R
+  - Settings: Ctrl+Shift+Comma
+- Single-instance lock added (prevents duplicate tray instances).
+- First-run downloader implemented (model download + CT2 conversion).
+- Silent background update checker implemented.
+- Display language pipeline fixed (setting is now applied to translations).
+- Reply "Copy & Send" loop fixed (app-originated clipboard text is suppressed).
+- Startup stale-clipboard replay fixed (old clipboard content is ignored on launch).
+
+UI / UX
+- Settings UI redesigned and modernized.
+- Save button contrast fix applied (text visibility fixed).
+- Translation card enhanced visually (clearer hierarchy, stronger CTA).
+- Reply box enhanced visually.
+- Card comfort controls implemented:
+  - Rate limiter (minimum delay between cards)
+  - Anchor setting (top-left/top-right/bottom-left/bottom-right)
+  - Compact mode
+- Compact mode is now default.
+- Reply UI now supports compact mode and follows compact setting.
+
+Language Reliability
+- Added Latin-script language detection fallback (langdetect) in Flash engine.
+- Bidirectional all-language test script created and validated.
+
+============================================================
+2) Packaging / Installer Work Completed
+============================================================
+
+Path Hardening for Packaged Runs
+- Added path helper module: core/paths.py
+- Updated path resolution to BASE_DIR for:
+  - config.json
+  - version.json
+  - assets/icon.ico
+  - data/babelgg.log
+  - data/vault.json
+  - models paths used by Flash/downloader
+
+PyInstaller
+- Created spec: BabelGG_Lite.spec
+  - onefile=True
+  - console=False
+  - uac_admin=True
+  - includes assets/, config.json, version.json
+  - excludes models/
+- Build command executed:
+  - pyinstaller BabelGG_Lite.spec --clean --noconfirm
+- Output produced:
+  - dist/BabelGG.exe
+
+Inno Setup
+- Created script: installer/BabelGG.iss
+  - AppName=BabelGG
+  - AppVersion=0.1.0
+  - InstallDir={autopf}\BabelGG
+  - PrivilegesRequired=admin
+  - Desktop + Start Menu shortcuts
+  - Launch after install
+  - Uninstaller included
+- Inno Setup compiler installed and script compiled.
+- Output produced:
+  - installer/BabelGG_Setup.exe
+
+Artifact Sizes
+- dist/BabelGG.exe: 231,697,079 bytes
+- installer/BabelGG_Setup.exe: 232,647,787 bytes
+
+============================================================
+3) Validation Status
+============================================================
+
+Verified Working
+- Source app launches and reaches:
+  - Tray shown
+  - Flash warmup
+  - Ready / All systems go
+- Hotkeys register correctly.
+- Card controls (rate limit/anchor/compact) are wired and active.
+- Reply compact mode is wired and active.
+- Installer executable successfully compiled.
+
+Partially Verified / Pending Full End-to-End
+- Full clean-machine installer flow should still be manually verified:
+  1) Install to Program Files
+  2) Desktop shortcut creation
+  3) Launch after install
+  4) First-run model download UI on machine without models
+  5) Post-download Ready state and live translation test
+
+============================================================
+4) Current Known Issues / Notes
+============================================================
+
+CUDA
+- Runtime currently falls back to CPU because CUDA DLL dependency chain is incomplete.
+- cublas64_12.dll alone was not sufficient (it requires cublasLt64_12.dll and matching dependencies).
+- To keep app stable, the injected custom cublas64_12.dll was removed and CPU fallback path was restored.
+
+Process Exit Code Note
+- Some terminal runs show exit code 1 even when app launches and runs in background/tray.
+- Operational status should be confirmed by log lines and tray state (Ready / All systems go), which currently succeed.
+
+============================================================
+5) Important Files Added/Updated
+============================================================
+
+Added
+- core/paths.py
+- BabelGG_Lite.spec
+- installer/BabelGG.iss
+- PROGRESS_REPORT.txt
+
+Updated (high-impact)
+- main.py
+- core/catch.py
+- core/flash.py
+- core/vault.py
+- core/updater.py
+- ui/card.py
+- ui/reply.py
+- ui/settings.py
+- ui/downloader.py
+- config.json
+- requirements.txt
+
+============================================================
+6) Recommended Next Steps
+============================================================
+
+1. Run full installer verification on a truly clean machine/account.
+2. Decide whether to keep CPU-only default behavior for public testing build.
+3. If CUDA support is required, install matching CUDA runtime bundle (includes cublas + cublasLt and dependencies) instead of copying single DLLs.
+4. Commit and push remaining uncommitted changes after final manual QA.
+
+End of report.

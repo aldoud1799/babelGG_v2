@@ -1,0 +1,56 @@
+﻿2026-04-07 21:30:40.484   Log opened. (Time zone: UTC+03:00)
+2026-04-07 21:30:40.484   Setup version: Inno Setup version 6.7.1
+2026-04-07 21:30:40.484   Original Setup EXE: D:\AbeSoft\BabelGG_v2\installer\BabelGG_Setup.exe
+2026-04-07 21:30:40.484   Setup command line: /SL5="$A0A06,313376842,893952,D:\AbeSoft\BabelGG_v2\installer\BabelGG_Setup.exe" /SPAWNWND=$60A0C /FIRSTWND=$A0A54 /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG="d:/AbeSoft/BabelGG_v2/_installer_smoketest/installer_run.log" 
+2026-04-07 21:30:40.484   Compatibility mode: Yes (Installer)
+2026-04-07 21:30:40.484   Windows version: 10.0.26200
+2026-04-07 21:30:40.484   Windows architecture: x64 (64-bit)
+2026-04-07 21:30:40.484   Machine types supported by system: x86 x64
+2026-04-07 21:30:40.489   User privileges: Administrative
+2026-04-07 21:30:40.492   Administrative install mode: Yes
+2026-04-07 21:30:40.492   Install mode root key: HKEY_LOCAL_MACHINE
+2026-04-07 21:30:40.492   64-bit install mode: No
+2026-04-07 21:30:40.492   RedirectionGuard status for current process: Enabled in enforcing mode
+2026-04-07 21:30:40.494   Created protected temporary directory: C:\Users\PC\AppData\Local\Temp\is-Q1BN60AWJ8.tmp
+2026-04-07 21:30:40.673   Found 1 files to register with RestartManager.
+2026-04-07 21:30:40.673   Calling RestartManager's RmGetList.
+2026-04-07 21:30:40.682   RmGetList finished successfully.
+2026-04-07 21:30:40.682   RestartManager found no applications using one of our files.
+2026-04-07 21:30:40.691   Starting the installation process.
+2026-04-07 21:30:40.693   Directory for uninstall files: C:\Program Files (x86)\BabelGG
+2026-04-07 21:30:40.694   Will append to existing uninstall log: C:\Program Files (x86)\BabelGG\unins000.dat
+2026-04-07 21:30:40.702   -- File entry --
+2026-04-07 21:30:40.702   Dest filename: C:\Program Files (x86)\BabelGG\unins000.exe
+2026-04-07 21:30:40.710   Time stamp of our file: 2026-04-07 21:30:39.596
+2026-04-07 21:30:40.710   Dest file exists.
+2026-04-07 21:30:40.711   Time stamp of existing file: 2026-03-15 21:10:50.138
+2026-04-07 21:30:40.711   Version of our file: 51.1054.0.0
+2026-04-07 21:30:40.717   Version of existing file: 51.1054.0.0
+2026-04-07 21:30:40.717   Installing the file.
+2026-04-07 21:30:40.725   Leaving temporary file in place for now.
+2026-04-07 21:30:40.726   -- File entry --
+2026-04-07 21:30:40.726   Dest filename: C:\Program Files (x86)\BabelGG\BabelGG.exe
+2026-04-07 21:30:40.726   Time stamp of our file: 2026-03-15 21:05:30.000
+2026-04-07 21:30:40.726   Dest file exists.
+2026-04-07 21:30:40.726   Time stamp of existing file: 2026-03-15 21:05:30.000
+2026-04-07 21:30:40.726   Installing the file.
+2026-04-07 21:30:56.502   Successfully installed the file.
+2026-04-07 21:30:56.502   -- Icon entry --
+2026-04-07 21:30:56.502   Dest filename: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\BabelGG\BabelGG.lnk
+2026-04-07 21:30:56.503   Creating the icon.
+2026-04-07 21:30:56.983   Successfully created the icon.
+2026-04-07 21:30:56.993   -- Icon entry --
+2026-04-07 21:30:56.993   Dest filename: C:\Users\Public\Desktop\BabelGG.lnk
+2026-04-07 21:30:56.993   Creating the icon.
+2026-04-07 21:30:56.999   Successfully created the icon.
+2026-04-07 21:30:57.009   Saving uninstall information.
+2026-04-07 21:30:57.009   Renaming uninstaller.
+2026-04-07 21:30:57.010   Deleting uninstall key left over from previous administrative 32-bit install.
+2026-04-07 21:30:57.011   Creating new uninstall key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{2D8D3A86-4B10-4FE6-8915-3AF7AC91E0C7}_is1
+2026-04-07 21:30:57.011   Writing uninstall key values.
+2026-04-07 21:30:57.013   Detected previous non administrative install? No
+2026-04-07 21:30:57.013   Detected previous administrative 64-bit install? No
+2026-04-07 21:30:57.015   Installation process succeeded.
+2026-04-07 21:30:57.016   Need to restart Windows? No
+2026-04-07 21:30:57.020   Deinitializing Setup.
+2026-04-07 21:30:57.030   Log closed.

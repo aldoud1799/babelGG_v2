@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+.venv311/
+venv_build/
+venv/
+env/
+
+# Model weights (large binary files - download separately)
+models/*.gguf
+models/small100-ct2/model.bin
+models/nllb-200-distilled-600M/sentencepiece.bpe.model
+models/nllb-200-distilled-600M/tokenizer.json
+models/nllb-200-distilled-600M/pytorch_model.bin
+
+# Logs & runtime data
+data/babelgg.log
+data/babelgg.lock
+data/telemetry.json
+data/vault.json
+build_log*.txt
+build_unpacked.log
+pyinstaller_build_full*.log
+pyinstaller_unpacked_build.log
+dist_tree_paths_only.txt
+dist_tree_with_sizes.txt
+models_backup/
+
+# PyInstaller
+*.spec.bak
+dist/
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Download probe scratch directory (2.5GB of HF model artifacts)
+.tmp_downloader_probe/
+.tmp_fill_i18n.py
+.qwen/
+
+# All model weights — download separately from HuggingFace, see README
+models/**/*.bin
+models/**/*.gguf
+models/**/*.safetensors
+models/**/*.h5
+models/**/*.pb
+models/**/*.pt
+models/**/*.pth
+
+# Downloader probe scratch (2.5GB+ of HF artifacts)
+.tmp_downloader_probe/
+
+# Build outputs and installer staging
+installer_build/
+dist/
+build/
+
+# Large audit / report files not needed for paper reproduction
+APP_READINESS_AUDIT_*.md
+APP_REPORT_*.md
+PUBLISHING_READINESS_AUDIT_*.md
+DEAD_CODE_INVENTORY_*.md
+HARDCODED_INVENTORY_*.md
+LANGUAGE_PROFILE_COMPLETION_STATUS_*.md
+NATURALIZER_IMPLEMENTATION_PLAN.md
+PLAN_*.md
+SESSION_*.md
+RELEASE_FIX_PLAN.md
+RELEASE_CHECKLIST_*.md
+TRANSLATION_STABILITY_PLAN_*.md
+.tmp_fill_i18n.py
+.qwen/
+.claude/
